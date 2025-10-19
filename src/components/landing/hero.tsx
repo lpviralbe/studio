@@ -11,7 +11,7 @@ export function Hero() {
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
           Ideias, roteiros e vídeos prontos gerados por IA para você crescer em qualquer rede social — rápido, simples e sem sofrimento.
         </p>
-        <div className="mt-12 flex justify-center">
+        <div className="mt-12 flex justify-center animate-fade-in-up">
            <NicheSearch />
         </div>
       </div>
