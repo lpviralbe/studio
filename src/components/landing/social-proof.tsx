@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { Users, Lightbulb, Smile } from 'lucide-react';
 import Image from 'next/image';
+import { RevenueChart } from './revenue-chart';
 
 const stats = [
   { icon: Users, end: 5000, label: 'Usuários' },
@@ -77,20 +78,27 @@ export function SocialProof() {
         </div>
         
         <div className="relative z-10">
-          <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold">Mais de <span className="text-primary">5.000 influencers</span> já usam ViralBe.AI</h2>
+          <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">Mais de <span className="text-primary">5.000 influencers</span> faturando alto após viralizar</h2>
+              <p className="mt-4 text-muted-foreground">O ViralBe.AI não só aumenta seus seguidores, ele multiplica seu faturamento. Veja o impacto real.</p>
           </div>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            {stats.map((stat, index) => (
-              <div key={index} className="flex flex-col items-center p-6 bg-background rounded-xl border border-border transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
-                <stat.icon className="w-12 h-12 text-primary mb-4" />
-                <div className="text-4xl font-bold">
-                  <Counter end={stat.end} />
-                  {index === 2 ? '%' : '+'}
+
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="flex flex-col gap-8">
+              {stats.map((stat, index) => (
+                <div key={index} className="flex items-center gap-6 p-6 bg-background/50 rounded-xl border border-border transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
+                  <stat.icon className="w-10 h-10 text-primary flex-shrink-0" />
+                  <div>
+                    <div className="text-3xl font-bold">
+                      <Counter end={stat.end} />
+                      {index === 2 ? '%' : '+'}
+                    </div>
+                    <p className="text-muted-foreground mt-1">{stat.label}</p>
+                  </div>
                 </div>
-                <p className="text-muted-foreground mt-2">{stat.label}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+            <RevenueChart />
           </div>
         </div>
       </div>
