@@ -1,41 +1,20 @@
 'use client';
-import { useState } from 'react';
-import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
+import Link from 'next/link';
 
 export function NicheSearch() {
-  const [niche, setNiche] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (niche.trim() === '') return;
-    const encodedNiche = encodeURIComponent(niche.trim());
-    window.open(`https://viralbeai.vercel.app/?q=${encodedNiche}`, '_blank');
+  const handleRedirect = () => {
+    window.open('https://viralbeai.vercel.app/', '_blank');
   };
 
   return (
     <div className="w-full max-w-2xl mx-auto text-center p-8 bg-card/50 backdrop-blur-lg border border-primary/20 rounded-xl shadow-lg shadow-primary/10">
-        <h2 className="text-2xl font-bold tracking-tight mb-6">
-          Digite seu nicho e veja ideias prontas agora:
-        </h2>
-        <form onSubmit={handleSubmit} className="flex w-full items-center space-x-2">
-          <Input
-            type="text"
-            value={niche}
-            onChange={(e) => setNiche(e.target.value)}
-            placeholder="ex.: futebol, beleza, finanças pessoais, pets..."
-            className="text-lg py-6"
-            aria-label="Seu nicho de conteúdo"
-          />
-          <Button type="submit" size="lg" className="py-6 px-4">
-            <Search className="h-5 w-5 md:mr-2" />
-            <span className="hidden md:inline">Ver Ideias</span>
-          </Button>
-        </form>
-        <p className="mt-4 text-sm text-muted-foreground">
-          Isso abre nosso app real com sugestões instantâneas.
-        </p>
+        <Button size="lg" className="py-8 px-8 text-lg" onClick={handleRedirect}>
+            <Search className="h-6 w-6 md:mr-3" />
+            Encontrar os vídeos mais virais do meu nicho
+        </Button>
       </div>
   );
 }
