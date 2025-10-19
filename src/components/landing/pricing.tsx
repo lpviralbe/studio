@@ -32,7 +32,7 @@ const plans = [
         ],
         isPopular: false,
         cta: "Assinar Pro",
-        href: "https://viralbeai.vercel.app/"
+        href: "https://buy.stripe.com/eVqbIUfqy1RC12UchO7EQ00"
     }
 ]
 
