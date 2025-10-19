@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Link from 'next/link';
-import { ArrowRight } from "lucide-react";
+'use client';
+import { NicheSearch } from "@/components/landing/niche-search";
 
 export function Hero() {
   return (
@@ -12,7 +11,8 @@ export function Hero() {
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
           Ideias, roteiros e vídeos prontos gerados por IA para você crescer em qualquer rede social — rápido, simples e sem sofrimento.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <div className="mt-8 flex justify-center">
+           <NicheSearch />
         </div>
       </div>
     </section>

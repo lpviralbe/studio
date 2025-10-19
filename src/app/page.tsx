@@ -1,6 +1,5 @@
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
-import { NicheSearch } from "@/components/landing/niche-search";
 import { SocialProof } from "@/components/landing/social-proof";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Testimonials } from "@/components/landing/testimonials";
@@ -17,7 +16,6 @@ export default function Home() {
         <SocialProof />
         <HowItWorks />
         <Testimonials />
-        <NicheSearch />
         <Pricing />
         <Faq />
       </main>

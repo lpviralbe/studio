@@ -15,12 +15,11 @@ export function NicheSearch() {
   };
 
   return (
-    <section className="py-16 bg-muted/20">
-      <div className="container max-w-2xl mx-auto text-center">
-        <h2 className="text-2xl font-bold tracking-tight">
+    <div className="w-full max-w-2xl mx-auto text-center">
+        <h2 className="text-2xl font-bold tracking-tight mb-6">
           Digite seu nicho e veja ideias prontas agora:
         </h2>
-        <form onSubmit={handleSubmit} className="mt-6 flex w-full items-center space-x-2">
+        <form onSubmit={handleSubmit} className="flex w-full items-center space-x-2">
           <Input
             type="text"
             value={niche}
@@ -38,6 +37,5 @@ export function NicheSearch() {
           Isso abre nosso app real com sugestões instantâneas.
         </p>
       </div>
-    </section>
   );
 }
