@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import Link from 'next/link';
 
 const plans = [
     {
@@ -16,7 +17,8 @@ const plans = [
             "Suporte prioritário via chat"
         ],
         isPopular: true,
-        cta: "Assinar Pro"
+        cta: "Assinar Pro",
+        href: "https://viralbeai.vercel.app/"
     }
 ]
 
@@ -56,7 +58,9 @@ export function Pricing() {
                                 </ul>
                             </CardContent>
                             <CardFooter>
-                                <Button className="w-full" variant={plan.isPopular ? 'default' : 'outline'}>{plan.cta}</Button>
+                                <Button className="w-full" variant={plan.isPopular ? 'default' : 'outline'} asChild>
+                                    <Link href={plan.href} target="_blank">{plan.cta}</Link>
+                                </Button>
                             </CardFooter>
                         </Card>
                     ))}

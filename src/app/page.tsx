@@ -14,10 +14,10 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <NicheSearch />
         <SocialProof />
         <HowItWorks />
         <Testimonials />
+        <NicheSearch />
         <Pricing />
         <Faq />
       </main>

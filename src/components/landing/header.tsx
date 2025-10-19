@@ -83,9 +83,6 @@ export function Header() {
                 </Link>
             </div>
           <nav className="hidden md:flex items-center">
-            <Button size="sm" asChild>
-                <Link href="#pricing">Assinar Pro</Link>
-            </Button>
           </nav>
         </div>
       </div>
