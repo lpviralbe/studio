@@ -6,7 +6,7 @@ const steps = [
     icon: PenTool,
     title: "Digite seu nicho",
     objection: "“Não sou criativo”",
-    answer: "Tudo bem — a IA gera ideias para você.",
+    answer: "Tudo bem, a IA gera ideias para você.",
     description: "Basta inserir o tema do seu conteúdo e nossa IA entrega dezenas de ideias virais em segundos."
   },
   {

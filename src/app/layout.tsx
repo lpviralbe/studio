@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'ViralBe.AI — Viralize seu conteúdo sem ser criativo',
-  description: 'Ideias, roteiros e vídeos prontos gerados por IA para você crescer em qualquer rede social — rápido, simples e sem sofrimento.',
+  title: 'ViralBe.AI: Viralize seu conteúdo sem ser criativo',
+  description: 'Ideias, roteiros e vídeos prontos gerados por IA para você crescer em qualquer rede social. Rápido, simples e sem sofrimento.',
 };
 
 export default function RootLayout({

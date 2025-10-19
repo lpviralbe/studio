@@ -8,7 +8,7 @@ export function Footer() {
             <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="flex flex-col items-center md:items-start gap-4">
                     <Logo className="h-6 w-auto" />
-                    <p className="text-sm text-muted-foreground">© 2025 ViralBe.AI — Todos os direitos reservados.</p>
+                    <p className="text-sm text-muted-foreground">© 2025 ViralBe.AI. Todos os direitos reservados.</p>
                 </div>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <Link href="#" className="hover:text-foreground">Termos</Link>
