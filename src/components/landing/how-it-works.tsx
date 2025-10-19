@@ -28,14 +28,14 @@ const steps = [
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="py-20 md:py-32">
-      <div className="container">
+      <div className="container animate-fade-in-up">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Como usar em 3 passos</h2>
           <p className="mt-4 text-muted-foreground">O processo é tão simples que parece mágica. Transforme suas ideias em conteúdo viral em minutos.</p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="bg-card/50 backdrop-blur-lg border border-white/10 transition-all hover:border-primary/50">
+            <Card key={index} className="bg-card/50 backdrop-blur-lg border border-white/10 transition-all hover:border-primary/50 hover:shadow-primary/20 hover:-translate-y-2">
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="bg-primary/10 p-3 rounded-full border border-primary/20">

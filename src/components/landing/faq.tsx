@@ -31,7 +31,7 @@ const faqs = [
 export function Faq() {
     return (
         <section id="faq" className="py-20 md:py-32">
-            <div className="container max-w-3xl mx-auto">
+            <div className="container max-w-3xl mx-auto animate-fade-in-up">
                 <div className="text-center">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold">Perguntas Frequentes</h2>
                     <p className="mt-4 text-muted-foreground">Tudo o que você precisa saber antes de começar a viralizar.</p>

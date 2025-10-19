@@ -25,7 +25,7 @@ const plans = [
 export function Pricing() {
     return (
         <section id="pricing" className="py-20 md:py-32">
-            <div className="container">
+            <div className="container animate-fade-in-up">
                 <div className="text-center max-w-2xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-headline font-bold">Plano e Preços</h2>
                     <p className="mt-4 text-muted-foreground">Acesso completo para transformar suas ideias em conteúdo viral.</p>
@@ -33,7 +33,7 @@ export function Pricing() {
 
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto items-stretch">
                     {plans.map(plan => (
-                        <Card key={plan.name} className={`flex flex-col relative ${plan.isPopular ? 'border-primary shadow-lg shadow-primary/20' : ''}`}>
+                        <Card key={plan.name} className={`flex flex-col relative transition-all hover:-translate-y-2 ${plan.isPopular ? 'border-primary shadow-lg shadow-primary/20' : ''}`}>
                             {plan.isPopular && (
                                 <div className="py-1 px-4 bg-primary text-primary-foreground text-sm font-semibold rounded-t-lg text-center">
                                     Mais Vendido

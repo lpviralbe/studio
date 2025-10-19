@@ -30,7 +30,7 @@ export async function Testimonials() {
 
   return (
     <section id="testimonials" className="py-20 md:py-32 bg-muted/20">
-      <div className="container">
+      <div className="container animate-fade-in-up">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Contas que saíram do zero a resultados incríveis</h2>
           <p className="mt-4 text-muted-foreground">Não acredite só na nossa palavra. Veja o que os criadores estão dizendo sobre o ViralBe.AI.</p>
