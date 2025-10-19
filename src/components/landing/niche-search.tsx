@@ -15,7 +15,7 @@ export function NicheSearch() {
             <Search className="h-6 w-6 md:mr-3" />
             Encontrar os vídeos mais virais do meu nicho
         </Button>
-        <div className="mt-8 grid grid-cols-3 md:grid-cols-6 gap-4">
+        <div className="mt-8 grid grid-cols-3 md:grid-cols-6 gap-2">
             {[...Array(6)].map((_, i) => (
                 <div key={i} className="relative aspect-[9/16] rounded-md overflow-hidden transition-transform hover:scale-105">
                     <Image
