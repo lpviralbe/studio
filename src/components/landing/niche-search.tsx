@@ -15,7 +15,7 @@ export function NicheSearch() {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto text-center">
+    <div className="w-full max-w-2xl mx-auto text-center p-8 bg-card/50 backdrop-blur-lg border border-primary/20 rounded-xl shadow-lg shadow-primary/10">
         <h2 className="text-2xl font-bold tracking-tight mb-6">
           Digite seu nicho e veja ideias prontas agora:
         </h2>
