@@ -1,27 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PenTool, Scissors, Download } from "lucide-react";
+import { PenTool, Scissors, Download, Search, FileVideo, Sparkles } from "lucide-react";
 
 const steps = [
   {
-    icon: PenTool,
-    title: "Digite seu nicho",
-    objection: "“Não sou criativo”",
-    answer: "Tudo bem, a IA gera ideias para você.",
-    description: "Basta inserir o tema do seu conteúdo e nossa IA entrega dezenas de ideias virais em segundos."
+    icon: Search,
+    title: "Encontre um Viral",
+    objection: "“Não sei o que está em alta”",
+    answer: "Nós mostramos os vídeos com maior potencial.",
+    description: "Pesquise por seu nicho e veja os vídeos que mais estão viralizando no momento para se inspirar."
   },
   {
-    icon: Scissors,
-    title: "Escolha um roteiro",
+    icon: FileVideo,
+    title: "Selecione um Vídeo",
     objection: "“E se não combinar com meu estilo?”",
-    answer: "Templates personalizáveis: ajuste tom e duração em 1 clique.",
-    description: "Selecione a ideia que mais gostar e personalize o roteiro, tom de voz e duração para se alinhar perfeitamente com sua marca."
+    answer: "Você escolhe a base, nós adaptamos a magia.",
+    description: "Escolha o vídeo que mais te agrada e que tem a ver com seu público. Ele será a base para sua nova criação."
   },
   {
-    icon: Download,
-    title: "Baixe ou publique",
-    objection: "“Preciso de formatos diferentes?”",
-    answer: "Gera formatos otimizados para cada rede.",
-    description: "Exporte seu conteúdo final nos formatos ideais para Reels, TikTok, Shorts e mais. Pronto para viralizar."
+    icon: Sparkles,
+    title: "Receba seu Roteiro",
+    objection: "“Preciso criar o roteiro do zero?”",
+    answer: "Não. A IA cria um roteiro novo para você.",
+    description: "Nossa IA analisa o vídeo selecionado e cria um roteiro 100% novo e aprimorado para você apenas gravar."
   }
 ];
 
@@ -31,7 +31,7 @@ export function HowItWorks() {
       <div className="container animate-fade-in-up">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Como usar em 3 passos</h2>
-          <p className="mt-4 text-muted-foreground">O processo é tão simples que parece mágica. Transforme suas ideias em conteúdo viral em minutos.</p>
+          <p className="mt-4 text-muted-foreground">O processo é tão simples que parece mágica. Transforme inspiração em conteúdo viral em minutos.</p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (

@@ -7,20 +7,20 @@ import {
   
 const faqs = [
     {
-        question: "Preciso ser criativo para usar?",
-        answer: "De jeito nenhum! O ViralBe.AI foi feito exatamente para quem não se considera criativo. Nossa IA gera as ideias e os roteiros para você, eliminando o bloqueio criativo."
+        question: "Preciso ter ideias para usar o ViralBe.AI?",
+        answer: "Não! A grande vantagem é que você não precisa de ideias. Basta pesquisar seu nicho, encontrar um vídeo que já é viral e nós criamos um roteiro novo e melhorado para você."
     },
     {
-        question: "Funciona para TikTok, Reels, YouTube e X (Twitter)?",
-        answer: "Sim! Geramos conteúdos otimizados para os formatos de vídeo curto (TikTok, Reels, Shorts) e também para posts mais longos no YouTube e textos para o X (antigo Twitter)."
+        question: "A IA vai copiar o vídeo de outra pessoa?",
+        answer: "De forma alguma. A IA usa o vídeo selecionado apenas como inspiração para entender a estrutura e o tema. O roteiro gerado é 100% original e pronto para você gravar com seu estilo."
     },
     {
-        question: "Posso editar os roteiros antes de publicar?",
-        answer: "Com certeza. Todos os roteiros e ideias são 100% editáveis. Você pode ajustar o tom, adicionar suas próprias piadas ou informações, e deixar o conteúdo com a sua cara."
+        question: "Funciona para qualquer nicho?",
+        answer: "Sim! De finanças a games, de beleza a programação. Se existe conteúdo em vídeo no seu nicho, nossa ferramenta pode encontrar os virais e te ajudar a criar sua versão."
     },
     {
         question: "Como funciona o período grátis?",
-        answer: "Você tem direito a 3 gerações de conteúdo (ideias e roteiros) totalmente grátis, sem precisar cadastrar cartão de crédito. É uma forma de você testar e ver o valor na prática."
+        answer: "Você tem direito a 3 gerações de roteiros totalmente grátis, sem precisar cadastrar cartão de crédito. É a melhor forma de você testar e ver o poder da ferramenta na prática."
     },
     {
         question: "Tem suporte e tutoriais?",
