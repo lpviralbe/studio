@@ -67,13 +67,13 @@ export function SocialProof() {
     <section className="py-20 md:py-32">
       <div className="container relative">
         <div className="absolute -top-20 -left-20 w-48 h-48">
-          <Image src="https://picsum.photos/seed/img1/200/200" alt="blurred image 1" layout="fill" className="blur-2xl opacity-20" data-ai-hint="abstract shape" />
+          <Image src="https://picsum.photos/seed/img1/200/200" alt="blurred image 1" fill={true} className="blur-2xl opacity-20" data-ai-hint="abstract shape" />
         </div>
         <div className="absolute -top-10 right-0 w-48 h-48">
-          <Image src="https://picsum.photos/seed/img2/200/200" alt="blurred image 2" layout="fill" className="blur-2xl opacity-20" data-ai-hint="abstract shape" />
+          <Image src="https://picsum.photos/seed/img2/200/200" alt="blurred image 2" fill={true} className="blur-2xl opacity-20" data-ai-hint="abstract shape" />
         </div>
         <div className="absolute top-20 -left-10 w-48 h-48">
-          <Image src="https://picsum.photos/seed/img3/200/200" alt="blurred image 3" layout="fill" className="blur-2xl opacity-20" data-ai-hint="abstract shape" />
+          <Image src="https://picsum.photos/seed/img3/200/200" alt="blurred image 3" fill={true} className="blur-2xl opacity-20" data-ai-hint="abstract shape" />
         </div>
         
         <div className="relative z-10">
@@ -86,9 +86,7 @@ export function SocialProof() {
                 <stat.icon className="w-12 h-12 text-primary mb-4" />
                 <div className="text-4xl font-bold">
                   <Counter end={stat.end} />
-                  {index === 0 ? 'k+' : ''}
-                  {index === 1 ? 'k' : ''}
-                  {index === 2 ? '%' : ''}
+                  {index === 2 ? '%' : '+'}
                 </div>
                 <p className="text-muted-foreground mt-2">{stat.label}</p>
               </div>
