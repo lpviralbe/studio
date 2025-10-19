@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PenTool, Scissors, Download, Search, FileVideo, Sparkles } from "lucide-react";
+import Image from "next/image";
 
 const steps = [
   {
@@ -7,21 +8,36 @@ const steps = [
     title: "Encontre um Viral",
     objection: "“Não sei o que está em alta”",
     answer: "Nós mostramos os vídeos com maior potencial.",
-    description: "Pesquise por seu nicho e veja os vídeos que mais estão viralizando no momento para se inspirar."
+    description: "Pesquise por seu nicho e veja os vídeos que mais estão viralizando no momento para se inspirar.",
+    image: {
+      src: "https://picsum.photos/seed/step1/600/400",
+      alt: "Tela de pesquisa de vídeos virais",
+      hint: "search interface"
+    }
   },
   {
     icon: FileVideo,
     title: "Selecione um Vídeo",
     objection: "“E se não combinar com meu estilo?”",
     answer: "Você escolhe a base, nós adaptamos a magia.",
-    description: "Escolha o vídeo que mais te agrada e que tem a ver com seu público. Ele será a base para sua nova criação."
+    description: "Escolha o vídeo que mais te agrada e que tem a ver com seu público. Ele será a base para sua nova criação.",
+    image: {
+      src: "https://picsum.photos/seed/step2/600/400",
+      alt: "Tela de seleção de vídeo",
+      hint: "video selection"
+    }
   },
   {
     icon: Sparkles,
     title: "Receba seu Roteiro",
     objection: "“Preciso criar o roteiro do zero?”",
     answer: "Não. A IA cria um roteiro novo para você.",
-    description: "Nossa IA analisa o vídeo selecionado e cria um roteiro 100% novo e aprimorado para você apenas gravar."
+    description: "Nossa IA analisa o vídeo selecionado e cria um roteiro 100% novo e aprimorado para você apenas gravar.",
+    image: {
+      src: "https://picsum.photos/seed/step3/600/400",
+      alt: "Tela de exibição do roteiro gerado por IA",
+      hint: "AI script"
+    }
   }
 ];
 
@@ -35,7 +51,7 @@ export function HowItWorks() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="bg-card/50 backdrop-blur-lg border border-white/10 transition-all hover:border-primary/50 hover:shadow-primary/20 hover:-translate-y-2">
+            <Card key={index} className="bg-card/50 backdrop-blur-lg border border-white/10 transition-all hover:border-primary/50 hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="bg-primary/10 p-3 rounded-full border border-primary/20">
@@ -44,9 +60,18 @@ export function HowItWorks() {
                   <CardTitle className="font-headline text-2xl">{step.title}</CardTitle>
                 </div>
               </CardHeader>
-              <CardContent className="flex flex-col gap-4">
+              <CardContent className="flex flex-col gap-4 flex-1">
+                <div className="relative aspect-video rounded-md overflow-hidden mb-4 border border-border">
+                  <Image 
+                    src={step.image.src} 
+                    alt={step.image.alt} 
+                    fill 
+                    className="object-cover"
+                    data-ai-hint={step.image.hint}
+                  />
+                </div>
                 <p className="text-muted-foreground">{step.description}</p>
-                <div className="bg-muted/30 p-4 rounded-lg border border-border">
+                <div className="mt-auto bg-muted/30 p-4 rounded-lg border border-border">
                   <p className="font-semibold text-foreground/80">{step.objection}</p>
                   <p className="text-accent font-medium">{step.answer}</p>
                 </div>
