@@ -4,23 +4,9 @@ import { Check } from "lucide-react";
 
 const plans = [
     {
-        name: "Free",
-        price: "Grátis",
-        priceDetails: "3 testes",
-        description: "Para quem quer experimentar o poder da nossa IA.",
-        features: [
-            "3 ideias de conteúdo",
-            "3 roteiros curtos",
-            "Acesso limitado a templates",
-            "Com marca d'água"
-        ],
-        isPopular: false,
-        cta: "Começar agora"
-    },
-    {
         name: "Pro",
-        price: "R$49",
-        priceDetails: "/mês",
+        price: "Planos",
+        priceDetails: "flexíveis",
         description: "Para criadores que querem crescer de verdade.",
         features: [
             "Ideias de conteúdo ilimitadas",
@@ -39,11 +25,11 @@ export function Pricing() {
         <section id="pricing" className="py-20 md:py-32">
             <div className="container">
                 <div className="text-center max-w-2xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Planos e Preços</h2>
-                    <p className="mt-4 text-muted-foreground">Escolha o plano que melhor se adapta à sua jornada de criador. Comece grátis.</p>
+                    <h2 className="text-3xl md:text-4xl font-headline font-bold">Plano e Preços</h2>
+                    <p className="mt-4 text-muted-foreground">Acesso completo para transformar suas ideias em conteúdo viral.</p>
                 </div>
 
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+                <div className="mt-16 grid grid-cols-1 md:grid-cols-1 gap-8 max-w-2xl mx-auto items-stretch">
                     {plans.map(plan => (
                         <Card key={plan.name} className={`flex flex-col relative ${plan.isPopular ? 'border-primary shadow-lg shadow-primary/20' : ''}`}>
                             {plan.isPopular && (

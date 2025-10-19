@@ -15,12 +15,7 @@ export function Hero() {
         <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
           <Button size="lg" asChild>
             <Link href="#pricing">
-                Teste grátis — 3 envios <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
-          <Button size="lg" variant="outline" asChild>
-            <Link href="#pricing">
-                Assinar Pro R$49/mês
+                Ver planos e começar <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
         </div>

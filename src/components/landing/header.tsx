@@ -83,11 +83,8 @@ export function Header() {
                 </Link>
             </div>
           <nav className="hidden md:flex items-center">
-            <Button variant="secondary" size="sm" asChild>
-                <Link href="#pricing">Teste grátis</Link>
-            </Button>
-            <Button size="sm" className="ml-2" asChild>
-                <Link href="#pricing">Assinar Pro R$49/mês</Link>
+            <Button size="sm" asChild>
+                <Link href="#pricing">Assinar Pro</Link>
             </Button>
           </nav>
         </div>
