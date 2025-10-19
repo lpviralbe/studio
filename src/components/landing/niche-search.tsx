@@ -1,7 +1,7 @@
 'use client';
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
-import Link from 'next/link';
+import Image from 'next/image';
 
 export function NicheSearch() {
 
@@ -15,6 +15,19 @@ export function NicheSearch() {
             <Search className="h-6 w-6 md:mr-3" />
             Encontrar os vídeos mais virais do meu nicho
         </Button>
+        <div className="mt-8 grid grid-cols-3 md:grid-cols-6 gap-4">
+            {[...Array(6)].map((_, i) => (
+                <div key={i} className="relative aspect-[9/16] rounded-md overflow-hidden transition-transform hover:scale-105">
+                    <Image
+                        src={`https://picsum.photos/seed/${200+i}/270/480`}
+                        alt={`Exemplo de vídeo viral ${i + 1}`}
+                        fill
+                        className="object-cover"
+                        data-ai-hint="viral video"
+                    />
+                </div>
+            ))}
+        </div>
       </div>
   );
 }
