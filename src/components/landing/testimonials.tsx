@@ -4,13 +4,13 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export async function Testimonials() {
   let testimonialsData;
-  try {
-    testimonialsData = await generateAuthenticTestimonials({
-      numberOfTestimonials: 4,
-      niche: 'beleza, fitness, educação, finanças'
-    });
-  } catch (error) {
-    console.error("Failed to generate testimonials:", error);
+  // try {
+  //   testimonialsData = await generateAuthenticTestimonials({
+  //     numberOfTestimonials: 4,
+  //     niche: 'beleza, fitness, educação, finanças'
+  //   });
+  // } catch (error) {
+  //   console.error("Failed to generate testimonials:", error);
     // Fallback data in case of AI failure
     testimonialsData = {
       testimonials: [
@@ -20,7 +20,7 @@ export async function Testimonials() {
         { name: 'Sofia Mendes', handle: '@sofiapets', network: 'Instagram', text: 'Finalmente consigo postar todos os dias sobre meus pets. O crescimento foi absurdo!', photoUrl: '' },
       ]
     };
-  }
+  // }
 
   const testimonialsWithImages = testimonialsData.testimonials.map((testimonial, index) => ({
     ...testimonial,
