@@ -13,7 +13,7 @@ export function Hero() {
           Os vídeos mais virais do mundo na sua mão. Viralize sem ser criativo.
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-fade-in-up">
-          Encontre vídeos virais do seu nicho, escolha um e deixe nossa IA criar um roteiro novo e aprimorado para você gravar.
+          Encontre vídeos mais virais do seu nicho, e deixe nossa IA criar um roteiro novo e aprimorado para você gravar.
         </p>
         <div className="mt-12 flex justify-center animate-fade-in-up">
            <NicheSearch />
