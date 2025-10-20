@@ -4,7 +4,7 @@ import type { SVGProps } from 'react';
 export function Logo(props: Omit<React.ComponentProps<typeof Image>, 'src' | 'alt'>) {
   return (
     <Image
-      src="https://i.imgur.com/9EJR281.png"
+      src="/logo.png"
       alt="ViralBe.AI Logo"
       width={120}
       height={40}
