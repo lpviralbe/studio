@@ -9,7 +9,7 @@ export function Hero() {
           <div className="absolute bottom-0 right-0 h-[300px] w-[300px] bg-accent/20 rounded-full blur-[100px] animate-fade-in-up [animation-delay:200ms]"></div>
         </div>
       <div className="container text-center relative z-10">
-        <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text animate-fade-in-up">
+        <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-r from-primary via-blue-400 to-accent text-transparent bg-clip-text animate-fade-in-up">
           Os vídeos mais virais do mundo na sua mão. Viralize sem ser criativo.
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-fade-in-up">
