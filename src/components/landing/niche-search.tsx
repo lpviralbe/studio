@@ -2,7 +2,6 @@
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
 import Image from 'next/image';
-import { Logo } from '@/components/logo';
 
 export function NicheSearch() {
 
