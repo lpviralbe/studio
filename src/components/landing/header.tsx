@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Menu, Instagram, Youtube, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Logo } from '@/components/logo';
 import Link from 'next/link';
 
 const navLinks = [
@@ -21,7 +20,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Logo className="w-32" />
+            <span className="font-bold text-lg">ViralBe.ai</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map(({ href, label }) => (
@@ -53,7 +52,7 @@ export function Header() {
                 className="mb-8 flex items-center"
                 onClick={() => setIsOpen(false)}
               >
-                <Logo className="w-32" />
+                <span className="font-bold text-lg">ViralBe.ai</span>
               </Link>
               <div className="flex flex-col space-y-4">
                 {navLinks.map(({ href, label }) => (
@@ -79,7 +78,7 @@ export function Header() {
         <div className="flex flex-1 items-center justify-center md:justify-end space-x-4">
             <div className="md:hidden">
                 <Link href="/" className="flex items-center">
-                    <Logo className="w-32" />
+                    <span className="font-bold text-lg">ViralBe.ai</span>
                 </Link>
             </div>
           <nav className="hidden md:flex items-center">
