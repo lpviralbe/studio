@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { Search } from 'lucide-react';
 import Image from 'next/image';
+import { Logo } from '@/components/logo';
 
 export function NicheSearch() {
 
@@ -16,12 +17,9 @@ export function NicheSearch() {
             Encontrar os vídeos mais virais do meu nicho
         </Button>
         <div className="mt-4 flex justify-center items-center gap-4">
-            <Image
-                src="https://i.imgur.com/7P9pUs4.png"
-                alt="ViralBe.AI"
+            <Logo
                 width={240}
                 height={80}
-                className="h-auto"
             />
             <Image
                 src="https://i.imgur.com/NNzOliK.png"
