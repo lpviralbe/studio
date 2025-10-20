@@ -76,7 +76,7 @@ export function SocialProof() {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="grid grid-cols-1 gap-8">
               {stats.map((stat, index) => (
-                <div key={index} className="flex items-center gap-6 p-6 bg-background/50 rounded-xl border border-border transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
+                <div key={index} className="flex items-center gap-6 p-6 bg-card/50 backdrop-blur-lg border border-white/10 rounded-xl transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
                   <stat.icon className="w-10 h-10 text-primary flex-shrink-0" />
                   <div>
                     <div className="text-3xl font-bold">
