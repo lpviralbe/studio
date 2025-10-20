@@ -37,6 +37,13 @@ export function NicheSearch() {
                 height={40}
                 className="h-auto"
             />
+            <Image
+                src="https://i.imgur.com/7P9pUs4.png"
+                alt="Mais um logo"
+                width={120}
+                height={40}
+                className="h-auto"
+            />
         </div>
         <div className="mt-8 grid grid-cols-3 md:grid-cols-6 gap-2">
             {[...Array(6)].map((_, i) => (
