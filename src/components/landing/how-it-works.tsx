@@ -61,7 +61,7 @@ export function HowItWorks() {
                   <div className="bg-primary/10 p-3 rounded-full border border-primary/20">
                     <step.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className="font-headline text-2xl">{step.title}</CardTitle>
+                  <CardTitle className="font-headline text-xl md:text-2xl">{step.title}</CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="flex flex-col gap-4 flex-1">

@@ -35,52 +35,52 @@ export function Header() {
           </nav>
         </div>
 
-        <div className="flex-1 md:hidden">
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button
-                variant="ghost"
-                className="px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
-              >
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left" className="pr-0 bg-background">
-              <Link
-                href="/"
-                className="mb-8 flex items-center"
-                onClick={() => setIsOpen(false)}
-              >
-                <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
-              </Link>
-              <div className="flex flex-col space-y-4">
-                {navLinks.map(({ href, label }) => (
-                  <Link
-                    key={href}
-                    href={href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-muted-foreground hover:text-foreground"
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </div>
-              <div className="absolute bottom-4 left-4 flex space-x-4">
-                   <Link href="#" className="text-muted-foreground hover:text-foreground"><Instagram size={20}/></Link>
-                   <Link href="#" className="text-muted-foreground hover:text-foreground"><Youtube size={20}/></Link>
-                   <Link href="#" className="text-muted-foreground hover:text-foreground"><Twitter size={20}/></Link>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
-        
-        <div className="flex flex-1 items-center justify-center md:justify-end space-x-4">
-            <div className="md:hidden">
-                <Link href="/" className="flex items-center">
-                    <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
+        <div className="flex flex-1 items-center justify-between md:justify-end">
+          <div className="md:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  className="px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
+                >
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="pr-0 bg-background">
+                <Link
+                  href="/"
+                  className="mb-8 flex items-center"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
                 </Link>
-            </div>
+                <div className="flex flex-col space-y-4">
+                  {navLinks.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setIsOpen(false)}
+                      className="text-muted-foreground hover:text-foreground"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+                <div className="absolute bottom-4 left-4 flex space-x-4">
+                     <Link href="#" className="text-muted-foreground hover:text-foreground"><Instagram size={20}/></Link>
+                     <Link href="#" className="text-muted-foreground hover:text-foreground"><Youtube size={20}/></Link>
+                     <Link href="#" className="text-muted-foreground hover:text-foreground"><Twitter size={20}/></Link>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+          
+          <div className="md:hidden">
+              <Link href="/" className="flex items-center">
+                  <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
+              </Link>
+          </div>
           <nav className="hidden md:flex items-center">
           </nav>
         </div>
