@@ -3,7 +3,7 @@ import Link from 'next/link';
 export function WhatsAppButton() {
   return (
     <Link
-      href="https://wa.me/5511999999999" // TODO: Substitua pelo seu número de WhatsApp
+      href="https://wa.me/5511978646907"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-transform duration-300 ease-in-out hover:scale-110"
