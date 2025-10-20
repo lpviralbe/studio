@@ -5,7 +5,7 @@ import Image from "next/image";
 const steps = [
   {
     icon: Search,
-    title: "Encontre um Viral",
+    title: "Pesquise o seu nicho",
     objection: "“Não sei o que está em alta”",
     answer: "Nós mostramos os vídeos com maior potencial.",
     description: "Pesquise por seu nicho e veja os vídeos que mais estão viralizando no momento para se inspirar.",
