@@ -15,7 +15,7 @@ export function NicheSearch() {
             <Search className="h-6 w-6 md:mr-3" />
             Encontrar os vídeos mais virais do meu nicho
         </Button>
-        <div className="mt-4 flex justify-center items-center gap-4">
+        <div className="mt-4 flex justify-center items-center gap-4 animate-fade-in-up [animation-delay:300ms]">
             <Image
                 src="https://i.imgur.com/NNzOliK.png"
                 alt="Powered by Gemini"
