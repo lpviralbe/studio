@@ -20,7 +20,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold text-lg">ViralBe.ai</span>
+            <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             {navLinks.map(({ href, label }) => (
@@ -52,7 +52,7 @@ export function Header() {
                 className="mb-8 flex items-center"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="font-bold text-lg">ViralBe.ai</span>
+                <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
               </Link>
               <div className="flex flex-col space-y-4">
                 {navLinks.map(({ href, label }) => (
@@ -78,7 +78,7 @@ export function Header() {
         <div className="flex flex-1 items-center justify-center md:justify-end space-x-4">
             <div className="md:hidden">
                 <Link href="/" className="flex items-center">
-                    <span className="font-bold text-lg">ViralBe.ai</span>
+                    <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
                 </Link>
             </div>
           <nav className="hidden md:flex items-center">

@@ -6,7 +6,7 @@ export function Footer() {
         <footer className="border-t border-border/40 py-8">
             <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="flex flex-col items-center md:items-start gap-4">
-                    <span className="font-bold text-lg">ViralBe.ai</span>
+                    <span className="font-bold text-lg bg-gradient-to-r from-primary via-purple-400 to-accent text-transparent bg-clip-text">ViralBe.ai</span>
                     <p className="text-sm text-muted-foreground">© 2025 ViralBe.AI. Todos os direitos reservados.</p>
                 </div>
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
