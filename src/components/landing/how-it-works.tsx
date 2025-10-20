@@ -10,9 +10,10 @@ const steps = [
     answer: "Nós mostramos os vídeos com maior potencial.",
     description: "Pesquise por seu nicho e veja os vídeos que mais estão viralizando no momento para se inspirar.",
     image: {
-      src: "https://picsum.photos/seed/step1/600/400",
+      src: "https://i.imgur.com/aoPgzXZ.mp4",
       alt: "Tela de pesquisa de vídeos virais",
-      hint: "search interface"
+      hint: "search interface",
+      type: "video"
     }
   },
   {
@@ -62,13 +63,24 @@ export function HowItWorks() {
               </CardHeader>
               <CardContent className="flex flex-col gap-4 flex-1">
                 <div className="relative aspect-video rounded-md overflow-hidden mb-4 border border-border">
-                  <Image 
-                    src={step.image.src} 
-                    alt={step.image.alt} 
-                    fill 
-                    className="object-cover"
-                    data-ai-hint={step.image.hint}
-                  />
+                  {(step.image as any).type === 'video' ? (
+                    <video
+                      src={step.image.src}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="object-cover w-full h-full"
+                    />
+                  ) : (
+                    <Image 
+                      src={step.image.src} 
+                      alt={step.image.alt} 
+                      fill 
+                      className="object-cover"
+                      data-ai-hint={step.image.hint}
+                    />
+                  )}
                 </div>
                 <p className="text-muted-foreground">{step.description}</p>
                 <div className="mt-auto bg-muted/30 p-4 rounded-lg border border-border">
