@@ -23,9 +23,10 @@ const steps = [
     answer: "Você escolhe a base, nós adaptamos a magia.",
     description: "Escolha o vídeo que mais te agrada e que tem a ver com seu público. Ele será a base para sua nova criação.",
     image: {
-      src: "https://picsum.photos/seed/step2/600/400",
+      src: "https://i.imgur.com/3wY6oZp.mp4",
       alt: "Tela de seleção de vídeo",
-      hint: "video selection"
+      hint: "video selection",
+      type: "video"
     }
   },
   {
