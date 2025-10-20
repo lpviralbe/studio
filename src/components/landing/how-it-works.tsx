@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PenTool, Scissors, Download, Search, FileVideo, Sparkles } from "lucide-react";
 import Image from "next/image";
@@ -36,9 +37,10 @@ const steps = [
     answer: "Não. A IA cria um roteiro novo para você.",
     description: "Nossa IA analisa o vídeo selecionado e cria um roteiro 100% novo e aprimorado para você apenas gravar.",
     image: {
-      src: "https://picsum.photos/seed/step3/600/400",
+      src: "https://i.imgur.com/2HLRMVL.mp4",
       alt: "Tela de exibição do roteiro gerado por IA",
-      hint: "AI script"
+      hint: "AI script",
+      type: "video"
     }
   }
 ];
