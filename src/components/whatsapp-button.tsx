@@ -1,9 +1,10 @@
 import Link from 'next/link';
 
 export function WhatsAppButton() {
+  const message = encodeURIComponent('Tenho uma dúvida sobre o App ViralBe.ai');
   return (
     <Link
-      href="https://wa.me/5511978646907"
+      href={`https://wa.me/5511978646907?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#128C7E] transition-transform duration-300 ease-in-out hover:scale-110"
