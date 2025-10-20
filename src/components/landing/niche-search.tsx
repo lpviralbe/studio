@@ -15,13 +15,20 @@ export function NicheSearch() {
             <Search className="h-6 w-6 md:mr-3" />
             Encontrar os vídeos mais virais do meu nicho
         </Button>
-        <div className="mt-4">
+        <div className="mt-4 flex justify-center items-center gap-4">
             <Image
                 src="https://i.imgur.com/7P9pUs4.png"
                 alt="ViralBe.AI"
                 width={240}
                 height={80}
-                className="h-auto mx-auto"
+                className="h-auto"
+            />
+            <Image
+                src="https://i.imgur.com/NNzOliK.png"
+                alt="Powered by Gemini"
+                width={120}
+                height={40}
+                className="h-auto"
             />
         </div>
         <div className="mt-8 grid grid-cols-3 md:grid-cols-6 gap-2">
