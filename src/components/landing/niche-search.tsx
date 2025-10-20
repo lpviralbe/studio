@@ -17,10 +17,6 @@ export function NicheSearch() {
             Encontrar os vídeos mais virais do meu nicho
         </Button>
         <div className="mt-4 flex justify-center items-center gap-4">
-            <Logo
-                width={240}
-                height={80}
-            />
             <Image
                 src="https://i.imgur.com/NNzOliK.png"
                 alt="Powered by Gemini"
