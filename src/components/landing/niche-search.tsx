@@ -24,7 +24,7 @@ export function NicheSearch() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.1,
+        delay: 0.5 + i * 0.1,
         duration: 0.5,
       },
     }),
@@ -38,7 +38,7 @@ export function NicheSearch() {
             onClick={handleRedirect}
           />
       </div>
-      <div className="flex justify-center items-center gap-8 mt-8">
+      <div className="flex justify-center items-center gap-8 mt-12">
         {logos.map((logo, index) => (
           <motion.div
             key={index}
@@ -46,13 +46,15 @@ export function NicheSearch() {
             initial="hidden"
             animate="visible"
             variants={fadeUpVariants}
+            whileHover={{ scale: 1.1, y: -5 }}
+            transition={{ type: 'spring', stiffness: 300 }}
           >
             <Image
               src={logo.src}
               alt={logo.alt}
-              width={100}
-              height={40}
-              className="object-contain h-10 w-auto"
+              width={120}
+              height={48}
+              className="object-contain h-12 w-auto"
             />
           </motion.div>
         ))}
