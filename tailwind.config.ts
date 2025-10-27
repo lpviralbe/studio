@@ -118,6 +118,10 @@ export default {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" },
         },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
         "shimmer-slide": {
           "0%": {
             transform: "translateX(-100%)",
@@ -240,6 +244,7 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 0.5s ease-out',
         marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
         "shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         first: "first 15s ease infinite",
