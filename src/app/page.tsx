@@ -10,7 +10,16 @@ import { SocialProof } from "@/components/landing/social-proof";
 import { Testimonials } from "@/components/landing/testimonials";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 import Link from "next/link";
+import { NavBar } from "@/components/ui/navbar";
 
+
+const navItems = [
+  { name: 'Início', url: '#', icon: Home },
+  { name: 'Como Funciona', url: '#how-it-works', icon: HelpCircle },
+  { name: 'Depoimentos', url: '#testimonials', icon: MessageCircle },
+  { name: 'Preços', url: '#pricing', icon: BarChart },
+  { name: 'FAQ', url: '#faq', icon: Sparkles },
+];
 
 export default function HomePage() {
   return (
@@ -20,6 +29,8 @@ export default function HomePage() {
           <div className="absolute bottom-0 right-0 h-[300px] w-[300px] bg-accent/20 rounded-full blur-[100px] animate-fade-in-up [animation-delay:200ms]"></div>
         </div>
       
+      <NavBar items={navItems} />
+
       <main className="flex-1 relative z-10">
         <Hero />
         <ProblemSolution />
