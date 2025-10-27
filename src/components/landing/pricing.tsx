@@ -56,8 +56,8 @@ interface PricingProps {
 }
 
 export function Pricing({
-  title = "Planos flexíveis para todos os níveis",
-  description = "Do iniciante ao profissional, temos o plano perfeito para você viralizar.",
+  title = "Escolha seu plano e comece a viralizar agora.",
+  description = "Do básico ao avançado a IA faz o pesado, você colhe os views.",
 }: PricingProps) {
 
   return (
