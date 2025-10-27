@@ -52,8 +52,8 @@ export function NavBar({ items, className }: NavBarProps) {
   return (
     <nav
       className={cn(
-        "fixed bottom-0 sm:top-0 left-0 right-0 z-50 flex justify-center",
-        "mb-6 sm:mt-6",
+        "fixed bottom-0 sm:top-0 left-0 z-50 flex justify-start",
+        "m-6",
         className,
       )}
     >
