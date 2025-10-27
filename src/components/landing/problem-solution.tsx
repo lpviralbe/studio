@@ -1,7 +1,6 @@
 'use client';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Zap, Copy, Video } from "lucide-react";
-import { TextRevealByWord } from "../ui/text-reveal";
 
 export function ProblemSolution() {
   const features = [
@@ -23,9 +22,16 @@ export function ProblemSolution() {
   ]
 
   return (
-    <section className="bg-transparent">
-        <TextRevealByWord text="Chega de postar no escuro. Você pode continuar testando às cegas ou deixar a IA te entregar o que já está dando certo — e finalmente começar a viralizar de verdade." />
-        <div className="container max-w-5xl mx-auto text-center animate-fade-in-up -mt-[100vh]">
+    <section className="py-20 md:py-32 bg-transparent">
+        <div className="container max-w-5xl mx-auto text-center animate-fade-in-up">
+            <div className="text-center max-w-3xl mx-auto mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold font-headline">
+                    Chega de postar no escuro
+                </h2>
+                <p className="mt-4 text-muted-foreground">
+                    Você pode continuar testando às cegas ou deixar a IA te entregar o que já está dando certo — e finalmente começar a viralizar de verdade.
+                </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {features.map((feature, index) => (
                     <Card key={index} className="bg-card/50 backdrop-blur-sm border-white/10 text-left">
