@@ -3,6 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { WhatsAppButton } from '@/components/whatsapp-button';
 import Script from 'next/script';
+import { Header } from '@/components/header';
 
 export const metadata: Metadata = {
   title: 'Viralize seu conteúdo sem ser criativo',
@@ -54,6 +55,7 @@ export default function RootLayout({
             alt="facebook pixel"
           />
         </noscript>
+        <Header />
         {children}
         <WhatsAppButton />
         <Toaster />

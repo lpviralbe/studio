@@ -3,14 +3,14 @@ import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
 export const BackgroundGradientAnimation = ({
-  gradientBackgroundStart = "rgb(13, 13, 13)",
-  gradientBackgroundEnd = "rgb(13, 13, 13)",
-  firstColor = "278, 93%, 53%",
-  secondColor = "160, 100%, 75%",
-  thirdColor = "278, 93%, 53%",
-  fourthColor = "160, 100%, 75%",
-  fifthColor = "220, 87%, 53%",
-  pointerColor = "160, 100%, 75%",
+  gradientBackgroundStart = "rgb(108, 0, 162)",
+  gradientBackgroundEnd = "rgb(0, 17, 82)",
+  firstColor = "18, 113, 255",
+  secondColor = "221, 74, 255",
+  thirdColor = "100, 220, 255",
+  fourthColor = "200, 50, 50",
+  fifthColor = "180, 180, 50",
+  pointerColor = "140, 100, 255",
   size = "80%",
   blendingValue = "hard-light",
   children,
@@ -39,38 +39,44 @@ export const BackgroundGradientAnimation = ({
   const [curY, setCurY] = useState(0);
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
+
   useEffect(() => {
-    document.body.style.setProperty(
-      "--gradient-background-start",
-      gradientBackgroundStart
-    );
-    document.body.style.setProperty(
-      "--gradient-background-end",
-      gradientBackgroundEnd
-    );
-    document.body.style.setProperty("--first-color", `hsl(${firstColor})`);
-    document.body.style.setProperty("--second-color", `hsl(${secondColor})`);
-    document.body.style.setProperty("--third-color", `hsl(${thirdColor})`);
-    document.body.style.setProperty("--fourth-color", `hsl(${fourthColor})`);
-    document.body.style.setProperty("--fifth-color", `hsl(${fifthColor})`);
-    document.body.style.setProperty("--pointer-color", `hsl(${pointerColor})`);
-    document.body.style.setProperty("--size", size);
-    document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+    const setStyles = () => {
+      document.body.style.setProperty(
+        "--gradient-background-start",
+        gradientBackgroundStart
+      );
+      document.body.style.setProperty(
+        "--gradient-background-end",
+        gradientBackgroundEnd
+      );
+      document.body.style.setProperty("--first-color", firstColor);
+      document.body.style.setProperty("--second-color", secondColor);
+      document.body.style.setProperty("--third-color", thirdColor);
+      document.body.style.setProperty("--fourth-color", fourthColor);
+      document.body.style.setProperty("--fifth-color", fifthColor);
+      document.body.style.setProperty("--pointer-color", pointerColor);
+      document.body.style.setProperty("--size", size);
+      document.body.style.setProperty("--blending-value", blendingValue);
+    }
+    setStyles();
+  }, [gradientBackgroundStart, gradientBackgroundEnd, firstColor, secondColor, thirdColor, fourthColor, fifthColor, pointerColor, size, blendingValue]);
 
   useEffect(() => {
     function move() {
       if (!interactiveRef.current) {
         return;
       }
-      setCurX(curX + (tgX - curX) / 20);
-      setCurY(curY + (tgY - curY) / 20);
+      setCurX((prevCurX) => prevCurX + (tgX - prevCurX) / 20);
+      setCurY((prevCurY) => prevCurY + (tgY - prevCurY) / 20);
       interactiveRef.current.style.transform = `translate(${Math.round(
         curX
       )}px, ${Math.round(curY)}px)`;
     }
 
-    move();
+    const animationFrame = requestAnimationFrame(move);
+    return () => cancelAnimationFrame(animationFrame)
+
   }, [tgX, tgY, curX, curY]);
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -92,6 +98,7 @@ export const BackgroundGradientAnimation = ({
         "h-full w-full relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName
       )}
+      onMouseMove={handleMouseMove}
     >
       <svg className="hidden">
         <defs>
@@ -167,7 +174,6 @@ export const BackgroundGradientAnimation = ({
         {interactive && (
           <div
             ref={interactiveRef}
-            onMouseMove={handleMouseMove}
             className={cn(
               `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
               `[mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,

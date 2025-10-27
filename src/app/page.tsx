@@ -9,23 +9,23 @@ import { ProblemSolution } from "@/components/landing/problem-solution";
 import { SocialProof } from "@/components/landing/social-proof";
 import { Testimonials } from "@/components/landing/testimonials";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
-import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
 import Link from "next/link";
 
 
-const navItems = [
-  { name: "Início", url: "#", icon: Home },
-  { name: "Como Funciona", url: "#how-it-works", icon: Sparkles },
-  { name: "Depoimentos", url: "#testimonials", icon: MessageCircle },
-  { name: "Preços", url: "#pricing", icon: BarChart },
-  { name: "FAQ", url: "#faq", icon: HelpCircle },
-];
-
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <div className="fixed inset-0 -z-10">
-        <BackgroundGradientAnimation />
+    <div className="flex flex-col min-h-screen">
+      <div className="fixed inset-0 -z-10 h-full w-full">
+        <BackgroundGradientAnimation 
+           gradientBackgroundStart="var(--background)"
+           gradientBackgroundEnd="var(--background)"
+           firstColor="210, 40%, 96.1%"
+           secondColor="217.2, 91.2%, 59.8%"
+           thirdColor="210, 40%, 96.1%"
+           fourthColor="217.2, 91.2%, 59.8%"
+           fifthColor="222.2 84% 4.9%"
+           pointerColor="210, 40%, 96.1%"
+        />
       </div>
       
       <main className="flex-1 relative z-10">
@@ -37,24 +37,6 @@ export default function HomePage() {
         <Pricing />
         <Faq />
       </main>
-      
-      <div className="fixed bottom-10 left-0 right-0 z-50">
-        <Dock>
-          {navItems.map((item) => {
-            const Icon = item.icon;
-            return (
-              <DockItem key={item.url}>
-                <Link href={item.url}>
-                  <DockIcon>
-                    <Icon />
-                  </DockIcon>
-                  <DockLabel>{item.name}</DockLabel>
-                </Link>
-              </DockItem>
-            )
-          })}
-        </Dock>
-      </div>
 
       <Footer />
     </div>
