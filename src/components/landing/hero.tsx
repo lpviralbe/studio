@@ -15,7 +15,7 @@ export function Hero() {
           <Typewriter text={["Viralize sem ser criativo.", "Com apenas 1 clique."]} />
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-fade-in-up">
-          Encontre vídeos mais virais do seu nicho, e deixe nossa IA criar um roteiro novo e aprimorado para você gravar.
+          Cansado de postar vídeos que ninguém vê? Descubra os mais virais do seu nicho e deixe nossa IA criar roteiros prontos pra você finalmente bombar.
         </p>
         <div className="mt-12 flex justify-center animate-fade-in-up">
            <NicheSearch />
