@@ -22,7 +22,9 @@ const navItems = [
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <BackgroundGradientAnimation />
+      <div className="fixed inset-0 -z-10">
+        <BackgroundGradientAnimation />
+      </div>
       <NavBar items={navItems} />
       <main className="flex-1">
         <Hero />
