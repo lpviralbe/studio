@@ -25,7 +25,7 @@ export default function HomePage() {
       
       <NavBar items={navItems} />
 
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <Hero />
         <ProblemSolution />
         <SocialProof />
