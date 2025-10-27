@@ -21,20 +21,19 @@ const navItems = [
 
 export default function HomePage() {
   return (
-    <BackgroundGradientAnimation>
-      <div className="flex flex-col min-h-screen bg-transparent">
-        <NavBar items={navItems} />
-        <main className="flex-1">
-          <Hero />
-          <ProblemSolution />
-          <SocialProof />
-          <HowItWorks />
-          <Testimonials />
-          <Pricing />
-          <Faq />
-        </main>
-        <Footer />
-      </div>
-    </BackgroundGradientAnimation>
+    <div className="flex flex-col min-h-screen bg-background">
+      <BackgroundGradientAnimation />
+      <NavBar items={navItems} />
+      <main className="flex-1">
+        <Hero />
+        <ProblemSolution />
+        <SocialProof />
+        <HowItWorks />
+        <Testimonials />
+        <Pricing />
+        <Faq />
+      </main>
+      <Footer />
+    </div>
   );
 }
