@@ -19,7 +19,7 @@ export function NicheSearch() {
             <Search className="h-6 w-6 mr-3" />
             <span className="text-center z-10">Encontrar vídeos virais</span>
         </ShimmerButton>
-        <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 justify-center items-center gap-4">
+        <div className="mt-4 flex justify-center items-center gap-4 flex-wrap">
             <Image
                 src="https://i.imgur.com/NNzOliK.png"
                 alt="Powered by Gemini"
