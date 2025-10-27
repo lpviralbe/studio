@@ -14,30 +14,35 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from '@/components/ui/chart';
-
-const chartData = [
-  { month: 'Janeiro', revenue: 1860 },
-  { month: 'Fevereiro', revenue: 3050 },
-  { month: 'Março', revenue: 2370 },
-  { month: 'Abril', revenue: 7300 },
-  { month: 'Maio', revenue: 20900 },
-  { month: 'Junho', revenue: 54000 },
-];
-
-const chartConfig = {
-  revenue: {
-    label: 'Faturamento',
-    color: 'hsl(var(--primary))',
-  },
-};
+import { useI18n } from '@/lib/i18n';
 
 export function RevenueChart() {
+  const { t, language } = useI18n();
+
+  const chartData = [
+    { month: t('months.january'), revenue: 1860 },
+    { month: t('months.february'), revenue: 3050 },
+    { month: t('months.march'), revenue: 2370 },
+    { month: t('months.april'), revenue: 7300 },
+    { month: t('months.may'), revenue: 20900 },
+    { month: t('months.june'), revenue: 54000 },
+  ];
+  
+  const chartConfig = {
+    revenue: {
+      label: t('revenueChart.label'),
+      color: 'hsl(var(--primary))',
+    },
+  };
+
+  const locale = language === 'pt' ? 'pt-BR' : language;
+
   return (
     <Card className="bg-card/50 backdrop-blur-lg border border-white/10 transition-all hover:border-primary/50">
       <CardHeader>
-        <CardTitle>Crescimento de Faturamento</CardTitle>
+        <CardTitle>{t('revenueChart.title')}</CardTitle>
         <CardDescription>
-          Média de faturamento de um criador após 6 meses usando ViralBe.AI
+          {t('revenueChart.description')}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -52,7 +57,7 @@ export function RevenueChart() {
             />
             <YAxis
               tickFormatter={(value) =>
-                `R$${Number(value).toLocaleString('pt-BR', {
+                `R$${Number(value).toLocaleString(locale, {
                   notation: 'compact',
                 })}`
               }
@@ -61,7 +66,7 @@ export function RevenueChart() {
               cursor={false}
               content={<ChartTooltipContent indicator="dot" />}
               formatter={(value) =>
-                `R$${Number(value).toLocaleString('pt-BR')}`
+                `R$${Number(value).toLocaleString(locale)}`
               }
             />
             <Bar dataKey="revenue" fill="var(--color-revenue)" radius={8} />

@@ -1,8 +1,11 @@
 'use client';
 import { NicheSearch } from "@/components/landing/niche-search";
 import { Typewriter } from "@/components/ui/typewriter";
+import { useI18n } from "@/lib/i18n";
 
 export function Hero() {
+  const { t } = useI18n();
+
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
        <div aria-hidden="true" className="absolute inset-0 z-0">
@@ -11,11 +14,11 @@ export function Hero() {
         </div>
       <div className="container text-center relative z-10">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-r from-primary via-blue-400 to-accent text-transparent bg-clip-text animate-fade-in-up">
-          Os vídeos mais virais do mundo na sua mão.{" "}
-          <Typewriter text={["Viralize sem ser criativo.", "Com apenas 1 clique."]} />
+          {t('hero.title')}
+          <Typewriter text={[t('hero.typewriter1'), t('hero.typewriter2')]} />
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground animate-fade-in-up">
-          Cansado de postar vídeos que ninguém vê? Descubra os mais virais do seu nicho e deixe nossa IA criar roteiros prontos pra você finalmente bombar.
+          {t('hero.description')}
         </p>
         <div className="mt-12 flex justify-center animate-fade-in-up">
            <NicheSearch />

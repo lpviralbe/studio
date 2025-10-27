@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "howItWorks": "Cómo Funciona",
+    "testimonials": "Testimonios",
+    "pricing": "Precios",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Los videos más virales del mundo en tu mano. ",
+    "typewriter1": "Hazte viral sin ser creativo.",
+    "typewriter2": "Con solo 1 clic.",
+    "description": "¿Cansado de publicar videos que nadie ve? Descubre los más virales de tu nicho y deja que nuestra IA cree guiones listos para que finalmente explotes."
+  },
+  "nicheSearch": {
+    "button": "Encontrar videos virales"
+  },
+  "problemSolution": {
+    "title": "Deja de publicar a ciegas",
+    "description": "Puedes seguir probando a ciegas o dejar que la IA te entregue lo que ya está funcionando, y finalmente comenzar a hacerte viral de verdad.",
+    "feature1": {
+      "title": "Copia lo que ya funciona",
+      "description": "Nuestra IA analiza millones de videos para encontrar los patrones que generan más vistas y participación en tu nicho."
+    },
+    "feature2": {
+      "title": "Guiones listos en minutos",
+      "description": "Recibe guiones completos, con ganchos, estructura y CTA optimizados, listos para que los grabes y publiques."
+    },
+    "feature3": {
+      "title": "Adelántate a la competencia",
+      "description": "Mientras otros prueban a ciegas, tú usas datos para crear contenido que el algoritmo ama y que tu audiencia no puede ignorar."
+    },
+    "tagline": "El juego ha cambiado: quien usa IA se vuelve viral, quien no, se queda atrás."
+  },
+  "socialProof": {
+    "title": {
+      "start": "Más de",
+      "highlight": "5,000 influencers",
+      "end": "ganando mucho después de hacerse virales"
+    },
+    "description": "ViralBe.AI no solo aumenta tus seguidores, multiplica tus ingresos. Ve el impacto real.",
+    "users": "Usuarios",
+    "ideas": "Ideas Generadas",
+    "satisfaction": "Satisfacción"
+  },
+  "revenueChart": {
+    "title": "Crecimiento de Ingresos",
+    "description": "Ingresos promedio de un creador después de 6 meses usando ViralBe.AI",
+    "label": "Ingresos"
+  },
+  "months": {
+    "january": "Enero",
+    "february": "Febrero",
+    "march": "Marzo",
+    "april": "Abril",
+    "may": "Mayo",
+    "june": "Junio"
+  },
+  "howItWorks": {
+    "title": "Cómo usar en 3 pasos",
+    "description": "El proceso es tan simple que parece magia. Convierte la inspiración en contenido viral en minutos.",
+    "step1": {
+      "title": "Busca tu nicho",
+      "objection": "“No sé qué está en tendencia”",
+      "answer": "Te mostramos los videos con más potencial.",
+      "description": "Busca por tu nicho y ve los videos que más se están viralizando en este momento para inspirarte."
+    },
+    "step2": {
+      "title": "Selecciona un Video",
+      "objection": "“¿Y si no coincide con mi estilo?”",
+      "answer": "Tú eliges la base, nosotros adaptamos la magia.",
+      "description": "Elige el video que más te guste y que tenga que ver con tu audiencia. Será la base para tu nueva creación."
+    },
+    "step3": {
+      "title": "Recibe tu Guion",
+      "objection": "“¿Necesito crear el guion desde cero?”",
+      "answer": "No. La IA crea un guion nuevo para ti.",
+      "description": "Nuestra IA analiza el video seleccionado y crea un guion 100% nuevo y mejorado para que solo tengas que grabar."
+    }
+  },
+  "testimonials": {
+    "title": "Cuentas que pasaron de cero a resultados increíbles",
+    "description": "No te fíes solo de nuestra palabra. Ve lo que dicen los creadores sobre ViralBe.AI.",
+    "t1": "De 300 a 12k en 6 semanas. ¡Los guiones me ahorran tiempo y cordura!",
+    "t2": "Contenido consistente sin esfuerzo. Vale cada centavo del plan Pro. ¡Lo recomiendo mucho!",
+    "t3": "No soy creativo, y ViralBe.AI fue la solución perfecta. ¡Mi canal de finanzas despegó!",
+    "t4": "Finalmente puedo publicar sobre mis mascotas todos los días. ¡El crecimiento ha sido absurdo!"
+  },
+  "pricing": {
+    "title": "Elige tu plan y empieza a hacerte viral ahora.",
+    "description": "De básico a avanzado, la IA hace el trabajo pesado, tú cosechas las vistas.",
+    "monthly": "mes",
+    "popular": "Popular",
+    "free": {
+      "name": "Gratis",
+      "description": "Para quienes están comenzando a explorar el poder de la IA.",
+      "feature1": "3 generaciones de guion/mes",
+      "feature2": "Análisis de hasta 10 videos",
+      "feature3": "Soporte vía comunidad",
+      "button": "Comenzar Ahora",
+      "priceNote": "Siempre gratis"
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Para creadores de contenido que se toman en serio el crecimiento.",
+      "feature1": "Generaciones de guiones ilimitadas",
+      "feature2": "Análisis de videos ilimitados",
+      "feature3": "Guiones para videos largos",
+      "feature4": "Soporte prioritario vía chat",
+      "feature5": "Sin marca de agua",
+      "button": "Suscribirse a Pro",
+      "priceNote": "facturado mensualmente"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "description": "Todo lo que necesitas saber antes de empezar a hacerte viral.",
+    "q1": "¿Necesito tener ideas para usar ViralBe.AI?",
+    "a1": "¡No! La gran ventaja es que no necesitas ideas. Simplemente busca en tu nicho, encuentra un video que ya sea viral y creamos un guion nuevo y mejorado para ti.",
+    "q2": "¿La IA copiará el video de otra persona?",
+    "a2": "Para nada. La IA usa el video seleccionado solo como inspiración para entender la estructura y el tema. El guion generado es 100% original y está listo para que lo grabes con tu propio estilo.",
+    "q3": "¿Funciona para cualquier nicho?",
+    "a3": "¡Sí! De finanzas a videojuegos, de belleza a programación. Si hay contenido de video en tu nicho, nuestra herramienta puede encontrar los virales y ayudarte a crear tu versión.",
+    "q4": "¿Cómo funciona la prueba gratuita?",
+    "a4": "Tienes derecho a 3 generaciones de guiones totalmente gratis, sin necesidad de registrar una tarjeta de crédito. Es la mejor manera de que pruebes y veas el poder de la herramienta en práctica.",
+    "q5": "¿Hay soporte y tutoriales?",
+    "a5": "Sí. Ofrecemos una base de conocimientos con tutoriales y ejemplos, y los suscriptores del plan Pro cuentan con soporte prioritario a través de chat y correo electrónico para cualquier duda."
+  },
+  "footer": {
+    "copy": "© 2025 ViralBe.AI. Todos los derechos reservados.",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "contact": "Contacto"
+  }
+}

@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { Logo } from "../logo"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Button } from "./button"
+import { useI18n } from "@/lib/i18n"
 
 interface NavItem {
   name: string
@@ -21,7 +22,14 @@ interface NavBarProps {
 
 export function NavBar({ items, className }: NavBarProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
-  const [language, setLanguage] = useState("PT");
+  const { setLanguage, t } = useI18n();
+
+  const navLinks = [
+    { name: `💡 ${t('nav.howItWorks')}`, url: '#how-it-works'},
+    { name: `💬 ${t('nav.testimonials')}`, url: '#testimonials'},
+    { name: `💰 ${t('nav.pricing')}`, url: '#pricing'},
+    { name: `❓ ${t('nav.faq')}`, url: '#faq'},
+  ];
 
   return (
     <header className={cn("fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/40", className)}>
@@ -29,11 +37,11 @@ export function NavBar({ items, className }: NavBarProps) {
             <Logo />
             <div className="flex items-center gap-2">
                 <nav className="hidden md:flex items-center gap-6">
-                    {items.slice(1).map((item) => ( // Pula o 'Início'
+                    {navLinks.map((item) => (
                         <Link 
                           key={item.name} 
                           href={item.url} 
-                          className="relative text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                          className="relative text-base font-medium text-muted-foreground hover:text-primary transition-colors"
                           onMouseEnter={() => setHoveredItem(item.name)}
                           onMouseLeave={() => setHoveredItem(null)}
                         >
@@ -59,14 +67,14 @@ export function NavBar({ items, className }: NavBarProps) {
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
-                        <DropdownMenuItem onClick={() => setLanguage("PT")}>
-                            Português (BR)
+                        <DropdownMenuItem onClick={() => setLanguage("pt")}>
+                            🇧🇷 Português (BR)
                         </DropdownMenuItem>
-                        <DropdownMenuItem onClick={() => setLanguage("EN")}>
-                            English
+                        <DropdownMenuItem onClick={() => setLanguage("en")}>
+                            🇺🇸 English
                         </DropdownMenuItem>
-                        <DropdownMenuItem onClick={() => setLanguage("ES")}>
-                            Español
+                        <DropdownMenuItem onClick={() => setLanguage("es")}>
+                            🇪🇸 Español
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>

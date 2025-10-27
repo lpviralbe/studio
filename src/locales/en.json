@@ -1,0 +1,135 @@
+{
+  "nav": {
+    "home": "Home",
+    "howItWorks": "How It Works",
+    "testimonials": "Testimonials",
+    "pricing": "Pricing",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "The most viral videos in the world in your hand. ",
+    "typewriter1": "Go viral without being creative.",
+    "typewriter2": "With just 1 click.",
+    "description": "Tired of posting videos that no one sees? Discover the most viral ones in your niche and let our AI create ready-made scripts for you to finally blow up."
+  },
+  "nicheSearch": {
+    "button": "Find viral videos"
+  },
+  "problemSolution": {
+    "title": "Stop posting in the dark",
+    "description": "You can keep testing blindly or let the AI deliver what's already working—and finally start going viral for real.",
+    "feature1": {
+      "title": "Copy what already works",
+      "description": "Our AI analyzes millions of videos to find the patterns that generate the most views and engagement in your niche."
+    },
+    "feature2": {
+      "title": "Ready-made scripts in minutes",
+      "description": "Receive complete scripts, with optimized hooks, structure, and CTAs, ready for you to record and post."
+    },
+    "feature3": {
+      "title": "Get ahead of the competition",
+      "description": "While others test blindly, you use data to create content that the algorithm loves and your audience can't ignore."
+    },
+    "tagline": "The game has changed: those who use AI go viral, those who don't are left behind."
+  },
+  "socialProof": {
+    "title": {
+      "start": "More than",
+      "highlight": "5,000 influencers",
+      "end": "earning big after going viral"
+    },
+    "description": "ViralBe.AI not only increases your followers, it multiplies your revenue. See the real impact.",
+    "users": "Users",
+    "ideas": "Ideas Generated",
+    "satisfaction": "Satisfaction"
+  },
+  "revenueChart": {
+    "title": "Revenue Growth",
+    "description": "Average revenue of a creator after 6 months using ViralBe.AI",
+    "label": "Revenue"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June"
+  },
+  "howItWorks": {
+    "title": "How to use in 3 steps",
+    "description": "The process is so simple it feels like magic. Turn inspiration into viral content in minutes.",
+    "step1": {
+      "title": "Search your niche",
+      "objection": "“I don't know what's trending”",
+      "answer": "We show you the videos with the most potential.",
+      "description": "Search for your niche and see the videos that are currently going viral to get inspired."
+    },
+    "step2": {
+      "title": "Select a Video",
+      "objection": "“What if it doesn't match my style?”",
+      "answer": "You choose the base, we adapt the magic.",
+      "description": "Choose the video you like the most and that resonates with your audience. It will be the foundation for your new creation."
+    },
+    "step3": {
+      "title": "Receive your Script",
+      "objection": "“Do I need to create the script from scratch?”",
+      "answer": "No. The AI creates a new script for you.",
+      "description": "Our AI analyzes the selected video and creates a 100% new and improved script for you to just record."
+    }
+  },
+  "testimonials": {
+    "title": "Accounts that went from zero to incredible results",
+    "description": "Don't just take our word for it. See what creators are saying about ViralBe.AI.",
+    "t1": "From 300 to 12k in 6 weeks. The scripts save my time and my sanity!",
+    "t2": "Consistent content without the effort. Worth every penny of the Pro plan. Highly recommend!",
+    "t3": "I'm not creative, and ViralBe.AI was the perfect solution. My finance channel took off!",
+    "t4": "I can finally post about my pets every day. The growth has been absurd!"
+  },
+  "pricing": {
+    "title": "Choose your plan and start going viral now.",
+    "description": "From basic to advanced, the AI does the heavy lifting, you reap the views.",
+    "monthly": "month",
+    "popular": "Popular",
+    "free": {
+      "name": "Free",
+      "description": "For those just starting to explore the power of AI.",
+      "feature1": "3 script generations/month",
+      "feature2": "Analysis of up to 10 videos",
+      "feature3": "Community support",
+      "button": "Start Now",
+      "priceNote": "Always free"
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "For content creators who are serious about growth.",
+      "feature1": "Unlimited script generations",
+      "feature2": "Unlimited video analyses",
+      "feature3": "Scripts for long videos",
+      "feature4": "Priority support via chat",
+      "feature5": "No watermark",
+      "button": "Subscribe to Pro",
+      "priceNote": "billed monthly"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know before you start going viral.",
+    "q1": "Do I need to have ideas to use ViralBe.AI?",
+    "a1": "No! The big advantage is that you don't need any ideas. Just search your niche, find a video that is already viral, and we create a new and improved script for you.",
+    "q2": "Will the AI copy someone else's video?",
+    "a2": "Not at all. The AI uses the selected video only as inspiration to understand the structure and theme. The generated script is 100% original and ready for you to record in your own style.",
+    "q3": "Does it work for any niche?",
+    "a3": "Yes! From finance to gaming, from beauty to programming. If there is video content in your niche, our tool can find the viral ones and help you create your version.",
+    "q4": "How does the free trial work?",
+    "a4": "You get 3 free script generations, no credit card required. It's the best way for you to test and see the power of the tool in practice.",
+    "q5": "Is there support and tutorials?",
+    "a5": "Yes. We offer a knowledge base with tutorials and examples, and Pro plan subscribers get priority support via chat and email for any questions."
+  },
+  "footer": {
+    "copy": "© 2025 ViralBe.AI. All rights reserved.",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  }
+}

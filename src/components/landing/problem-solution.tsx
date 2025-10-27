@@ -1,23 +1,26 @@
 'use client';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Zap, Copy, Video } from "lucide-react";
+import { useI18n } from "@/lib/i18n";
 
 export function ProblemSolution() {
+  const { t } = useI18n();
+
   const features = [
     {
       icon: Copy,
-      title: "Copie o que já funciona",
-      description: "Nossa IA analisa milhões de vídeos para encontrar os padrões que geram mais visualizações e engajamento no seu nicho.",
+      title: t('problemSolution.feature1.title'),
+      description: t('problemSolution.feature1.description'),
     },
     {
       icon: Video,
-      title: "Roteiros prontos em minutos",
-      description: "Receba roteiros completos, com ganchos, estrutura e CTAs otimizados, prontos para você gravar e postar.",
+      title: t('problemSolution.feature2.title'),
+      description: t('problemSolution.feature2.description'),
     },
     {
       icon: Zap,
-      title: "Saia na frente da concorrência",
-      description: "Enquanto outros testam às cegas, você usa dados para criar conteúdo que o algoritmo ama e seu público não consegue ignorar.",
+      title: t('problemSolution.feature3.title'),
+      description: t('problemSolution.feature3.description'),
     }
   ]
 
@@ -26,10 +29,10 @@ export function ProblemSolution() {
         <div className="container max-w-5xl mx-auto text-center animate-fade-in-up">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline">
-                    Chega de postar no escuro
+                    {t('problemSolution.title')}
                 </h2>
                 <p className="mt-4 text-muted-foreground">
-                    Você pode continuar testando às cegas ou deixar a IA te entregar o que já está dando certo — e finalmente começar a viralizar de verdade.
+                    {t('problemSolution.description')}
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,7 +53,7 @@ export function ProblemSolution() {
 
             <p 
               className="mt-16 text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary via-blue-400 to-accent text-transparent bg-clip-text"
-            >O jogo mudou: quem usa IA viraliza, quem não usa fica pra trás.</p>
+            >{t('problemSolution.tagline')}</p>
       </div>
     </section>
   );

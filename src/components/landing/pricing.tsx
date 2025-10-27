@@ -4,70 +4,66 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Check, Star } from "lucide-react";
 import Link from "next/link";
+import { useI18n } from "@/lib/i18n";
 
 interface PricingPlan {
   name: string;
   price: string;
   period: string;
-  features: string[];
   description: string;
+  features: string[];
   buttonText: string;
   href: string;
   isPopular: boolean;
+  priceNote: string;
 }
 
-const plans: PricingPlan[] = [
+export function Pricing() {
+  const { t } = useI18n();
+
+  const plans: PricingPlan[] = [
     {
-      name: 'Grátis',
+      name: t('pricing.free.name'),
       price: "0",
-      period: 'mês',
-      description: 'Para quem está começando a explorar o poder da IA.',
+      period: t('pricing.monthly'),
+      description: t('pricing.free.description'),
       features: [
-        '3 gerações de roteiro/mês',
-        "Análise de até 10 vídeos",
-        'Suporte via comunidade',
+        t('pricing.free.feature1'),
+        t('pricing.free.feature2'),
+        t('pricing.free.feature3'),
       ],
-      buttonText: 'Começar Agora',
+      buttonText: t('pricing.free.button'),
       href: "https://viralbeai.vercel.app/",
       isPopular: false,
+      priceNote: t('pricing.free.priceNote'),
     },
     {
-      name: 'Pro',
+      name: t('pricing.pro.name'),
       price: "49",
-      period: 'mês',
-      description: 'Para criadores de conteúdo que levam a sério o crescimento.',
+      period: t('pricing.monthly'),
+      description: t('pricing.pro.description'),
       features: [
-        'Gerações de roteiro ilimitadas',
-        'Análises de vídeos ilimitadas',
-        'Roteiros para vídeos longos',
-        'Suporte prioritário via chat',
-        "Sem marca d'água",
+        t('pricing.pro.feature1'),
+        t('pricing.pro.feature2'),
+        t('pricing.pro.feature3'),
+        t('pricing.pro.feature4'),
+        t('pricing.pro.feature5'),
       ],
-      buttonText: 'Assinar o Pro',
+      buttonText: t('pricing.pro.button'),
       href: "https://buy.stripe.com/eVqbIUfqy1RC12UchO7EQ00",
       isPopular: true,
+      priceNote: t('pricing.pro.priceNote'),
     },
   ];
-  
-
-interface PricingProps {
-  title?: string;
-  description?: string;
-}
-
-export function Pricing({
-  title = "Escolha seu plano e comece a viralizar agora.",
-  description = "Do básico ao avançado a IA faz o pesado, você colhe os views.",
-}: PricingProps) {
 
   return (
     <div id="pricing" className="container py-20">
       <div className="text-center space-y-4 mb-12 animate-fade-in-up">
         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
-          {title}
+          {t('pricing.title')}
         </h2>
         <p className="text-muted-foreground text-lg whitespace-pre-line">
-          {description}
+          {t('pricing.description')}
         </p>
       </div>
 
@@ -87,7 +83,7 @@ export function Pricing({
               <div className="absolute -top-4 right-6 bg-primary py-1 px-3 rounded-full flex items-center shadow-lg">
                 <Star className="text-primary-foreground h-4 w-4 fill-current" />
                 <span className="text-primary-foreground ml-1 font-sans font-semibold text-sm">
-                  Popular
+                  {t('pricing.popular')}
                 </span>
               </div>
             )}
@@ -107,7 +103,7 @@ export function Pricing({
               </div>
 
               <p className="text-xs leading-5 text-muted-foreground">
-                {plan.name === 'Grátis' ? 'Sempre grátis' : 'cobrado mensalmente'}
+                {plan.priceNote}
               </p>
 
               <ul className="mt-8 gap-3 flex flex-col">

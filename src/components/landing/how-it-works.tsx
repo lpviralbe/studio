@@ -1,57 +1,60 @@
-
+'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { PenTool, Scissors, Download, Search, FileVideo, Sparkles } from "lucide-react";
+import { Search, FileVideo, Sparkles } from "lucide-react";
 import Image from "next/image";
-
-const steps = [
-  {
-    icon: Search,
-    title: "Pesquise o seu nicho",
-    objection: "“Não sei o que está em alta”",
-    answer: "Nós mostramos os vídeos com maior potencial.",
-    description: "Pesquise por seu nicho e veja os vídeos que mais estão viralizando no momento para se inspirar.",
-    image: {
-      src: "https://i.imgur.com/aoPgzXZ.mp4",
-      alt: "Tela de pesquisa de vídeos virais",
-      hint: "search interface",
-      type: "video"
-    }
-  },
-  {
-    icon: FileVideo,
-    title: "Selecione um Vídeo",
-    objection: "“E se não combinar com meu estilo?”",
-    answer: "Você escolhe a base, nós adaptamos a magia.",
-    description: "Escolha o vídeo que mais te agrada e que tem a ver com seu público. Ele será a base para sua nova criação.",
-    image: {
-      src: "https://i.imgur.com/F2ueVnD.mp4",
-      alt: "Tela de seleção de vídeo",
-      hint: "video selection",
-      type: "video"
-    }
-  },
-  {
-    icon: Sparkles,
-    title: "Receba seu Roteiro",
-    objection: "“Preciso criar o roteiro do zero?”",
-    answer: "Não. A IA cria um roteiro novo para você.",
-    description: "Nossa IA analisa o vídeo selecionado e cria um roteiro 100% novo e aprimorado para você apenas gravar.",
-    image: {
-      src: "https://i.imgur.com/2HLRMVL.mp4",
-      alt: "Tela de exibição do roteiro gerado por IA",
-      hint: "AI script",
-      type: "video"
-    }
-  }
-];
+import { useI18n } from "@/lib/i18n";
 
 export function HowItWorks() {
+  const { t } = useI18n();
+
+  const steps = [
+    {
+      icon: Search,
+      title: t('howItWorks.step1.title'),
+      objection: t('howItWorks.step1.objection'),
+      answer: t('howItWorks.step1.answer'),
+      description: t('howItWorks.step1.description'),
+      image: {
+        src: "https://i.imgur.com/aoPgzXZ.mp4",
+        alt: "Tela de pesquisa de vídeos virais",
+        hint: "search interface",
+        type: "video"
+      }
+    },
+    {
+      icon: FileVideo,
+      title: t('howItWorks.step2.title'),
+      objection: t('howItWorks.step2.objection'),
+      answer: t('howItWorks.step2.answer'),
+      description: t('howItWorks.step2.description'),
+      image: {
+        src: "https://i.imgur.com/F2ueVnD.mp4",
+        alt: "Tela de seleção de vídeo",
+        hint: "video selection",
+        type: "video"
+      }
+    },
+    {
+      icon: Sparkles,
+      title: t('howItWorks.step3.title'),
+      objection: t('howItWorks.step3.objection'),
+      answer: t('howItWorks.step3.answer'),
+      description: t('howItWorks.step3.description'),
+      image: {
+        src: "https://i.imgur.com/2HLRMVL.mp4",
+        alt: "Tela de exibição do roteiro gerado por IA",
+        hint: "AI script",
+        type: "video"
+      }
+    }
+  ];
+
   return (
     <section id="how-it-works" className="py-20 md:py-32">
       <div className="container animate-fade-in-up">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold">Como usar em 3 passos</h2>
-          <p className="mt-4 text-muted-foreground">O processo é tão simples que parece mágica. Transforme inspiração em conteúdo viral em minutos.</p>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold">{t('howItWorks.title')}</h2>
+          <p className="mt-4 text-muted-foreground">{t('howItWorks.description')}</p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (

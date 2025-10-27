@@ -2,8 +2,10 @@
 import { FlowButton } from '@/components/ui/flow-button';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useI18n } from '@/lib/i18n';
 
 export function NicheSearch() {
+  const { t } = useI18n();
 
   const handleRedirect = () => {
     window.open('https://viralbeai.vercel.app/', '_blank');
@@ -43,7 +45,7 @@ export function NicheSearch() {
     <div className="w-full max-w-2xl mx-auto text-center p-8 bg-card/50 backdrop-blur-lg border border-primary/20 rounded-xl shadow-lg shadow-primary/10">
         <div className="flex justify-center mb-6">
             <FlowButton
-              text="Encontrar vídeos virais"
+              text={t('nicheSearch.button')}
               onClick={handleRedirect}
             />
         </div>

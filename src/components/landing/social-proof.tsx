@@ -2,18 +2,13 @@
 
 import { useEffect, useState, useRef } from 'react';
 import { Users, Lightbulb, Smile } from 'lucide-react';
-import Image from 'next/image';
 import { RevenueChart } from './revenue-chart';
-
-const stats = [
-  { icon: Users, end: 5000, label: 'Usuários' },
-  { icon: Lightbulb, end: 120000, label: 'Ideias Geradas' },
-  { icon: Smile, end: 98, label: 'Satisfação' },
-];
+import { useI18n } from '@/lib/i18n';
 
 function Counter({ end, duration = 2000 }: { end: number; duration?: number }) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
+  const { language } = useI18n();
 
   useEffect(() => {
     let frame: number;
@@ -57,20 +52,28 @@ function Counter({ end, duration = 2000 }: { end: number; duration?: number }) {
     };
   }, [end, duration]);
   
-  const formatter = new Intl.NumberFormat('pt-BR');
+  const formatter = new Intl.NumberFormat(language === 'pt' ? 'pt-BR' : language);
 
   return <span ref={ref}>{formatter.format(count)}</span>;
 }
 
 
 export function SocialProof() {
+  const { t } = useI18n();
+
+  const stats = [
+    { icon: Users, end: 5000, label: t('socialProof.users') },
+    { icon: Lightbulb, end: 120000, label: t('socialProof.ideas') },
+    { icon: Smile, end: 98, label: t('socialProof.satisfaction') },
+  ];
+
   return (
     <section className="py-20 md:py-32">
       <div className="container relative">
         <div className="relative z-10 animate-fade-in-up">
           <div className="text-center max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold font-headline">Mais de <span className="text-primary">5.000 influencers</span> faturando alto após viralizar</h2>
-              <p className="mt-4 text-muted-foreground">O ViralBe.AI não só aumenta seus seguidores, ele multiplica seu faturamento. Veja o impacto real.</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-headline">{t('socialProof.title.start')} <span className="text-primary">{t('socialProof.title.highlight')}</span> {t('socialProof.title.end')}</h2>
+              <p className="mt-4 text-muted-foreground">{t('socialProof.description')}</p>
           </div>
 
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
