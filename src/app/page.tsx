@@ -13,7 +13,6 @@ import { I18nProvider, useI18n } from "@/lib/i18n";
 
 
 const navItems = [
-  { name: 'nav.home', url: '#', icon: Home },
   { name: 'nav.howItWorks', url: '#how-it-works', icon: HelpCircle },
   { name: 'nav.testimonials', url: '#testimonials', icon: MessageCircle },
   { name: 'nav.pricing', url: '#pricing', icon: BarChart },

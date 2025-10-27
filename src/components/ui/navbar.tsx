@@ -24,27 +24,22 @@ export function NavBar({ items, className }: NavBarProps) {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const { setLanguage, t } = useI18n();
 
-  const navLinks = [
-    { name: `💡 ${t('nav.howItWorks')}`, url: '#how-it-works'},
-    { name: `💬 ${t('nav.testimonials')}`, url: '#testimonials'},
-    { name: `💰 ${t('nav.pricing')}`, url: '#pricing'},
-    { name: `❓ ${t('nav.faq')}`, url: '#faq'},
-  ];
-
   return (
     <header className={cn("fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/40", className)}>
         <div className="container flex items-center justify-between h-16">
             <Logo />
             <div className="flex items-center gap-2">
                 <nav className="hidden md:flex items-center gap-6">
-                    {navLinks.map((item) => (
+                    {items.map((item) => (
                         <Link 
                           key={item.name} 
                           href={item.url} 
-                          className="relative text-base font-medium text-muted-foreground hover:text-primary transition-colors"
+                          className="relative text-base font-medium text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                           onMouseEnter={() => setHoveredItem(item.name)}
                           onMouseLeave={() => setHoveredItem(null)}
                         >
+                            <item.icon className="h-4 w-4" />
+                            {item.name}
                             {hoveredItem === item.name && (
                                 <motion.span
                                     layoutId="navbar-highlight"
@@ -55,7 +50,6 @@ export function NavBar({ items, className }: NavBarProps) {
                                     transition={{ duration: 0.3 }}
                                 />
                             )}
-                            {item.name}
                         </Link>
                     ))}
                 </nav>
