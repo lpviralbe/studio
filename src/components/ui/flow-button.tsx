@@ -1,9 +1,22 @@
 'use client';
 import { ArrowRight } from 'lucide-react';
+import type { HTMLAttributes } from 'react';
+import { cn } from '@/lib/utils';
 
-export function FlowButton({ text = "Modern Button" }: { text?: string }) {
+
+interface FlowButtonProps extends HTMLAttributes<HTMLButtonElement> {
+    text?: string;
+}
+
+export function FlowButton({ text = "Modern Button", className, ...props }: FlowButtonProps) {
   return (
-    <button className="group relative flex items-center gap-1 overflow-hidden rounded-[100px] border-[1.5px] border-primary/40 bg-card/50 px-8 py-4 text-lg font-semibold text-foreground cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:border-transparent hover:text-primary-foreground hover:rounded-[12px] active:scale-[0.95] hover:bg-primary">
+    <button 
+        className={cn(
+            "group relative flex items-center gap-1 overflow-hidden rounded-[100px] border-[1.5px] border-primary/40 bg-card/50 px-8 py-4 text-lg font-semibold text-foreground cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.23,1,0.32,1)] hover:border-transparent hover:text-primary-foreground hover:rounded-[12px] active:scale-[0.95] hover:bg-primary",
+            className
+        )}
+        {...props}
+    >
       {/* Left arrow (arr-2) */}
       <ArrowRight
         className="absolute w-5 h-5 left-[-25%] stroke-foreground fill-none z-[9] group-hover:left-4 group-hover:stroke-primary-foreground transition-all duration-[800ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]"
