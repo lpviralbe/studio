@@ -109,12 +109,30 @@ export default {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" },
         },
+        "shimmer-slide": {
+          "0%": {
+            transform: "translateX(-100%)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+        "spin-around": {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "100%": {
+            transform: "rotate(360deg)",
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'fade-in-up': 'fade-in-up 0.5s ease-out',
         marquee: "marquee var(--duration) linear infinite",
+        "shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite",
+        "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
       },
     },
   },
