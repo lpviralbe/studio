@@ -78,6 +78,15 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      transitionDuration: {
+        'flow': '600ms',
+        'flow-long': '800ms',
+      },
+      transitionTimingFunction: {
+        'flow-in-out': 'cubic-bezier(0.23, 1, 0.32, 1)',
+        'flow-out': 'cubic-bezier(0.19, 1, 0.22, 1)',
+        'flow-bounce': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+      },
       keyframes: {
         'accordion-down': {
           from: {
