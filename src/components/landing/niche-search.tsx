@@ -2,7 +2,6 @@
 import { FlowButton } from '@/components/ui/flow-button';
 import { useI18n } from '@/lib/i18n';
 import React, { useState, useEffect } from 'react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 // Component for the individual photo cards
 const PhotoCard = ({ src, alt, rotation, text, index, style = {} }: {
@@ -116,15 +115,15 @@ export function NicheSearch() {
 
   const photos = [
     {
-        src: PlaceHolderImages[0]?.imageUrl || "https://framerusercontent.com/images/iTYf5BdHF9LFJQ3JBv65nwyo730.jpg",
-        alt: PlaceHolderImages[0]?.description || "A person standing in a field with mountains in the background",
+        src: "https://i.imgur.com/NNzOliK.png",
+        alt: "Ícone de geração de roteiro por IA",
         rotation: -8,
         text: "Ideias infinitas...",
         style: { top: '20px', left: '0px' }
     },
     {
-        src: PlaceHolderImages[1]?.imageUrl || "https://framerusercontent.com/images/uOHOKF6VtoSK07qQRm4AYoxI.jpg",
-        alt: PlaceHolderImages[1]?.description || "A close-up of a person's face",
+        src: "https://i.imgur.com/7P9pUs4.png",
+        alt: "Ícone de ideia de vídeo viral",
         rotation: 15,
         text: "Roteiros perfeitos!",
         style: { top: '10px', right: '0px' }
