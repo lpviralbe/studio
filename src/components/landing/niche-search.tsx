@@ -54,7 +54,12 @@ export function NicheSearch() {
           animate="visible"
         >
           {images.map((image, index) => (
-            <motion.div key={index} variants={itemVariants}>
+            <motion.div 
+              key={index} 
+              variants={itemVariants}
+              whileHover={{ scale: 1.1, y: -5 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <Image
                   src={image.src}
                   alt={image.alt}
