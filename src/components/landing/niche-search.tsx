@@ -52,9 +52,9 @@ export function NicheSearch() {
             <Image
               src={logo.src}
               alt={logo.alt}
-              width={120}
-              height={48}
-              className="object-contain h-12 w-auto"
+              width={160}
+              height={64}
+              className="object-contain h-16 w-auto"
             />
           </motion.div>
         ))}
