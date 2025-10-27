@@ -2,8 +2,6 @@
 import { TestimonialsCarousel } from './testimonials-carousel';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useI18n } from '@/lib/i18n';
-import { Marquee } from '../ui/marquee';
-import { TestimonialCard } from '../ui/testimonial-card';
 
 export function Testimonials() {
   const { t } = useI18n();
@@ -28,9 +26,6 @@ export function Testimonials() {
     }
   }));
 
-  const firstRow = testimonialsWithImages.slice(0, testimonialsWithImages.length / 2);
-  const secondRow = testimonialsWithImages.slice(testimonialsWithImages.length / 2);
-
   return (
     <section id="testimonials" className="py-20 md:py-32 bg-muted/20">
       <div className="container animate-fade-in-up">
@@ -39,18 +34,8 @@ export function Testimonials() {
           <p className="mt-4 text-muted-foreground">{t('testimonials.description')}</p>
         </div>
       </div>
-      <div className="relative mt-16">
-        <div className="opacity-10">
-          <Marquee pauseOnHover vertical className="[--duration:120s]">
-            {firstRow.map((testimonial, idx) => <TestimonialCard key={idx} {...testimonial} />)}
-          </Marquee>
-          <Marquee pauseOnHover vertical reverse className="[--duration:120s] [--delay:60s]">
-            {secondRow.map((testimonial, idx) => <TestimonialCard key={idx} {...testimonial} />)}
-          </Marquee>
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center">
-            <TestimonialsCarousel testimonials={testimonialsWithImages.map(t => ({...t, photoUrl: t.author.imageUrl}))} />
-        </div>
+      <div className="relative mt-16 flex flex-col items-center justify-center">
+          <TestimonialsCarousel testimonials={testimonialsWithImages.map(t => ({...t, photoUrl: t.author.imageUrl}))} />
       </div>
     </section>
   );
