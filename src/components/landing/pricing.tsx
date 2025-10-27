@@ -1,18 +1,13 @@
 "use client";
 
 import { buttonVariants } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
-import { useMediaQuery } from "@/hooks/use-media-query";
 import { cn } from "@/lib/utils";
 import { Check, Star } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 
 interface PricingPlan {
   name: string;
   price: string;
-  yearlyPrice: string;
   period: string;
   features: string[];
   description: string;
@@ -25,7 +20,6 @@ const plans: PricingPlan[] = [
     {
       name: 'Grátis',
       price: "0",
-      yearlyPrice: "0",
       period: 'mês',
       description: 'Para quem está começando a explorar o poder da IA.',
       features: [
@@ -40,7 +34,6 @@ const plans: PricingPlan[] = [
     {
       name: 'Pro',
       price: "49",
-      yearlyPrice: "499",
       period: 'mês',
       description: 'Para criadores de conteúdo que levam a sério o crescimento.',
       features: [
@@ -66,7 +59,6 @@ export function Pricing({
   title = "Planos flexíveis para todos os níveis",
   description = "Do iniciante ao profissional, temos o plano perfeito para você viralizar.",
 }: PricingProps) {
-  const [isMonthly, setIsMonthly] = useState(true);
 
   return (
     <div id="pricing" className="container py-20">
@@ -77,20 +69,6 @@ export function Pricing({
         <p className="text-muted-foreground text-lg whitespace-pre-line">
           {description}
         </p>
-      </div>
-
-      <div className="flex justify-center items-center mb-10 animate-fade-in-up">
-          <Label htmlFor="billing-cycle">Mensal</Label>
-          <Switch
-              id="billing-cycle"
-              checked={!isMonthly}
-              onCheckedChange={() => setIsMonthly(prev => !prev)}
-              className="mx-4"
-          />
-          <Label htmlFor="billing-cycle">Anual</Label>
-          <div className="ml-2 bg-accent/20 text-accent font-semibold text-xs px-2 py-1 rounded-full border border-accent/50">
-              Economize 20%
-          </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -119,7 +97,7 @@ export function Pricing({
               </p>
               <div className="mt-4 flex items-baseline justify-center gap-x-2">
                 <span className="text-5xl font-bold tracking-tight text-foreground">
-                  R${isMonthly ? plan.price : Math.round(Number(plan.yearlyPrice) / 12)}
+                  R${plan.price}
                 </span>
                 
                   <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">
@@ -129,7 +107,7 @@ export function Pricing({
               </div>
 
               <p className="text-xs leading-5 text-muted-foreground">
-                {isMonthly ? (plan.name === 'Grátis' ? 'Sempre grátis' : 'cobrado mensalmente') : (plan.name === 'Grátis' ? 'Sempre grátis' : `R$${plan.yearlyPrice} cobrado anualmente`)}
+                {plan.name === 'Grátis' ? 'Sempre grátis' : 'cobrado mensalmente'}
               </p>
 
               <ul className="mt-8 gap-3 flex flex-col">
