@@ -1,14 +1,7 @@
-import { TextRotate } from "@/components/ui/text-rotate";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Zap, Copy, Video } from "lucide-react";
 
 export function ProblemSolution() {
-  const rotatingTexts = [
-    "postar no escuro",
-    "tentar adivinhar",
-    "perder tempo",
-  ];
-
   const features = [
     {
       icon: Copy,
@@ -31,8 +24,7 @@ export function ProblemSolution() {
     <section className="py-20 md:py-32 bg-transparent">
       <div className="container max-w-5xl mx-auto text-center animate-fade-in-up">
         <div className="flex items-center justify-center font-headline text-2xl md:text-3xl font-bold text-foreground mb-8">
-            <span className="mr-2">Chega de</span>
-            <TextRotate texts={rotatingTexts} />
+            <span className="mr-2">Chega de postar no escuro</span>
         </div>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
