@@ -54,23 +54,6 @@ const plans: PricingPlan[] = [
       href: "https://buy.stripe.com/eVqbIUfqy1RC12UchO7EQ00",
       isPopular: true,
     },
-    {
-      name: 'Business',
-      price: "99",
-      yearlyPrice: "999",
-      period: 'mês',
-      description: 'Para agências e marcas que buscam escalar o conteúdo.',
-      features: [
-        'Tudo do plano Pro',
-        'Múltiplos usuários',
-        'Dashboard de performance',
-        'API de integração',
-        'Gerente de contas dedicado',
-      ],
-      buttonText: 'Fale Conosco',
-      href: "https://wa.me/5511978646907?text=Tenho%20interesse%20no%20plano%20Business%20do%20ViralBe.ai",
-      isPopular: false,
-    },
   ];
   
 
@@ -110,7 +93,7 @@ export function Pricing({
           </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {plans.map((plan, index) => (
           <div
             key={index}
@@ -119,7 +102,7 @@ export function Pricing({
               plan.isPopular ? "border-primary border-2 shadow-primary/20 shadow-2xl" : "border-border",
               "flex flex-col",
               "transition-all hover:-translate-y-2",
-              plan.isPopular ? "scale-1.0" : "scale-0.95"
+               plan.isPopular ? "md:scale-1.05" : "scale-1.0"
             )}
           >
             {plan.isPopular && (
