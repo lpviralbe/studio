@@ -8,8 +8,10 @@ import { Pricing } from "@/components/landing/pricing";
 import { ProblemSolution } from "@/components/landing/problem-solution";
 import { SocialProof } from "@/components/landing/social-proof";
 import { Testimonials } from "@/components/landing/testimonials";
-import { NavBar } from "@/components/ui/navbar";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
+import Link from "next/link";
+
 
 const navItems = [
   { name: "Início", url: "#", icon: Home },
@@ -25,7 +27,7 @@ export default function HomePage() {
       <div className="fixed inset-0 -z-10">
         <BackgroundGradientAnimation />
       </div>
-      <NavBar items={navItems} />
+      
       <main className="flex-1 relative z-10">
         <Hero />
         <ProblemSolution />
@@ -35,6 +37,25 @@ export default function HomePage() {
         <Pricing />
         <Faq />
       </main>
+      
+      <div className="fixed bottom-10 left-0 right-0 z-50">
+        <Dock>
+          {navItems.map((item) => {
+            const Icon = item.icon;
+            return (
+              <DockItem key={item.url}>
+                <Link href={item.url}>
+                  <DockIcon>
+                    <Icon />
+                  </DockIcon>
+                  <DockLabel>{item.name}</DockLabel>
+                </Link>
+              </DockItem>
+            )
+          })}
+        </Dock>
+      </div>
+
       <Footer />
     </div>
   );
