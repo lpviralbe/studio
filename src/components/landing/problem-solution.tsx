@@ -49,11 +49,9 @@ export function ProblemSolution() {
                 ))}
             </div>
 
-            <SparklesText 
-              text="Não espere o próximo viral... crie o seu." 
+            <p 
               className="mt-16 text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary via-blue-400 to-accent text-transparent bg-clip-text"
-              colors={{ first: '#A020F0', second: '#7FFFD4' }}
-            />
+            >Não espere o próximo viral... crie o seu.</p>
       </div>
     </section>
   );
