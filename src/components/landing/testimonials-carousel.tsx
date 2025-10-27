@@ -1,5 +1,4 @@
 'use client';
-import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -7,45 +6,36 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import type { GenerateAuthenticTestimonialsOutput } from '@/ai/flows/generate-authentic-testimonials';
+import { TestimonialCard } from '@/components/ui/testimonial-card';
+import type { TestimonialAuthor } from '@/components/ui/testimonial-card';
 
-type Testimonial = GenerateAuthenticTestimonialsOutput['testimonials'][0] & { photoUrl: string };
+type Testimonial = {
+    author: TestimonialAuthor;
+    text: string;
+    href?: string;
+};
 
-export function TestimonialsCarousel({ testimonials }: { testimonials: Testimonial[] }) {
+export function TestimonialsCarousel({ testimonials }: { testimonials: any[] }) {
+  if (!testimonials || testimonials.length === 0) {
+    return null;
+  }
   return (
-    <Carousel
-      opts={{
-        align: 'start',
-        loop: true,
-      }}
-      className="w-full max-w-5xl mx-auto mt-12"
-    >
-      <CarouselContent>
-        {testimonials.map((testimonial, index) => (
-          <CarouselItem key={index} className="md:basis-1/2">
-            <div className="p-1 h-full">
-              <Card className="h-full bg-card/50 backdrop-blur-lg border-white/10 flex flex-col">
-                <CardContent className="flex flex-col justify-between flex-1 p-6">
-                  <blockquote className="text-foreground/90 mb-6 flex-1">&ldquo;{testimonial.text}&rdquo;</blockquote>
-                  <div className="flex items-center gap-4">
-                    <Avatar>
-                      <AvatarImage src={testimonial.photoUrl} alt={testimonial.name} />
-                      <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.handle} ({testimonial.network})</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious className="hidden md:inline-flex" />
-      <CarouselNext className="hidden md:inline-flex" />
-    </Carousel>
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+        <div className="group flex overflow-hidden p-2 [--gap:1rem] [gap:var(--gap)] flex-row [--duration:40s]">
+        <div className="flex shrink-0 justify-around [gap:var(--gap)] animate-marquee flex-row group-hover:[animation-play-state:paused]">
+            {[...Array(4)].map((_, setIndex) =>
+            testimonials.map((testimonial, i) => (
+                <TestimonialCard
+                key={`${setIndex}-${i}`}
+                {...testimonial}
+                />
+            ))
+            )}
+        </div>
+        </div>
+
+        <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-1/3 bg-gradient-to-r from-background sm:block" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/3 bg-gradient-to-l from-background sm:block" />
+    </div>
   );
 }

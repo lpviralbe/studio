@@ -23,8 +23,12 @@ export async function Testimonials() {
   // }
 
   const testimonialsWithImages = testimonialsData.testimonials.map((testimonial, index) => ({
-    ...testimonial,
-    photoUrl: PlaceHolderImages[index % PlaceHolderImages.length]?.imageUrl || `https://picsum.photos/seed/${101+index}/48/48`
+    text: testimonial.text,
+    author: {
+      name: testimonial.name,
+      handle: `${testimonial.handle} (${testimonial.network})`,
+      imageUrl: PlaceHolderImages[index % PlaceHolderImages.length]?.imageUrl || `https://picsum.photos/seed/${101+index}/48/48`
+    }
   }));
 
 
@@ -35,7 +39,7 @@ export async function Testimonials() {
           <h2 className="text-3xl md:text-4xl font-headline font-bold">Contas que saíram do zero a resultados incríveis</h2>
           <p className="mt-4 text-muted-foreground">Não acredite só na nossa palavra. Veja o que os criadores estão dizendo sobre o ViralBe.AI.</p>
         </div>
-        <TestimonialsCarousel testimonials={testimonialsWithImages} />
+        <TestimonialsCarousel testimonials={testimonialsWithImages.map(t => ({...t, photoUrl: t.author.imageUrl}))} />
       </div>
     </section>
   );
