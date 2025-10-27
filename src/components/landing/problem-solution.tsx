@@ -1,6 +1,5 @@
 'use client';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { SparklesText } from "@/components/ui/sparkles-text";
 import { Zap, Copy, Video } from "lucide-react";
 
 export function ProblemSolution() {
@@ -51,7 +50,7 @@ export function ProblemSolution() {
 
             <p 
               className="mt-16 text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary via-blue-400 to-accent text-transparent bg-clip-text"
-            >Não espere o próximo viral... crie o seu.</p>
+            >O jogo mudou: quem usa IA viraliza, quem não usa fica pra trás.</p>
       </div>
     </section>
   );
