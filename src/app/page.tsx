@@ -26,7 +26,7 @@ export default function HomePage() {
         <BackgroundGradientAnimation />
       </div>
       <NavBar items={navItems} />
-      <main className="flex-1">
+      <main className="flex-1 relative z-10">
         <Hero />
         <ProblemSolution />
         <SocialProof />
