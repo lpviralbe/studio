@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { LucideIcon } from "lucide-react"
@@ -18,14 +18,31 @@ interface NavBarProps {
 }
 
 export function NavBar({ items, className }: NavBarProps) {
+    const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/40">
+    <header className={cn("fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/40", className)}>
         <div className="container flex items-center justify-between h-16">
             <Logo />
             <nav className="hidden md:flex items-center gap-6">
                 {items.slice(1).map((item) => ( // Pula o 'Início'
-                    <Link key={item.name} href={item.url} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+                    <Link 
+                      key={item.name} 
+                      href={item.url} 
+                      className="relative text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      onMouseEnter={() => setHoveredItem(item.name)}
+                      onMouseLeave={() => setHoveredItem(null)}
+                    >
+                        {hoveredItem === item.name && (
+                            <motion.span
+                                layoutId="navbar-highlight"
+                                className="absolute bottom-[-8px] left-0 h-0.5 bg-primary w-full"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                            />
+                        )}
                         {item.name}
                     </Link>
                 ))}
