@@ -125,6 +125,106 @@ export default {
             transform: "rotate(360deg)",
           },
         },
+        first: {
+          "0%": {
+            transform: "translate(0px, 0px)",
+          },
+          "20%": {
+            transform: "translate(100px, -50px)",
+          },
+          "40%": {
+            transform: "translate(-100px, 50px)",
+          },
+          "60%": {
+            transform: "translate(50px, -100px)",
+          },
+          "80%": {
+            transform: "translate(-50px, 100px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          },
+        },
+        second: {
+          "0%": {
+            transform: "translate(0px, 0px)",
+          },
+          "20%": {
+            transform: "translate(-200px, 100px)",
+          },
+          "40%": {
+            transform: "translate(200px, -100px)",
+          },
+          "60%": {
+            transform: "translate(-100px, 200px)",
+          },
+          "80%": {
+            transform: "translate(100px, -200px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          },
+        },
+        third: {
+          "0%": {
+            transform: "translate(0px, 0px)",
+          },
+          "20%": {
+            transform: "translate(150px, -100px)",
+          },
+          "40%": {
+            transform: "translate(-150px, 100px)",
+          },
+          "60%": {
+            transform: "translate(100px, -150px)",
+          },
+          "80%": {
+            transform: "translate(-100px, 150px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          },
+        },
+        fourth: {
+          "0%": {
+            transform: "translate(0px, 0px)",
+          },
+          "20%": {
+            transform: "translate(-300px, 150px)",
+          },
+          "40%": {
+            transform: "translate(300px, -150px)",
+          },
+          "60%": {
+            transform: "translate(-150px, 300px)",
+          },
+          "80%": {
+            transform: "translate(150px, -300px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          },
+        },
+        fifth: {
+          "0%": {
+            transform: "translate(0px, 0px)",
+          },
+          "20%": {
+            transform: "translate(250px, -150px)",
+          },
+          "40%": {
+            transform: "translate(-250px, 150px)",
+          },
+          "60%": {
+            transform: "translate(150px, -250px)",
+          },
+          "80%": {
+            transform: "translate(-150px, 250px)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px)",
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -133,6 +233,11 @@ export default {
         marquee: "marquee var(--duration) linear infinite",
         "shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        first: "first 15s ease infinite",
+        second: "second 15s ease infinite",
+        third: "third 15s ease infinite",
+        fourth: "fourth 15s ease infinite",
+        fifth: "fifth 15s ease infinite",
       },
     },
   },

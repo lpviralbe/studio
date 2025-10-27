@@ -9,6 +9,7 @@ import { ProblemSolution } from "@/components/landing/problem-solution";
 import { SocialProof } from "@/components/landing/social-proof";
 import { Testimonials } from "@/components/landing/testimonials";
 import { NavBar } from "@/components/ui/navbar";
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 const navItems = [
   { name: "Início", url: "#", icon: Home },
@@ -20,18 +21,20 @@ const navItems = [
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <NavBar items={navItems} />
-      <main className="flex-1">
-        <Hero />
-        <ProblemSolution />
-        <SocialProof />
-        <HowItWorks />
-        <Testimonials />
-        <Pricing />
-        <Faq />
-      </main>
-      <Footer />
-    </div>
+    <BackgroundGradientAnimation>
+      <div className="flex flex-col min-h-screen bg-transparent">
+        <NavBar items={navItems} />
+        <main className="flex-1">
+          <Hero />
+          <ProblemSolution />
+          <SocialProof />
+          <HowItWorks />
+          <Testimonials />
+          <Pricing />
+          <Faq />
+        </main>
+        <Footer />
+      </div>
+    </BackgroundGradientAnimation>
   );
 }
