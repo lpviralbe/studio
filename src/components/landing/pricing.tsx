@@ -50,7 +50,7 @@ export function Pricing() {
         t('pricing.pro.feature5'),
       ],
       buttonText: t('pricing.pro.button'),
-      href: "https://buy.stripe.com/eVqbIUfqy1RC12UchO7EQ00",
+      href: "https://buy.stripe.com/00w00cguCeEofXO4Pm7EQ01",
       isPopular: true,
       priceNote: t('pricing.pro.priceNote'),
     },
