@@ -39,7 +39,7 @@ export function Pricing() {
     },
     {
       name: t('pricing.pro.name'),
-      price: "49",
+      price: "29,90",
       period: t('pricing.monthly'),
       description: t('pricing.pro.description'),
       features: [
