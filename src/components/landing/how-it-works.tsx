@@ -15,7 +15,7 @@ export function HowItWorks() {
       answer: t('howItWorks.step1.answer'),
       description: t('howItWorks.step1.description'),
       image: {
-        src: "https://picsum.photos/seed/how-it-works-1/600/400",
+        src: "https://i.imgur.com/8o5j2d7.mp4",
         alt: "Tela de pesquisa de vídeos virais",
         hint: "search interface",
       }
@@ -27,7 +27,7 @@ export function HowItWorks() {
       answer: t('howItWorks.step2.answer'),
       description: t('howItWorks.step2.description'),
       image: {
-        src: "https://picsum.photos/seed/how-it-works-2/600/400",
+        src: "https://i.imgur.com/I2Nq6v4.mp4",
         alt: "Tela de seleção de vídeo",
         hint: "video selection",
       }
@@ -39,7 +39,7 @@ export function HowItWorks() {
       answer: t('howItWorks.step3.answer'),
       description: t('howItWorks.step3.description'),
       image: {
-        src: "https://picsum.photos/seed/how-it-works-3/600/400",
+        src: "https://i.imgur.com/KPG15s1.mp4",
         alt: "Tela de exibição do roteiro gerado por IA",
         hint: "AI script",
       }
@@ -66,11 +66,13 @@ export function HowItWorks() {
               </CardHeader>
               <CardContent className="flex flex-col gap-4 flex-1">
                 <div className="relative aspect-video rounded-md overflow-hidden mb-4 border border-border">
-                  <Image 
+                  <video 
                     src={step.image.src} 
-                    alt={step.image.alt} 
-                    fill 
-                    className="object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
                     data-ai-hint={step.image.hint}
                   />
                 </div>
