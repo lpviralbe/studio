@@ -24,7 +24,7 @@ const PhotoCard = ({ src, alt, rotation, text, index, style = {} }: {
   return (
     <div
       className={cn(
-        "w-[162px] h-[240px] bg-white dark:bg-slate-800 p-2 rounded-md shadow-2xl cursor-pointer absolute transition-all duration-300 ease-out",
+        "w-[220px] h-[320px] bg-white dark:bg-slate-800 p-2 rounded-md shadow-2xl cursor-pointer absolute transition-all duration-300 ease-out",
         "hover:z-20 hover:scale-105",
         isVisible ? "opacity-100" : "opacity-0"
         )}
@@ -43,7 +43,7 @@ const PhotoCard = ({ src, alt, rotation, text, index, style = {} }: {
         />
       </div>
       <div className="h-[15%] flex items-center justify-center">
-        <p style={{ fontFamily: '"Zeyada", cursive' }} className="text-sm text-muted-foreground tracking-tighter text-center">
+        <p style={{ fontFamily: '"Zeyada", cursive' }} className="text-lg text-muted-foreground tracking-tighter text-center">
           {text}
         </p>
       </div>
@@ -128,9 +128,9 @@ export function NicheSearch() {
             onClick={handleRedirect}
           />
       </div>
-      <div className="relative w-full h-[300px] flex items-center justify-center mt-16">
+      <div className="relative w-full h-[400px] flex items-center justify-center mt-16">
         <AnimatedGrid />
-        <div className="relative w-[300px] h-[300px] flex items-center justify-center">
+        <div className="relative w-[400px] h-[400px] flex items-center justify-center">
             {photos.map((photo, index) => (
                 <PhotoCard
                     key={index}
