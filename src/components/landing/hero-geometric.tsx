@@ -27,13 +27,13 @@ function HeroGeometric() {
                     </div>
 
                     <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
                             <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
                                 {t('hero.title')}
                             </span>
                             <span
                                 className={cn(
-                                    "block min-h-[50px] md:min-h-[96px] bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 "
+                                    "block min-h-[50px] md:min-h-[80px] bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300"
                                 )}
                             >
                                 <Typewriter text={[t('hero.typewriter1'), t('hero.typewriter2')]} />
