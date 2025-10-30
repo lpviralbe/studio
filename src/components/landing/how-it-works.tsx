@@ -14,7 +14,7 @@ export function HowItWorks() {
       answer: t('howItWorks.step1.answer'),
       description: t('howItWorks.step1.description'),
       image: {
-        src: "https://i.imgur.com/8o5j2d7.mp4",
+        src: "https://i.imgur.com/2fTcF7R.mp4",
         alt: "Tela de pesquisa de vídeos virais",
         hint: "search interface",
       }
@@ -26,7 +26,7 @@ export function HowItWorks() {
       answer: t('howItWorks.step2.answer'),
       description: t('howItWorks.step2.description'),
       image: {
-        src: "https://i.imgur.com/I2Nq6v4.mp4",
+        src: "https://i.imgur.com/bMld8lK.mp4",
         alt: "Tela de seleção de vídeo",
         hint: "video selection",
       }
@@ -38,7 +38,7 @@ export function HowItWorks() {
       answer: t('howItWorks.step3.answer'),
       description: t('howItWorks.step3.description'),
       image: {
-        src: "https://i.imgur.com/KPG15s1.mp4",
+        src: "https://i.imgur.com/LbEr2mu.mp4",
         alt: "Tela de exibição do roteiro gerado por IA",
         hint: "AI script",
       }
