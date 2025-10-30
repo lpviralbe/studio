@@ -30,8 +30,8 @@ function HomePageContent() {
       <main className="flex-1">
         <HeroGeometric />
         <ProblemSolution />
-        <SocialProof />
         <HowItWorks />
+        <SocialProof />
         <Testimonials />
         <Pricing />
         <Faq />
