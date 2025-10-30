@@ -1,7 +1,6 @@
 'use client';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Search, FileVideo, Sparkles } from "lucide-react";
-import Image from "next/image";
 import { useI18n } from "@/lib/i18n";
 
 export function HowItWorks() {
