@@ -2,7 +2,7 @@
 import { Home, Sparkles, MessageCircle, BarChart, HelpCircle } from "lucide-react";
 import { Faq } from "@/components/landing/faq";
 import { Footer } from "@/components/landing/footer";
-import { Hero } from "@/components/landing/hero";
+import { HeroGeometric } from "@/components/landing/hero-geometric";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Pricing } from "@/components/landing/pricing";
 import { ProblemSolution } from "@/components/landing/problem-solution";
@@ -28,7 +28,7 @@ function HomePageContent() {
       <NavBar items={translatedNavItems} />
 
       <main className="flex-1">
-        <Hero />
+        <HeroGeometric />
         <ProblemSolution />
         <SocialProof />
         <HowItWorks />
