@@ -238,6 +238,10 @@ export default {
             transform: "translate(0px, 0px)",
           },
         },
+        "blink": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -252,6 +256,7 @@ export default {
         third: "third 15s ease infinite",
         fourth: "fourth 15s ease infinite",
         fifth: "fifth 15s ease infinite",
+        "blink": "blink 0.8s infinite"
       },
     },
   },

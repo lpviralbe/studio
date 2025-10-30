@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from "react"
-import { motion } from "framer-motion"
 import Link from "next/link"
 import { Globe, LucideIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -21,7 +20,6 @@ interface NavBarProps {
 }
 
 export function NavBar({ items, className }: NavBarProps) {
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const { setLanguage, t } = useI18n();
 
   return (
@@ -34,22 +32,11 @@ export function NavBar({ items, className }: NavBarProps) {
                         <Link 
                           key={item.name} 
                           href={item.url} 
-                          className="relative text-base font-medium text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
-                          onMouseEnter={() => setHoveredItem(item.name)}
-                          onMouseLeave={() => setHoveredItem(null)}
+                          className="group relative text-base font-medium text-muted-foreground hover:text-primary transition-colors flex items-center gap-2"
                         >
                             <item.icon className="h-4 w-4" />
                             {item.name}
-                            {hoveredItem === item.name && (
-                                <motion.span
-                                    layoutId="navbar-highlight"
-                                    className="absolute bottom-[-8px] left-0 h-0.5 bg-primary w-full"
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    exit={{ opacity: 0 }}
-                                    transition={{ duration: 0.3 }}
-                                />
-                            )}
+                            <span className="absolute bottom-[-8px] left-0 h-0.5 bg-primary w-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
                         </Link>
                     ))}
                 </nav>
