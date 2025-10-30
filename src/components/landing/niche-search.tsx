@@ -2,6 +2,8 @@
 import { FlowButton } from '@/components/ui/flow-button';
 import { useI18n } from '@/lib/i18n';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 // Component for the individual photo cards
 const PhotoCard = ({ src, alt, rotation, text, index, style = {} }: {
@@ -12,8 +14,6 @@ const PhotoCard = ({ src, alt, rotation, text, index, style = {} }: {
     index: number;
     style?: React.CSSProperties;
 }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -21,35 +21,25 @@ const PhotoCard = ({ src, alt, rotation, text, index, style = {} }: {
     return () => clearTimeout(timer);
   }, [index]);
 
-  const cardStyle: React.CSSProperties = {
-    position: 'absolute',
-    transform: `rotate(${rotation}deg) ${isHovered ? `scale(1.05)` : `scale(1)`}`,
-    zIndex: isHovered ? 20 : (index === 1 ? 2 : 1),
-    transition: 'all 0.3s ease-out',
-    opacity: isVisible ? 1 : 0,
-    ...style
-  };
-
   return (
     <div
-      className="w-[162px] h-[240px] bg-white dark:bg-slate-800 p-2 rounded-md shadow-2xl cursor-pointer"
-      style={cardStyle}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className={cn(
+        "w-[162px] h-[240px] bg-white dark:bg-slate-800 p-2 rounded-md shadow-2xl cursor-pointer absolute transition-all duration-300 ease-out",
+        "hover:z-20 hover:scale-105",
+        isVisible ? "opacity-100" : "opacity-0"
+        )}
+      style={{
+        ...style,
+        transform: `rotate(${rotation}deg)`,
+        zIndex: index === 1 ? 2 : 1,
+      }}
     >
-      <div className="w-full h-[85%] bg-muted rounded-sm overflow-hidden">
-        <img
+      <div className="w-full h-[85%] bg-muted rounded-sm overflow-hidden relative">
+        <Image
           src={src}
           alt={alt}
-          className="w-full h-full object-cover transition-transform duration-300"
-          style={{ transform: isHovered ? 'scale(1.02)' : 'scale(1)' }}
-          onLoad={() => setIsLoaded(true)}
-          onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => { 
-            const target = e.target as HTMLImageElement;
-            target.onerror = null; 
-            target.src='https://placehold.co/162x200/e2e8f0/94a3b8?text=Image';
-            setIsLoaded(true);
-          }}
+          fill
+          className="object-cover"
         />
       </div>
       <div className="h-[15%] flex items-center justify-center">
@@ -115,15 +105,15 @@ export function NicheSearch() {
 
   const photos = [
     {
-        src: "https://i.imgur.com/NNzOliK.png",
-        alt: "Ícone de geração de roteiro por IA",
+        src: "https://i.imgur.com/csMPLcY.jpeg",
+        alt: "Viral video idea",
         rotation: -8,
         text: "Ideias infinitas...",
         style: { top: '20px', left: '0px' }
     },
     {
-        src: "https://i.imgur.com/7P9pUs4.png",
-        alt: "Ícone de ideia de vídeo viral",
+        src: "https://i.imgur.com/KK70xaG.jpeg",
+        alt: "AI generated script",
         rotation: 15,
         text: "Roteiros perfeitos!",
         style: { top: '10px', right: '0px' }

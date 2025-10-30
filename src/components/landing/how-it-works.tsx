@@ -15,10 +15,9 @@ export function HowItWorks() {
       answer: t('howItWorks.step1.answer'),
       description: t('howItWorks.step1.description'),
       image: {
-        src: "https://i.imgur.com/aoPgzXZ.mp4",
+        src: "https://picsum.photos/seed/how-it-works-1/600/400",
         alt: "Tela de pesquisa de vídeos virais",
         hint: "search interface",
-        type: "video"
       }
     },
     {
@@ -28,10 +27,9 @@ export function HowItWorks() {
       answer: t('howItWorks.step2.answer'),
       description: t('howItWorks.step2.description'),
       image: {
-        src: "https://i.imgur.com/F2ueVnD.mp4",
+        src: "https://picsum.photos/seed/how-it-works-2/600/400",
         alt: "Tela de seleção de vídeo",
         hint: "video selection",
-        type: "video"
       }
     },
     {
@@ -41,10 +39,9 @@ export function HowItWorks() {
       answer: t('howItWorks.step3.answer'),
       description: t('howItWorks.step3.description'),
       image: {
-        src: "https://i.imgur.com/2HLRMVL.mp4",
+        src: "https://picsum.photos/seed/how-it-works-3/600/400",
         alt: "Tela de exibição do roteiro gerado por IA",
         hint: "AI script",
-        type: "video"
       }
     }
   ];
@@ -69,24 +66,13 @@ export function HowItWorks() {
               </CardHeader>
               <CardContent className="flex flex-col gap-4 flex-1">
                 <div className="relative aspect-video rounded-md overflow-hidden mb-4 border border-border">
-                  {(step.image as any).type === 'video' ? (
-                    <video
-                      src={step.image.src}
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="object-cover w-full h-full"
-                    />
-                  ) : (
-                    <Image 
-                      src={step.image.src} 
-                      alt={step.image.alt} 
-                      fill 
-                      className="object-cover"
-                      data-ai-hint={step.image.hint}
-                    />
-                  )}
+                  <Image 
+                    src={step.image.src} 
+                    alt={step.image.alt} 
+                    fill 
+                    className="object-cover"
+                    data-ai-hint={step.image.hint}
+                  />
                 </div>
                 <p className="text-muted-foreground">{step.description}</p>
                 <div className="mt-auto bg-muted/30 p-4 rounded-lg border border-border">
