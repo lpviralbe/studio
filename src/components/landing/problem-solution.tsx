@@ -1,6 +1,6 @@
 'use client';
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Zap, Copy, Video } from "lucide-react";
+import { Zap, Copy, Video, Users } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 export function ProblemSolution() {
@@ -21,6 +21,11 @@ export function ProblemSolution() {
       icon: Zap,
       title: t('problemSolution.feature3.title'),
       description: t('problemSolution.feature3.description'),
+    },
+    {
+      icon: Users,
+      title: t('problemSolution.feature4.title'),
+      description: t('problemSolution.feature4.description'),
     }
   ]
 
@@ -35,7 +40,7 @@ export function ProblemSolution() {
                     {t('problemSolution.description')}
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {features.map((feature, index) => (
                     <Card key={index} className="bg-card/50 backdrop-blur-sm border-white/10 text-left">
                         <CardHeader>

@@ -30,6 +30,10 @@
       "title": "Get ahead of the competition",
       "description": "While others test blindly, you use data to create content that the algorithm loves and your audience can't ignore."
     },
+    "feature4": {
+      "title": "Social Media Community",
+      "description": "Connect with other creators, exchange experiences, and grow together in our exclusive community."
+    },
     "tagline": "The game has changed: those who use AI go viral, those who don't are left behind."
   },
   "socialProof": {
@@ -58,7 +62,7 @@
   },
   "howItWorks": {
     "title": "How to use in 3 steps",
-    "description": "The process is so simple it feels like magic. Turn inspiration into viral content in minutes.",
+    "description": "The process is so simple it feels like magic. Transform inspiration into viral content in minutes.",
     "step1": {
       "title": "Search your niche",
       "objection": "“I don't know what's trending”",
