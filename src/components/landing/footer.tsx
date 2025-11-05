@@ -20,7 +20,7 @@ export function Footer() {
                 <div className="flex items-center gap-4">
                     <Link href="https://www.instagram.com/viralbe.ai/" aria-label="Instagram" className="text-muted-foreground hover:text-foreground"><Instagram /></Link>
                     <Link href="#" aria-label="YouTube" className="text-muted-foreground hover:text-foreground"><Youtube /></Link>
-                    <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-foreground"><Twitter /></Link>
+                    <Link href="https://x.com/ViralBeai" aria-label="Twitter" className="text-muted-foreground hover:text-foreground"><Twitter /></Link>
                 </div>
             </div>
         </footer>
