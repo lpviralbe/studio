@@ -13,7 +13,7 @@ export function NicheSearch() {
   return (
     <div className="w-full max-w-4xl mx-auto text-center">
       <div className="flex justify-center mb-6">
-          <FlowButton text={t('objections.cta.button')} onClick={handleRedirect} className="px-10 py-5 text-xl" />
+          <FlowButton text={t('nicheSearch.button')} onClick={handleRedirect} className="px-10 py-5 text-xl" />
       </div>
     </div>
   );

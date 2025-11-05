@@ -12,9 +12,9 @@
     "description": "O ViralBe.ai encontra os vídeos mais virais do mundo e gera roteiros prontos, personalizados pro seu nicho."
   },
   "nicheSearch": {
-    "button": "Teste grátis — começar em 2 minutos"
+    "button": "teste gratis agora >"
   },
-  "objections": {
+  "problemSolution": {
     "title": "Criar conteúdo para clientes virou uma guerra contra o tempo.",
     "description": "Você conhece a rotina: abrir o TikTok para garimpar ideias, passar horas vendo o que está em alta, adaptar para cada cliente e, no final, o vídeo flopar. A pressão por resultados é alta, mas as ferramentas certas são raras.",
     "solutionTitle": "Com o ViralBe.ai, você economiza tempo e cria vídeos com chance real de explodir.",
@@ -95,7 +95,7 @@
       "priceNote": "cobrado mensalmente"
     }
   },
-  "problemSolution": {
+  "objections": {
     "supertitle": "A rotina de social medias, transformada.",
     "title": "As dúvidas que todo social media tem e as respostas que você precisa.",
     "description": "Sabemos quais são os gargalos de um social media. Veja como o ViralBe.ai foi construído para resolver cada um deles.",

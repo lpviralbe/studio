@@ -12,9 +12,9 @@
     "description": "ViralBe.ai finds the world's most viral videos and generates ready-to-use scripts, customized for your niche."
   },
   "nicheSearch": {
-    "button": "Start for free — get started in 2 minutes"
+    "button": "try for free now >"
   },
-  "objections": {
+  "problemSolution": {
     "title": "Creating content has become a war against time and creativity.",
     "description": "You know how it is... Opening TikTok for ideas. Spending hours watching trends. Trying to copy a style—only for the video to flop. Creating content is now a battle against tight deadlines, demanding clients, and ever-changing algorithms.",
     "solutionTitle": "With ViralBe.ai, you save time and create videos with a real chance to go big.",
@@ -95,32 +95,32 @@
       "priceNote": "billed monthly"
     }
   },
-  "problemSolution": {
+  "objections": {
     "supertitle": "The routine of social media managers, transformed.",
     "title": "Common Questions, Cleared Up.",
     "description": "We know the hurdles social media managers face. Here’s how ViralBe.ai is built to overcome them.",
     "o1": {
-      "question": "I already create content, I don't need a tool.",
+      "question": "“I already create content, I don't need a tool.”",
       "answer": "ViralBe isn't just for creating—it's for creating with intelligence. We replace guesswork with data so your content performs better, justifying your value to clients."
     },
     "o2": {
-      "question": "I don't have time to learn another tool.",
+      "question": "“I don't have time to learn another tool.”",
       "answer": "ViralBe is designed to save you time, not consume it. Automate hours of weekly research and get to the creative part faster. The onboarding takes less than 5 minutes."
     },
     "o3": {
-      "question": "Each client is different.",
+      "question": "“Each client is different.”",
       "answer": "Exactly. Our AI doesn't just copy-paste. It analyzes viral patterns and generates personalized scripts for any niche, ensuring your content is relevant and unique."
     },
     "o4": {
-      "question": "AI tools promise a lot but don't deliver.",
+      "question": "“AI tools promise a lot but don't deliver.”",
       "answer": "We agree. That's why ViralBe.ai is built on real performance data, not just generic suggestions. It analyzes what has already gone viral to generate what will."
     },
     "o5": {
-      "question": "My clients want results, not just views.",
+      "question": "“My clients want results, not just views.”",
       "answer": "Viral views are the gateway to results. Our scripts are based on content that drives high engagement, which translates into more leads, brand recognition, and sales for your clients."
     },
     "o6": {
-      "question": "I already use other AI tools.",
+      "question": "“I already use other AI tools.”",
       "answer": "Tools like ChatGPT are generalists. ViralBe.ai is a specialist, built for the social media manager's workflow. It’s your strategic partner for viral content, not just a text generator."
     },
     "cta": {
