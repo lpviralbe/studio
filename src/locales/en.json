@@ -9,12 +9,12 @@
   },
   "hero": {
     "title": "Create viral videos in minutes without wasting hours on trend research.",
-    "description": "ViralBe.ai finds the world's most viral videos and generates ready-to-use scripts, customized for your niche."
+    "description": "Finds the world's most viral videos and generates ready-to-use scripts, customized for your niche."
   },
   "nicheSearch": {
     "button": "try for free now"
   },
-  "objections": {
+  "problemSolution": {
     "supertitle": "The social media manager's routine, transformed.",
     "title": "The questions every social media manager has—and the answers you need.",
     "description": "We know the bottlenecks social media managers face. Here’s how ViralBe.ai is built to solve them.",
@@ -103,7 +103,7 @@
       "priceNote": "billed monthly"
     }
   },
-  "problemSolution": {
+  "objections": {
     "title": "Creating content for clients has become a war against time.",
     "description": "You know the routine... Opening TikTok for ideas. Spending hours watching trends. Trying to copy a style—only for the video to flop. Creating content is now a battle against tight deadlines, demanding clients, and ever-changing algorithms.",
     "solutionTitle": "With ViralBe.ai, you save time and create videos with a real chance to go big.",
