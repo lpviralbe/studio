@@ -30,10 +30,10 @@ function HomePageContent() {
       <main className="flex-1">
         <Hero />
         <HowItWorks />
+        <Objections />
         <ProblemSolution />
         <Testimonials />
         <Pricing />
-        <Objections />
         <Faq />
       </main>
 
