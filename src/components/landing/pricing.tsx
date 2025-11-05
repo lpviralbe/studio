@@ -5,6 +5,10 @@ import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
+import { SurveyForm } from "./survey-form";
+import { Button } from "../ui/button";
 
 interface PricingPlan {
   name: string;
@@ -16,10 +20,13 @@ interface PricingPlan {
   href: string;
   isPopular: boolean;
   priceNote: string;
+  isFree?: boolean;
 }
 
 export function Pricing() {
   const { t } = useI18n();
+  const [open, setOpen] = useState(false);
+
 
   const plans: PricingPlan[] = [
     {
@@ -33,9 +40,10 @@ export function Pricing() {
         t('pricing.free.feature3'),
       ],
       buttonText: t('pricing.free.button'),
-      href: "https://viralbeai.vercel.app/",
+      href: "#",
       isPopular: false,
       priceNote: t('pricing.free.priceNote'),
+      isFree: true,
     },
     {
       name: t('pricing.pro.name'),
@@ -65,69 +73,90 @@ export function Pricing() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        {plans.map((plan, index) => (
-          <div
-            key={index}
-            className={cn(
-              `rounded-2xl border p-6 text-center lg:flex lg:flex-col lg:justify-center relative bg-card`,
-              plan.isPopular ? "border-primary border-2 shadow-primary/20 shadow-2xl" : "border-border",
-              "flex flex-col",
-              "transition-all hover:-translate-y-2",
-               plan.isPopular ? "lg:scale-1.05" : "scale-1.0"
-            )}
-          >
-            <div className="flex-1 flex flex-col pt-6">
-              <p className="text-xl font-semibold text-foreground font-headline">
-                {plan.name}
-              </p>
-              <div className="mt-4 flex items-baseline justify-center gap-x-2">
-                <span className="text-5xl font-bold tracking-tight text-foreground">
-                  ${plan.price}
-                </span>
-                
-                  <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">
-                    / {plan.period}
-                  </span>
-                
-              </div>
-
-              <p className="text-xs leading-5 text-muted-foreground">
-                {plan.priceNote}
-              </p>
-
-              <ul className="mt-8 gap-3 flex flex-col">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 justify-center">
-                    <Check className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
-                    <span className="text-left text-muted-foreground">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="mt-auto pt-8">
-                <Link
-                    href={plan.href}
-                    target="_blank"
-                    className={cn(
-                        buttonVariants({
-                        variant: plan.isPopular ? "default" : "outline",
-                        }),
-                        "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
-                        "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
-                         plan.isPopular ? "hover:bg-primary/90" : "hover:bg-accent hover:text-accent-foreground"
-                    )}
-                    >
-                    {plan.buttonText}
-                </Link>
-                <p className="mt-6 text-xs leading-5 text-muted-foreground">
-                    {plan.description}
+      <Dialog open={open} onOpenChange={setOpen}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {plans.map((plan, index) => (
+            <div
+              key={index}
+              className={cn(
+                `rounded-2xl border p-6 text-center lg:flex lg:flex-col lg:justify-center relative bg-card`,
+                plan.isPopular ? "border-primary border-2 shadow-primary/20 shadow-2xl" : "border-border",
+                "flex flex-col",
+                "transition-all hover:-translate-y-2",
+                 plan.isPopular ? "lg:scale-1.05" : "scale-1.0"
+              )}
+            >
+              <div className="flex-1 flex flex-col pt-6">
+                <p className="text-xl font-semibold text-foreground font-headline">
+                  {plan.name}
                 </p>
+                <div className="mt-4 flex items-baseline justify-center gap-x-2">
+                  <span className="text-5xl font-bold tracking-tight text-foreground">
+                    ${plan.price}
+                  </span>
+                  
+                    <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">
+                      / {plan.period}
+                    </span>
+                  
+                </div>
+
+                <p className="text-xs leading-5 text-muted-foreground">
+                  {plan.priceNote}
+                </p>
+
+                <ul className="mt-8 gap-3 flex flex-col">
+                  {plan.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-3 justify-center">
+                      <Check className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                      <span className="text-left text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <div className="mt-auto pt-8">
+                  {plan.isFree ? (
+                     <DialogTrigger asChild>
+                      <Button
+                        variant={plan.isPopular ? "default" : "outline"}
+                        className={cn(
+                          "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
+                          "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
+                          plan.isPopular ? "hover:bg-primary/90" : "hover:bg-accent hover:text-accent-foreground"
+                        )}
+                      >
+                          {plan.buttonText}
+                      </Button>
+                    </DialogTrigger>
+                  ) : (
+                     <Link
+                      href={plan.href}
+                      target="_blank"
+                      className={cn(
+                          buttonVariants({
+                          variant: plan.isPopular ? "default" : "outline",
+                          }),
+                          "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
+                          "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2",
+                           plan.isPopular ? "hover:bg-primary/90" : "hover:bg-accent hover:text-accent-foreground"
+                      )}
+                      >
+                      {plan.buttonText}
+                    </Link>
+                  )}
+
+                  <p className="mt-6 text-xs leading-5 text-muted-foreground">
+                      {plan.description}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+        <DialogContent className="sm:max-w-[600px] p-0">
+          <SurveyForm onFinished={() => setOpen(false)} />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
