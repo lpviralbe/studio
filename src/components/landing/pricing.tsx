@@ -47,7 +47,6 @@ export function Pricing() {
         t('pricing.pro.feature2'),
         t('pricing.pro.feature3'),
         t('pricing.pro.feature4'),
-        t('pricing.pro.feature5'),
       ],
       buttonText: t('pricing.pro.button'),
       href: "https://buy.stripe.com/00w00cguCeEofXO4Pm7EQ01",
