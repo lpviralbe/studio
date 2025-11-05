@@ -7,17 +7,17 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Crea videos virales en minutos, sin perder horas buscando tendencias.",
+    "title": "Crea videos virales en minutos — sin perder horas buscando tendencias.",
     "description": "ViralBe.ai encuentra los videos más virales del mundo y genera guiones listos para usar, personalizados para tu nicho."
   },
   "nicheSearch": {
     "button": "Prueba gratis — comienza en 2 minutos"
   },
   "problemSolution": {
-    "title": "Crear contenido se ha convertido en una guerra contra el tiempo y la creatividad.",
-    "description": "Ya sabes cómo es... Abrir TikTok en busca de ideas. Pasar horas viendo tendencias. Intentar copiar un estilo y que el video fracase. Crear contenido ahora es una batalla contra plazos ajustados, clientes exigentes y algoritmos que cambian constantemente.",
+    "title": "Crear contenido para clientes se ha convertido en una guerra contra el tiempo.",
+    "description": "Ya conoces la rutina: abrir TikTok para buscar ideas, pasar horas viendo lo que está de moda, adaptar para cada cliente y, al final, que el video fracase. La presión por resultados es alta, pero las herramientas adecuadas son escasas.",
     "solutionTitle": "Con ViralBe.ai, ahorras tiempo y creas videos con una oportunidad real de triunfar.",
-    "solutionDescription": "La IA analiza los videos más virales del mundo, entiende su formato y entrega guiones listos y personalizados, inspirados en lo que realmente funciona.",
+    "solutionDescription": "La IA analiza los videos más virales del mundo, entiende su formato y te entrega guiones listos, personalizados e inspirados en lo que realmente funciona.",
     "feature1": {
       "title": "Descubre videos virales en TikTok, Reels y YouTube Shorts."
     },
@@ -28,49 +28,49 @@
       "title": "Ahorra horas de investigación y lluvia de ideas."
     },
     "feature4": {
-      "title": "Aumenta la interacción y el alcance con contenido probado."
+      "title": "Aumenta el engagement y el alcance con contenido validado."
     },
     "feature5": {
       "title": "Ideal para Social Media Managers, creadores y agencias."
     },
     "feature6": {
-      "title": "Únete a una comunidad de gestores de redes sociales."
+      "title": "Escala el número de clientes que atiendes con calidad."
     },
-    "tagline": "👉 Deja de adivinar. Empieza a crear lo que da resultados."
+    "tagline": "👉 Deja de adivinar. Comienza a crear lo que da resultados."
   },
   "howItWorks": {
     "title": "Cómo usar en 3 pasos",
     "description": "El proceso es tan simple que parece magia. Convierte la inspiración en contenido viral en minutos.",
     "step1": {
-      "title": "Escanea Tu Nicho",
-      "objection": "“No sé qué está en tendencia”",
-      "answer": "La IA encuentra los videos virales por ti.",
-      "description": "Nuestra IA ya ha escaneado las plataformas y ha encontrado los videos con mayor potencial viral para tu nicho."
+      "title": "Explora tu nicho",
+      "objection": "“No sé qué está en tendencia para mi cliente.”",
+      "answer": "La IA encuentra los virales por ti.",
+      "description": "Nuestra IA ya ha explorado las plataformas y ha encontrado los videos con mayor potencial de viralización para cualquier nicho."
     },
     "step2": {
-      "title": "Analiza Patrones",
+      "title": "Analiza los patrones",
       "objection": "“¿Pero cómo sé que funcionará?”",
       "answer": "Analizamos lo que ya ha funcionado.",
-      "description": "La IA analiza la estructura, el gancho, la duración y el CTA de videos exitosos para replicar su éxito."
+      "description": "La IA analiza la estructura, el gancho, la duración y el CTA de los videos que ya tuvieron éxito para replicar ese éxito."
     },
     "step3": {
-      "title": "Recibe Tu Guion",
+      "title": "Recibe tu Guion",
       "objection": "“¿Necesito crear el guion desde cero?”",
       "answer": "No. La IA crea un guion nuevo para ti.",
-      "description": "Recibe un guion listo y personalizado para grabar, con sugerencias de subtítulos y hashtags."
+      "description": "Recibe un guion listo y personalizado para el cliente, con subtítulos y sugerencias de hashtags."
     }
   },
   "testimonials": {
-    "title": "Cuentas que pasaron de cero a resultados increíbles",
-    "description": "No te fíes solo de nuestra palabra. Ve lo que dicen los social media managers sobre ViralBe.AI.",
-    "t1": "Manejo 5 clientes y estaba ahogada en investigación. ViralBe salvó mi mes. Entregué un video que alcanzó 50k vistas en 2 días para uno de ellos.",
-    "t2": "Nuestra agencia duplicó el número de reels entregados por semana. El costo de la herramienta se paga solo con el primer cliente.",
-    "t3": "No soy el más creativo, but necesito entregar resultados. ViralBe es el socio perfecto. A mis clientes les encanta la nueva línea de contenido.",
-    "t4": "Mi mayor dificultad era encontrar tendencias que se ajustaran a diferentes nichos. Ahora lo hago en minutos. Es absurdamente práctico."
+    "title": "La rutina de los social media managers, transformada.",
+    "description": "No te fíes solo de nuestra palabra. Ve lo que profesionales como tú están diciendo sobre ViralBe.AI.",
+    "t1": "Manejo 5 clientes y estaba ahogada en investigación. ViralBe salvó mi mes. Entregué un video que alcanzó 50k vistas en 2 días para uno de ellos y justifiqué mi valor.",
+    "t2": "Nuestra agencia duplicó el número de reels entregados por semana. El costo de la herramienta se paga solo con el primer cliente que logras atender de más.",
+    "t3": "No soy el más creativo, pero necesito entregar resultados. ViralBe es el socio perfecto para escalar la operación. A mis clientes les encanta la nueva línea de contenido.",
+    "t4": "Mi mayor dificultad era encontrar tendencias que encajaran en diferentes nichos. Ahora lo hago en minutos y puedo atender a más clientes con el mismo equipo."
   },
   "pricing": {
-    "title": "Elige tu plan y empieza a hacerte viral ahora.",
-    "description": "Piensa en el ROI: las horas que ahorras se traducen en más clientes que puedes atender. Aquí, la automatización es una inversión directa en tu negocio.",
+    "title": "Elige el plan que escala con tu negocio.",
+    "description": "Piensa en el ROI: las horas que ahorras se convierten en más clientes que puedes atender. Aquí, la automatización es una inversión directa en tu facturación.",
     "monthly": "mes",
     "popular": "Popular",
     "free": {
@@ -84,7 +84,7 @@
     },
     "pro": {
       "name": "Pro",
-      "description": "Para creadores de contenido que se toman en serio el crecimiento.",
+      "description": "Para social media managers y agencias que se toman en serio el crecimiento.",
       "feature1": "Generaciones de guiones ilimitadas",
       "feature2": "Análisis de videos ilimitados",
       "feature3": "Guiones para videos largos",
@@ -95,50 +95,50 @@
     }
   },
   "objections": {
-    "title": "Preguntas Comunes, Aclaradas.",
-    "description": "Conocemos los obstáculos que enfrentan los social media managers. Así es como ViralBe.ai está diseñado para superarlos.",
+    "title": "Las dudas que todo social media manager tiene — y las respuestas que necesitas.",
+    "description": "Conocemos los cuellos de botella de un social media manager. Mira cómo ViralBe.ai fue construido para resolver cada uno de ellos.",
     "o1": {
-      "question": "Ya creo contenido, no necesito una herramienta.",
-      "answer": "ViralBe no es solo para crear, es para crear con inteligencia. Reemplazamos las conjeturas con datos para que tu contenido rinda más, justificando tu valor ante los clientes."
+      "question": "“Ya hago contenido, no necesito una herramienta.”",
+      "answer": "ViralBe no es para crear más, es para crear mejor. Cambiamos la 'suposición' por datos para que tu contenido rinda más y justifiques el valor a tu cliente."
     },
     "o2": {
-      "question": "No tengo tiempo para aprender otra herramienta.",
-      "answer": "ViralBe está diseñado para ahorrarte tiempo, no para consumirlo. Automatiza horas de investigación semanal y llega a la parte creativa más rápido. El onboarding toma menos de 5 minutos."
+      "question": "“No tengo tiempo para aprender a usarla.”",
+      "answer": "ViralBe fue hecho para devolverte tiempo, no para quitártelo. Automatiza horas de investigación semanal y ve directo a la parte creativa. El onboarding toma menos de 5 minutos."
     },
     "o3": {
-      "question": "Cada cliente es diferente.",
-      "answer": "Exacto. Nuestra IA no solo copia y pega. Analiza patrones virales y genera guiones personalizados para cualquier nicho, asegurando que tu contenido sea relevante y único."
+      "question": "“Cada cliente mío es diferente.”",
+      "answer": "Exacto. Nuestra IA no solo copia. Analiza los patrones virales y genera guiones personalizados para cualquier nicho, garantizando contenido relevante y único."
     },
     "o4": {
-      "question": "Las herramientas de IA prometen mucho pero no cumplen.",
-      "answer": "Estamos de acuerdo. Por eso ViralBe.ai se basa en datos de rendimiento reales, no solo en sugerencias genéricas. Analiza lo que ya se ha vuelto viral para generar lo que lo hará."
+      "question": "“Las herramientas de IA prometen y no cumplen.”",
+      "answer": "Estamos de acuerdo. Por eso, ViralBe.ai se basa en datos reales de rendimiento, no en sugerencias genéricas. Analiza lo que ya se ha viralizado para generar lo que se viralizará."
     },
     "o5": {
-      "question": "Mis clientes quieren resultados, no solo vistas.",
-      "answer": "Las vistas virales son la puerta de entrada a los resultados. Nuestros guiones se basan en contenido que genera alta interacción, lo que se traduce en más leads, reconocimiento de marca y ventas para tus clientes."
+      "question": "“Mis clientes quieren resultados, no vistas.”",
+      "answer": "Las vistas virales son la puerta de entrada a los resultados. Nuestros guiones se basan en contenidos que generan alto engagement, que se convierten en más leads, awareness y ventas para tus clientes."
     },
     "o6": {
-      "question": "Ya uso otras herramientas de IA.",
-      "answer": "Herramientas como ChatGPT son generalistas. ViralBe.ai es un especialista, diseñado para el flujo de trabajo del social media manager. Es tu socio estratégico para contenido viral, no solo un generador de texto."
+      "question": "“Yo ya uso ChatGPT/CapCut.”",
+      "answer": "Herramientas como ChatGPT son generalistas. ViralBe.ai es especialista, hecho para el flujo de trabajo del social media. Es tu socio estratégico para contenido viral, no un generador de texto."
     },
     "cta": {
-      "title": "Transforma Tu Flujo de Trabajo de Redes Sociales. Deja de Crear a Ciegas—Crea con Datos.",
+      "title": "Transforma tu rutina de Social Media. Deja de crear a oscuras — crea con datos.",
       "button": "Probar gratis ahora"
     }
   },
   "faq": {
-    "title": "¿Aún Tienes Dudas?",
-    "description": "Todo lo que necesitas saber antes de empezar a hacerte viral.",
-    "q1": "¿El contenido generado por IA es auténtico?",
-    "a1": "La IA hace la investigación y la estructura; tú agregas la personalidad. El resultado: escala con autenticidad.",
+    "title": "¿Aún tienes alguna duda?",
+    "description": "Todo lo que necesitas saber antes de empezar a viralizar para tus clientes.",
+    "q1": "Pero la IA no crea contenido humano.",
+    "a1": "Correcto. La IA aquí hace la investigación y la estructura; tú agregas la personalidad. El resultado: escala con autenticidad.",
     "q2": "¿Y si el algoritmo cambia?",
     "a2": "ViralBe.ai actualiza las tendencias en tiempo real y señala patrones que se repiten más allá de los cambios momentáneos.",
-    "q3": "¿Es caro?",
-    "a3": "Piensa en el valor de tu tiempo. Horas de investigación vs. la cantidad de clientes que dejas de atender. La automatización aquí es ROI.",
+    "q3": "Parece caro.",
+    "a3": "Piensa en cuánto vale el tiempo perdido: horas de investigación vs. la cantidad de clientes que dejas de atender. La automatización aquí es ROI.",
     "q4": "¿Cómo funciona la prueba gratuita?",
-    "a4": "Tienes derecho a 3 generaciones de guiones gratis, sin necesidad de tarjeta de crédito. Es la mejor manera de probar y ver el poder de la herramienta en práctica.",
-    "q5": "¿Hay soporte y tutoriales?",
-    "a5": "Sí. Ofrecemos una base de conocimientos con tutoriales y ejemplos, y los suscriptores del plan Pro tienen soporte prioritario vía chat y correo electrónico."
+    "a4": "Tienes derecho a 3 generaciones de guiones totalmente gratis, sin necesidad de registrar una tarjeta de crédito. Es la mejor manera de probar y ver el poder de la herramienta en práctica.",
+    "q5": "¿Esto sirve para mi agencia?",
+    "a5": "Sí. El plan Pro es ideal para agencias y freelancers, permitiendo análisis y generaciones ilimitadas para múltiples clientes, optimizando el flujo de trabajo de tu equipo."
   },
   "footer": {
     "copy": "© 2025 ViralBe.AI. Todos los derechos reservados.",
