@@ -93,7 +93,6 @@
     "title": "Choose your plan and start going viral now.",
     "description": "Think of the ROI: the hours you save translate into more clients you can serve. Here, automation is a direct investment in your business.",
     "monthly": "month",
-    "popular": "Popular",
     "free": {
       "name": "Free",
       "description": "For those just starting to explore the power of AI.",
@@ -137,5 +136,9 @@
     "popup_title": "🧩 One last quick thing...",
     "popup_description": "I promise it's fast—just to understand how Viralbe can help you create content that truly goes viral and delivers results for your clients.",
     "popup_button": "Open Survey"
+  },
+  "telegram": {
+    "title": "Join our community!",
+    "description": "Get tips, support, and exclusive content on our Telegram group."
   }
 }

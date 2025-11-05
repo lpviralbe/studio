@@ -2,12 +2,11 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import en from '@/locales/en.json';
 import es from '@/locales/es.json';
-import pt from '@/locales/pt.json';
 
-type Locale = 'en' | 'es' | 'pt';
+type Locale = 'en' | 'es';
 type Translations = typeof en;
 
-const translations: Record<Locale, Translations> = { en, es, pt };
+const translations: Record<Locale, Translations> = { en, es };
 
 interface I18nContextType {
   language: Locale;

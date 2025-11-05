@@ -93,7 +93,6 @@
     "title": "Elige el plan que escala con tu negocio.",
     "description": "Piensa en el ROI: las horas que ahorras se convierten en más clientes que puedes atender. Aquí, la automatización es una inversión directa en tu facturación.",
     "monthly": "mes",
-    "popular": "Popular",
     "free": {
       "name": "Gratis",
       "description": "Para quienes están comenzando a explorar el poder de la IA.",
@@ -137,5 +136,9 @@
     "popup_title": "🧩 Una última cosa rapidito...",
     "popup_description": "Prometo que es rápido, solo para entender cómo Viralbe puede ayudarte a crear contenido que realmente se vuelva viral y entregue resultados a tus clientes.",
     "popup_button": "Abrir Encuesta"
+  },
+  "telegram": {
+    "title": "¡Únete a nuestra comunidad!",
+    "description": "Obtén consejos, soporte y contenido exclusivo en nuestro grupo de Telegram."
   }
 }
