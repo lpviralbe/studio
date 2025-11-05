@@ -9,6 +9,7 @@ import { ProblemSolution } from "@/components/landing/problem-solution";
 import { Testimonials } from "@/components/landing/testimonials";
 import { NavBar } from "@/components/ui/navbar";
 import { I18nProvider, useI18n } from "@/lib/i18n";
+import { Objections } from "@/components/landing/objections";
 
 
 const navItems = [
@@ -32,6 +33,7 @@ function HomePageContent() {
         <HowItWorks />
         <Testimonials />
         <Pricing />
+        <Objections />
         <Faq />
       </main>
 

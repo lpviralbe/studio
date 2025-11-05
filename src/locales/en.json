@@ -7,28 +7,28 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Create viral videos in minutes without wasting hours searching for trends.",
-    "description": "ViralBe.ai finds the most viral videos in the world and generates ready-to-use scripts, customized for your niche."
+    "title": "Create viral videos in minutes — without wasting hours on trend research.",
+    "description": "ViralBe.ai finds the world's most viral videos and generates ready-to-use scripts, customized for your niche."
   },
   "nicheSearch": {
     "button": "Start for free — get started in 2 minutes"
   },
   "problemSolution": {
     "title": "Creating content has become a war against time and creativity.",
-    "description": "You know how it is... Opening TikTok to look for ideas. Spending hours watching what's trending. Trying to copy the style—and the video flops.",
-    "solutionTitle": "With ViralBe.ai, you save time and create videos with a real chance to explode.",
-    "solutionDescription": "The AI analyzes the most viral videos in the world, understands the format, and delivers ready-to-use, personalized scripts inspired by what really works.",
+    "description": "You know how it is... Opening TikTok for ideas. Spending hours watching trends. Trying to copy a style—only for the video to flop. Creating content is now a battle against tight deadlines, demanding clients, and ever-changing algorithms.",
+    "solutionTitle": "With ViralBe.ai, you save time and create videos with a real chance to go big.",
+    "solutionDescription": "The AI analyzes the world's most viral videos, understands their format, and delivers ready-made, personalized scripts inspired by what actually works.",
     "feature1": {
       "title": "Discover viral videos on TikTok, Reels, and YouTube Shorts."
     },
     "feature2": {
-      "title": "Receive automatic scripts based on the style and structure of the videos."
+      "title": "Get automatic scripts based on video style and structure."
     },
     "feature3": {
       "title": "Save hours of research and brainstorming."
     },
     "feature4": {
-      "title": "Increase engagement and reach with validated content."
+      "title": "Increase engagement and reach with proven content."
     },
     "feature5": {
       "title": "Ideal for Social Media Managers, Creators, and Agencies."
@@ -42,22 +42,22 @@
     "title": "How to use in 3 steps",
     "description": "The process is so simple it feels like magic. Transform inspiration into viral content in minutes.",
     "step1": {
-      "title": "Scan your niche",
+      "title": "Scan Your Niche",
       "objection": "“I don't know what's trending”",
-      "answer": "The AI finds the viral videos for you.",
-      "description": "Our AI has already scanned the platforms and found the videos with the highest viral potential for you."
+      "answer": "The AI finds viral videos for you.",
+      "description": "Our AI has already scanned the platforms and found the videos with the highest viral potential for your niche."
     },
     "step2": {
-      "title": "Analyze the patterns",
+      "title": "Analyze Patterns",
       "objection": "“But how do I know it will work?”",
       "answer": "We analyze what has already worked.",
-      "description": "The AI analyzes the structure, hook, duration, and CTA of videos that have already succeeded to replicate the success."
+      "description": "The AI analyzes the structure, hook, duration, and CTA of successful videos to replicate their success."
     },
     "step3": {
-      "title": "Receive your Script",
+      "title": "Receive Your Script",
       "objection": "“Do I need to create the script from scratch?”",
       "answer": "No. The AI creates a new script for you.",
-      "description": "Receive a ready and personalized script for you to film, with captions and hashtag suggestions."
+      "description": "Get a ready-to-use, personalized script to film, complete with caption and hashtag suggestions."
     }
   },
   "testimonials": {
@@ -70,7 +70,7 @@
   },
   "pricing": {
     "title": "Choose your plan and start going viral now.",
-    "description": "Think about the value of lost time: hours of research vs. the number of clients you fail to serve. Automation here is ROI.",
+    "description": "Think of the ROI: the hours you save translate into more clients you can serve. Here, automation is a direct investment in your business.",
     "monthly": "month",
     "popular": "Popular",
     "free": {
@@ -94,19 +94,51 @@
       "priceNote": "billed monthly"
     }
   },
+  "objections": {
+    "title": "Common Questions, Cleared Up.",
+    "description": "We know the hurdles social media managers face. Here’s how ViralBe.ai is built to overcome them.",
+    "o1": {
+      "question": "I already create content, I don't need a tool.",
+      "answer": "ViralBe isn't just for creating—it's for creating with intelligence. We replace guesswork with data so your content performs better, justifying your value to clients."
+    },
+    "o2": {
+      "question": "I don't have time to learn another tool.",
+      "answer": "ViralBe is designed to save you time, not consume it. Automate hours of weekly research and get to the creative part faster. The onboarding takes less than 5 minutes."
+    },
+    "o3": {
+      "question": "Each client is different.",
+      "answer": "Exactly. Our AI doesn't just copy-paste. It analyzes viral patterns and generates personalized scripts for any niche, ensuring your content is relevant and unique."
+    },
+    "o4": {
+      "question": "AI tools promise a lot but don't deliver.",
+      "answer": "We agree. That's why ViralBe.ai is built on real performance data, not just generic suggestions. It analyzes what has already gone viral to generate what will."
+    },
+    "o5": {
+      "question": "My clients want results, not just views.",
+      "answer": "Viral views are the gateway to results. Our scripts are based on content that drives high engagement, which translates into more leads, brand recognition, and sales for your clients."
+    },
+    "o6": {
+      "question": "I already use other AI tools.",
+      "answer": "Tools like ChatGPT are generalists. ViralBe.ai is a specialist, built for the social media manager's workflow. It’s your strategic partner for viral content, not just a text generator."
+    },
+    "cta": {
+      "title": "Transform Your Social Media Workflow. Stop Creating in the Dark—Create with Data.",
+      "button": "Try for free now"
+    }
+  },
   "faq": {
-    "title": "Objections we've heard — and why they don't stick",
+    "title": "Still Have Questions?",
     "description": "Everything you need to know before you start going viral.",
-    "q1": "But AI doesn't create human content.",
-    "a1": "Right. The AI here does the research and structuring; you add the personality. The result: scale with authenticity.",
+    "q1": "Is AI-generated content authentic?",
+    "a1": "The AI does the research and structuring; you add the personality. The result is scale with authenticity.",
     "q2": "What if the algorithm changes?",
-    "a2": "ViralBe.ai updates trends in real time and points out patterns that repeat beyond momentary changes.",
-    "q3": "It seems expensive.",
-    "a3": "Think about the value of lost time: hours of research vs. the number of clients you fail to serve. Automation here is ROI.",
+    "a2": "ViralBe.ai updates with trends in real-time and identifies patterns that persist beyond temporary changes.",
+    "q3": "Is it expensive?",
+    "a3": "Consider the value of your time. Hours spent on research vs. the number of clients you can serve. Automation here is ROI.",
     "q4": "How does the free trial work?",
-    "a4": "You get 3 free script generations, no credit card required. It's the best way for you to test and see the power of the tool in practice.",
+    "a4": "You get 3 free script generations, no credit card required. It's the best way to test and see the tool's power in action.",
     "q5": "Is there support and tutorials?",
-    "a5": "Yes. We offer a knowledge base with tutorials and examples, and Pro plan subscribers get priority support via chat and email for any questions."
+    "a5": "Yes. We offer a knowledge base with tutorials and examples, and Pro plan subscribers get priority support via chat and email."
   },
   "footer": {
     "copy": "© 2025 ViralBe.AI. All rights reserved.",
