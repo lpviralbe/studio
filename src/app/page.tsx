@@ -29,8 +29,8 @@ function HomePageContent() {
 
       <main className="flex-1">
         <Hero />
-        <HowItWorks />
         <Objections />
+        <HowItWorks />
         <ProblemSolution />
         <Testimonials />
         <Pricing />

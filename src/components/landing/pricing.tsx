@@ -2,7 +2,7 @@
 
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Check, Star } from "lucide-react";
+import { Check } from "lucide-react";
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 
@@ -46,7 +46,6 @@ export function Pricing() {
         t('pricing.pro.feature1'),
         t('pricing.pro.feature2'),
         t('pricing.pro.feature3'),
-        t('pricing.pro.feature4'),
       ],
       buttonText: t('pricing.pro.button'),
       href: "https://buy.stripe.com/00w00cguCeEofXO4Pm7EQ01",
@@ -58,15 +57,15 @@ export function Pricing() {
   return (
     <div id="pricing" className="container py-16 md:py-24">
       <div className="text-center space-y-4 mb-12 animate-fade-in-up">
-        <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight sm:text-5xl font-headline">
           {t('pricing.title')}
         </h2>
-        <p className="text-muted-foreground text-lg whitespace-pre-line">
+        <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
           {t('pricing.description')}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {plans.map((plan, index) => (
           <div
             key={index}
@@ -75,7 +74,7 @@ export function Pricing() {
               plan.isPopular ? "border-primary border-2 shadow-primary/20 shadow-2xl" : "border-border",
               "flex flex-col",
               "transition-all hover:-translate-y-2",
-               plan.isPopular ? "md:scale-1.05" : "scale-1.0"
+               plan.isPopular ? "lg:scale-1.05" : "scale-1.0"
             )}
           >
             <div className="flex-1 flex flex-col pt-6">
@@ -84,7 +83,7 @@ export function Pricing() {
               </p>
               <div className="mt-4 flex items-baseline justify-center gap-x-2">
                 <span className="text-5xl font-bold tracking-tight text-foreground">
-                  R${plan.price}
+                  ${plan.price}
                 </span>
                 
                   <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">
