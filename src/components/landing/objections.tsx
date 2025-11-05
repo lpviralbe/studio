@@ -45,16 +45,16 @@ export function Objections() {
   };
 
   return (
-    <section id="objections" className="py-16 md:py-20 bg-background">
+    <section id="objections" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto animate-fade-in-up">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <p className="text-primary font-semibold mb-2">{t('objections.supertitle')}</p>
           <h2 className="text-3xl md:text-4xl font-bold font-headline">
             {t('objections.title')}
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
             {t('objections.description')}
           </p>
+          <p className="text-primary font-semibold mt-4">{t('objections.supertitle')}</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
