@@ -38,30 +38,6 @@
     },
     "tagline": "👉 Deja de adivinar. Empieza a crear lo que da resultados."
   },
-  "socialProof": {
-    "title": {
-      "start": "Más de",
-      "highlight": "5,000 influencers",
-      "end": "ganando mucho después de hacerse virales"
-    },
-    "description": "ViralBe.AI no solo aumenta tus seguidores, multiplica tus ingresos. Ve el impacto real.",
-    "users": "Usuarios",
-    "ideas": "Ideas Generadas",
-    "satisfaction": "Satisfacción"
-  },
-  "revenueChart": {
-    "title": "Crecimiento de Ingresos",
-    "description": "Ingresos promedio de un creador después de 6 meses usando ViralBe.AI",
-    "label": "Ingresos"
-  },
-  "months": {
-    "january": "Enero",
-    "february": "Febrero",
-    "march": "Marzo",
-    "april": "Abril",
-    "may": "Mayo",
-    "june": "Junio"
-  },
   "howItWorks": {
     "title": "Cómo usar en 3 pasos",
     "description": "El proceso es tan simple que parece magia. Convierte la inspiración en contenido viral en minutos.",

@@ -7,7 +7,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Create viral videos in minutes — without wasting hours searching for trends.",
+    "title": "Create viral videos in minutes without wasting hours searching for trends.",
     "description": "ViralBe.ai finds the most viral videos in the world and generates ready-to-use scripts, customized for your niche."
   },
   "nicheSearch": {
@@ -37,30 +37,6 @@
       "title": "Join a community of social media managers."
     },
     "tagline": "👉 Stop guessing. Start creating what gets results."
-  },
-  "socialProof": {
-    "title": {
-      "start": "More than",
-      "highlight": "5,000 influencers",
-      "end": "earning big after going viral"
-    },
-    "description": "ViralBe.AI not only increases your followers, it multiplies your revenue. See the real impact.",
-    "users": "Users",
-    "ideas": "Ideas Generated",
-    "satisfaction": "Satisfaction"
-  },
-  "revenueChart": {
-    "title": "Revenue Growth",
-    "description": "Average revenue of a creator after 6 months using ViralBe.AI",
-    "label": "Revenue"
-  },
-  "months": {
-    "january": "January",
-    "february": "February",
-    "march": "March",
-    "april": "April",
-    "may": "May",
-    "june": "June"
   },
   "howItWorks": {
     "title": "How to use in 3 steps",

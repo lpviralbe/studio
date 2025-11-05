@@ -6,7 +6,6 @@ import { Hero } from "@/components/landing/hero";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Pricing } from "@/components/landing/pricing";
 import { ProblemSolution } from "@/components/landing/problem-solution";
-import { SocialProof } from "@/components/landing/social-proof";
 import { Testimonials } from "@/components/landing/testimonials";
 import { NavBar } from "@/components/ui/navbar";
 import { I18nProvider, useI18n } from "@/lib/i18n";
@@ -31,7 +30,6 @@ function HomePageContent() {
         <Hero />
         <ProblemSolution />
         <HowItWorks />
-        <SocialProof />
         <Testimonials />
         <Pricing />
         <Faq />
