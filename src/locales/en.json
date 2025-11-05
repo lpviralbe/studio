@@ -96,6 +96,7 @@
     }
   },
   "objections": {
+    "supertitle": "The routine of social media managers, transformed.",
     "title": "Common Questions, Cleared Up.",
     "description": "We know the hurdles social media managers face. Here’s how ViralBe.ai is built to overcome them.",
     "o1": {
@@ -123,7 +124,7 @@
       "answer": "Tools like ChatGPT are generalists. ViralBe.ai is a specialist, built for the social media manager's workflow. It’s your strategic partner for viral content, not just a text generator."
     },
     "cta": {
-      "title": "Transform Your Social Media Workflow. Stop Creating in the Dark—Create with Data.",
+      "title": "Your creativity, now powered by data. Transform your work and deliver the results your clients expect.",
       "button": "Try for free now"
     }
   },

@@ -96,7 +96,8 @@
     }
   },
   "objections": {
-    "title": "Las dudas que todo social media manager tiene — y las respuestas que necesitas.",
+    "supertitle": "La rutina de los social media managers, transformada.",
+    "title": "Las dudas que todo social media manager tiene y las respuestas que necesitas.",
     "description": "Conocemos los cuellos de botella de un social media manager. Mira cómo ViralBe.ai fue construido para resolver cada uno de ellos.",
     "o1": {
       "question": "“Ya hago contenido, no necesito una herramienta.”",
@@ -123,7 +124,7 @@
       "answer": "Herramientas como ChatGPT son generalistas. ViralBe.ai es especialista, hecho para el flujo de trabajo del social media. Es tu socio estratégico para contenido viral, no un generador de texto."
     },
     "cta": {
-      "title": "Transforma tu rutina de Social Media. Deja de crear a oscuras — crea con datos.",
+      "title": "Tu creatividad, ahora con el poder de los datos. Transforma tu trabajo y entrega los resultados que tus clientes esperan.",
       "button": "Probar gratis ahora"
     }
   },

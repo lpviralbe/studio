@@ -96,7 +96,8 @@
     }
   },
   "objections": {
-    "title": "As dúvidas que todo social media tem — e as respostas que você precisa.",
+    "supertitle": "A rotina de social medias, transformada.",
+    "title": "As dúvidas que todo social media tem e as respostas que você precisa.",
     "description": "Sabemos quais são os gargalos de um social media. Veja como o ViralBe.ai foi construído para resolver cada um deles.",
     "o1": {
       "question": "“Já faço conteúdo, não preciso de ferramenta.”",
@@ -123,7 +124,7 @@
       "answer": "Ferramentas como o ChatGPT são generalistas. O ViralBe.ai é especialista, feito para o fluxo de trabalho do social media. É seu parceiro estratégico para conteúdo viral, não um gerador de texto."
     },
     "cta": {
-      "title": "Transforme sua rotina de Social Media. Pare de criar no escuro — crie com dados.",
+      "title": "Sua criatividade, agora com o poder dos dados. Transforme seu trabalho e entregue os resultados que seus clientes esperam.",
       "button": "Testar grátis agora"
     }
   },
