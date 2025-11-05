@@ -1,7 +1,7 @@
 'use server';
 
 /**
- * @fileOverview A flow to generate authentic user testimonials in Portuguese.
+ * @fileOverview A flow to generate authentic user testimonials.
  *
  * - generateAuthenticTestimonials - A function that generates realistic-sounding user testimonials.
  * - GenerateAuthenticTestimonialsInput - The input type for the generateAuthenticTestimonials function.
@@ -52,15 +52,15 @@ const prompt = ai.definePrompt({
   output: {
     schema: GenerateAuthenticTestimonialsOutputSchema,
   },
-  prompt: `Você é um especialista em marketing e sabe como criar depoimentos autênticos e persuasivos. Escreva {{numberOfTestimonials}} depoimentos em português (pt-BR) para o SaaS ViralBe.AI, que ajuda influencers e criadores de conteúdo a crescerem rapidamente em qualquer rede social. Os depoimentos devem ser variados por nicho ({{niche}}). Cada depoimento deve incluir:
+  prompt: `You are a marketing expert and you know how to create authentic and persuasive testimonials. Write {{numberOfTestimonials}} testimonials in English for the SaaS ViralBe.AI, which helps influencers and content creators grow quickly on any social network. The testimonials should be varied by niche ({{niche}}). Each testimonial must include:
 
-*   Um nome completo.
-*   Um handle de rede social.
-*   A rede social utilizada.
-*   Uma URL de foto de perfil.
-*   O texto do depoimento, que deve soar realista e mencionar resultados positivos obtidos com o ViralBe.AI (ex: crescimento rápido, economia de tempo, facilidade de uso).
+*   A full name.
+*   A social media handle.
+*   The social network used.
+*   A profile picture URL.
+*   The testimonial text, which should sound realistic and mention positive results achieved with ViralBe.AI (e.g., rapid growth, time savings, ease of use).
 
-Certifique-se de que os depoimentos abordem diferentes casos de sucesso e benefícios do ViralBe.AI. Formate a saída como um objeto JSON que corresponde ao GenerateAuthenticTestimonialsOutputSchema.`,
+Make sure the testimonials address different success stories and benefits of ViralBe.AI. Format the output as a JSON object that matches the GenerateAuthenticTestimonialsOutputSchema.`,
 });
 
 const generateAuthenticTestimonialsFlow = ai.defineFlow(

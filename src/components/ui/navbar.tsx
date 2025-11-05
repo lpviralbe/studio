@@ -44,13 +44,10 @@ export function NavBar({ items, className }: NavBarProps) {
                     <DropdownMenuTrigger asChild>
                         <Button variant="ghost" size="icon">
                             <Globe className="h-5 w-5" />
-                            <span className="sr-only">Selecionar idioma</span>
+                            <span className="sr-only">Select language</span>
                         </Button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
-                        <DropdownMenuItem onClick={() => setLanguage("pt")}>
-                            🇧🇷 Português (BR)
-                        </DropdownMenuItem>
                         <DropdownMenuItem onClick={() => setLanguage("en")}>
                             🇺🇸 English
                         </DropdownMenuItem>

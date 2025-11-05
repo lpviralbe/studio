@@ -18,7 +18,7 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Locale>('pt');
+  const [language, setLanguage] = useState<Locale>('en');
 
   const t = (key: string): string => {
     const keys = key.split('.');

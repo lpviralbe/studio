@@ -5,8 +5,8 @@ import { WhatsAppButton } from '@/components/whatsapp-button';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Viralize seu conteúdo sem ser criativo',
-  description: 'Ideias, roteiros e vídeos prontos gerados por IA para você crescer em qualquer rede social. Rápido, simples e sem sofrimento.',
+  title: 'Viralize your content without being creative',
+  description: 'AI-generated ideas, scripts, and ready-made videos for you to grow on any social network. Fast, simple, and painless.',
 };
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="dark">
+    <html lang="en" className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
