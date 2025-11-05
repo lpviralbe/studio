@@ -14,6 +14,31 @@
   "nicheSearch": {
     "button": "teste grátis agora"
   },
+  "objections": {
+    "title": "Criar conteúdo para clientes virou uma guerra contra o tempo.",
+    "description": "Você conhece a rotina: abrir o TikTok para garimpar ideias, passar horas vendo o que está em alta, adaptar para cada cliente e, no final, o vídeo flopar. A pressão por resultados é alta, mas as ferramentas certas são raras.",
+    "solutionTitle": "Com o ViralBe.ai, você economiza tempo e cria vídeos com chance real de explodir.",
+    "solutionDescription": "A IA analisa os vídeos mais virais do mundo, entende o formato e te entrega roteiros prontos, personalizados e inspirados no que realmente funciona.",
+    "feature1": {
+      "title": "Descubra vídeos virais no TikTok, Reels e YouTube Shorts."
+    },
+    "feature2": {
+      "title": "Receba roteiros automáticos baseados no estilo e estrutura dos vídeos."
+    },
+    "feature3": {
+      "title": "Economize horas de pesquisa e brainstorming."
+    },
+    "feature4": {
+      "title": "Aumente engajamento e alcance com conteúdo validado."
+    },
+    "feature5": {
+      "title": "Ideal para Social Medias, Criadores e Agências."
+    },
+    "feature6": {
+      "title": "Escale o número de clientes que você atende com qualidade."
+    },
+    "tagline": "👉 Pare de adivinhar. Comece a criar o que dá resultado."
+  },
   "problemSolution": {
     "supertitle": "A rotina de social medias, transformada.",
     "title": "As dúvidas que todo social media tem e as respostas que você precisa.",
@@ -81,7 +106,6 @@
     "title": "Escolha o plano que escala com seu negócio.",
     "description": "Pense no ROI: as horas que você economiza viram mais clientes que você consegue atender. Aqui, automação é investimento direto no seu faturamento.",
     "monthly": "mês",
-    "popular": "Popular",
     "free": {
       "name": "Grátis",
       "description": "Para quem está começando a explorar o poder da IA.",
@@ -101,31 +125,6 @@
       "button": "Assinar o Pro",
       "priceNote": "cobrado mensalmente"
     }
-  },
-  "objections": {
-    "title": "Criar conteúdo para clientes virou uma guerra contra o tempo.",
-    "description": "Você conhece a rotina: abrir o TikTok para garimpar ideias, passar horas vendo o que está em alta, adaptar para cada cliente e, no final, o vídeo flopar. A pressão por resultados é alta, mas as ferramentas certas são raras.",
-    "solutionTitle": "Com o ViralBe.ai, você economiza tempo e cria vídeos com chance real de explodir.",
-    "solutionDescription": "A IA analisa os vídeos mais virais do mundo, entende o formato e te entrega roteiros prontos, personalizados e inspirados no que realmente funciona.",
-    "feature1": {
-      "title": "Descubra vídeos virais no TikTok, Reels e YouTube Shorts."
-    },
-    "feature2": {
-      "title": "Receba roteiros automáticos baseados no estilo e estrutura dos vídeos."
-    },
-    "feature3": {
-      "title": "Economize horas de pesquisa e brainstorming."
-    },
-    "feature4": {
-      "title": "Aumente engajamento e alcance com conteúdo validado."
-    },
-    "feature5": {
-      "title": "Ideal para Social Medias, Criadores e Agências."
-    },
-    "feature6": {
-      "title": "Escale o número de clientes que você atende com qualidade."
-    },
-    "tagline": "👉 Pare de adivinhar. Comece a criar o que dá resultado."
   },
   "faq": {
     "title": "Ainda tem alguma dúvida?",

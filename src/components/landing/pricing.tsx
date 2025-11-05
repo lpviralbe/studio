@@ -78,14 +78,6 @@ export function Pricing() {
                plan.isPopular ? "md:scale-1.05" : "scale-1.0"
             )}
           >
-            {plan.isPopular && (
-              <div className="absolute -top-4 right-6 bg-primary py-1 px-3 rounded-full flex items-center shadow-lg">
-                <Star className="text-primary-foreground h-4 w-4 fill-current" />
-                <span className="text-primary-foreground ml-1 font-sans font-semibold text-sm">
-                  {t('pricing.popular')}
-                </span>
-              </div>
-            )}
             <div className="flex-1 flex flex-col pt-6">
               <p className="text-xl font-semibold text-foreground font-headline">
                 {plan.name}
