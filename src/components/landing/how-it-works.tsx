@@ -46,7 +46,7 @@ export function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-16 md:py-24">
+    <section id="how-it-works" className="pt-10 md:pt-12">
        <div className="text-center max-w-2xl mx-auto mb-12 animate-fade-in-up">
             <p className="mt-4 text-muted-foreground">{t('howItWorks.description')}</p>
         </div>
