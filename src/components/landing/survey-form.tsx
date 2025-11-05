@@ -11,7 +11,7 @@ export function SurveyForm({ onFinished }: SurveyFormProps) {
     const { t } = useI18n();
 
     const handleRedirect = () => {
-        window.open('https://forms.gle/6iEWxar8JnYmknkK6', '_blank');
+        window.open('https://tally.so/r/MeKEl8', '_blank');
         onFinished();
     };
 
