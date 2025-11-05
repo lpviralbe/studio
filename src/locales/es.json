@@ -19,30 +19,17 @@
     "description": "Conocemos los cuellos de botella de un social media manager. Mira cómo ViralBe.ai fue construido para resolver cada uno de ellos.",
     "solutionTitle": "Tu creatividad, ahora con el poder de los datos. Transforma tu trabajo y entrega los resultados que tus clientes esperan.",
     "solutionDescription": "La rutina de los social media managers, transformada.",
-    "feature1": {
-      "title": "“Ya hago contenido, no necesito una herramienta.”"
-    },
-    "feature2": {
-      "title": "“No tengo tiempo para aprender a usarla.”"
-    },
-    "feature3": {
-      "title": "“Cada cliente mío es diferente.”"
-    },
-    "feature4": {
-      "title": "“Las herramientas de IA prometen y no cumplen.”"
-    },
-    "feature5": {
-      "title": "“Mis clientes quieren resultados, no vistas.”"
-    },
-    "feature6": {
-      "title": "“Yo ya uso ChatGPT/CapCut.”"
-    },
-    "tagline": ""
+    "feature1": "“Ya hago contenido, no necesito una herramienta.”",
+    "feature2": "“No tengo tiempo para aprender a usarla.”",
+    "feature3": "“Cada cliente mío es diferente.”",
+    "feature4": "“Las herramientas de IA prometen y no cumplen.”",
+    "feature5": "“Mis clientes quieren resultados, no vistas.”",
+    "feature6": "“Yo ya uso ChatGPT/CapCut.”"
   },
   "objections": {
     "supertitle": "Con ViralBe.ai, ahorras tiempo y creas videos con una oportunidad real de triunfar.",
     "title": "Crear contenido para clientes se ha convertido en una guerra contra el tiempo.",
-    "description": "Ya conoces la rutina: abrir TikTok para buscar ideas, pasar horas viendo lo que está de moda, adaptar para cada cliente y, al final, que el video fracase. La presión por resultados es alta, pero las herramientas adecuadas son escasas.",
+    "description": "La IA analiza los videos más virales del mundo, entiende el formato y te entrega guiones listos, personalizados e inspirados en lo que realmente funciona.",
     "o1": {
       "question": "Descubre videos virales en TikTok, Reels y YouTube Shorts.",
       "answer": "ViralBe no es para crear más, es para crear mejor. Cambiamos la 'suposición' por datos para que tu contenido rinda más y justifiques el valor a tu cliente."
@@ -106,6 +93,7 @@
     "title": "Elige el plan que escala con tu negocio.",
     "description": "Piensa en el ROI: las horas que ahorras se convierten en más clientes que puedes atender. Aquí, la automatización es una inversión directa en tu facturación.",
     "monthly": "mes",
+    "popular": "Popular",
     "free": {
       "name": "Gratis",
       "description": "Para quienes están comenzando a explorar el poder de la IA.",
@@ -148,49 +136,6 @@
   "survey": {
     "popup_title": "🧩 Una última cosa rapidito...",
     "popup_description": "Prometo que es rápido, solo para entender cómo Viralbe puede ayudarte a crear contenido que realmente se vuelva viral y entregue resultados a tus clientes.",
-    "popup_button": "Abrir Encuesta",
-    "q1": {
-      "question": "¿Cuál es tu mayor desafío hoy como Social Media Manager?",
-      "placeholder": "Ej: falta de tiempo, dificultad para tener ideas virales, sobrecarga de clientes, bajo engagement, etc."
-    },
-    "q2": {
-      "question": "¿Tus videos están dando los resultados que esperas (alcance, engagement, leads)?",
-      "o1": "Sí, pero quiero mejorar.",
-      "o2": "A veces acierto, a veces no.",
-      "o3": "No, la mayoría no rinde."
-    },
-    "q3": {
-      "question": "¿Cuánto tiempo te lleva, en promedio, tener una buena idea de contenido o guion?",
-      "o1": "Menos de 15 minutos",
-      "o2": "Unos 30 min a 1 hora",
-      "o3": "Más de 1 hora, fácil",
-      "o4": "Depende del humor del día 😅"
-    },
-    "q4": {
-      "question": "¿Has perdido algún cliente, plazo u oportunidad por falta de ideas o resultados?",
-      "o1": "Sí, y dolió 😬",
-      "o2": "Casi sucedió",
-      "o3": "Aún no, pero es una preocupación"
-    },
-    "q5": {
-      "question": "Si existiera una IA que analizara los videos más virales del mundo y te diera guiones listos para tu nicho, ¿qué te ayudaría más?",
-      "o1": "Tener ideas infinitas y creativas",
-      "o2": "Ahorrar horas de trabajo",
-      "o3": "Impresionar a mis clientes con resultados reales",
-      "o4": "Todo eso junto 😍"
-    },
-    "q6": {
-      "question": "¿Quieres probar esta IA ahora (gratis) y ver qué crea para ti?",
-      "o1": "Vamos, quiero probar ahora 🚀",
-      "o2": "Quiero ver ejemplos antes",
-      "o3": "Aún tengo dudas, quiero entender mejor"
-    },
-    "next": "Siguiente",
-    "back": "Atrás",
-    "final": {
-      "title": "¡Perfecto!",
-      "description": "Por tus respuestas, tienes todo para crear videos con potencial real de viralización usando Viralbe. Haz clic abajo y pruébalo gratis ahora.",
-      "button": "Probar gratis ahora"
-    }
+    "popup_button": "Abrir Encuesta"
   }
 }

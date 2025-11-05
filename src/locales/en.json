@@ -19,30 +19,17 @@
     "description": "We know the bottlenecks social media managers face. Here’s how ViralBe.ai is built to solve them.",
     "solutionTitle": "Your creativity, now powered by data. Transform your work and deliver the results your clients expect.",
     "solutionDescription": "The social media manager's routine, transformed.",
-    "feature1": {
-      "title": "“I already create content, I don't need a tool.”"
-    },
-    "feature2": {
-      "title": "“I don't have time to learn another tool.”"
-    },
-    "feature3": {
-      "title": "“Each of my clients is different.”"
-    },
-    "feature4": {
-      "title": "“AI tools promise a lot but don't deliver.”"
-    },
-    "feature5": {
-      "title": "“My clients want results, not just views.”"
-    },
-    "feature6": {
-      "title": "“I already use ChatGPT/CapCut.”"
-    },
-    "tagline": ""
+    "feature1": "“I already create content, I don't need a tool.”",
+    "feature2": "“I don't have time to learn another tool.”",
+    "feature3": "“Each of my clients is different.”",
+    "feature4": "“AI tools promise a lot but don't deliver.”",
+    "feature5": "“My clients want results, not just views.”",
+    "feature6": "“I already use ChatGPT/CapCut.”"
   },
   "objections": {
     "supertitle": "With ViralBe.ai, you save time and create videos with a real chance to go big.",
     "title": "Creating content for clients has become a war against time.",
-    "description": "You know the routine... Opening TikTok for ideas. Spending hours watching trends. Trying to copy a style—only for the video to flop. Creating content is now a battle against tight deadlines, demanding clients, and ever-changing algorithms.",
+    "description": "The AI ​​analyzes the most viral videos in the world, understands the format and delivers ready-made, personalized scripts inspired by what really works.",
     "o1": {
       "question": "Discover viral videos on TikTok, Reels, and YouTube Shorts.",
       "answer": "The AI does the research and structuring; you add the personality. The result is scale with authenticity."
@@ -106,6 +93,7 @@
     "title": "Choose your plan and start going viral now.",
     "description": "Think of the ROI: the hours you save translate into more clients you can serve. Here, automation is a direct investment in your business.",
     "monthly": "month",
+    "popular": "Popular",
     "free": {
       "name": "Free",
       "description": "For those just starting to explore the power of AI.",
@@ -148,49 +136,6 @@
   "survey": {
     "popup_title": "🧩 One last quick thing...",
     "popup_description": "I promise it's fast—just to understand how Viralbe can help you create content that truly goes viral and delivers results for your clients.",
-    "popup_button": "Open Survey",
-    "q1": {
-        "question": "What's your biggest challenge as a Social Media Manager today?",
-        "placeholder": "e.g., lack of time, difficulty finding viral ideas, client overload, low engagement, etc."
-    },
-    "q2": {
-        "question": "Are your videos delivering the results you expect (reach, engagement, leads)?",
-        "o1": "Yes, but I want to improve.",
-        "o2": "Sometimes I get it right, sometimes I don't.",
-        "o3": "No, most don't perform well."
-    },
-    "q3": {
-        "question": "How long does it take you, on average, to come up with a good content idea or script?",
-        "o1": "Less than 15 minutes",
-        "o2": "About 30 min to 1 hour",
-        "o3": "More than 1 hour, easily",
-        "o4": "Depends on the mood of the day 😅"
-    },
-    "q4": {
-        "question": "Have you ever lost a client, deadline, or opportunity due to a lack of ideas or results?",
-        "o1": "Yes, and it hurt 😬",
-        "o2": "It almost happened",
-        "o3": "Not yet, but it's a concern"
-    },
-    "q5": {
-        "question": "If an AI could analyze the world's most viral videos and give you ready-made scripts for your niche, what would help you the most?",
-        "o1": "Having infinite and creative ideas",
-        "o2": "Saving hours of work",
-        "o3": "Impressing my clients with real results",
-        "o4": "All of the above 😍"
-    },
-    "q6": {
-        "question": "Want to test this AI now (for free) and see what it creates for you?",
-        "o1": "Let's go, I want to test it now 🚀",
-        "o2": "I want to see examples first",
-        "o3": "I'm still not sure, I want to understand it better"
-    },
-    "next": "Next",
-    "back": "Back",
-    "final": {
-      "title": "Perfect!",
-      "description": "Based on your answers, you have everything it takes to create videos with real viral potential using Viralbe. Click below and try it for free now.",
-      "button": "Try for free now"
-    }
+    "popup_button": "Open Survey"
   }
 }
