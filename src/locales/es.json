@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Inicio",
@@ -7,7 +8,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Crea videos virales en minutos — sin perder horas buscando tendencias.",
+    "title": "Crea videos virales en minutos sin perder horas buscando tendencias.",
     "description": "ViralBe.ai encuentra los videos más virales del mundo y genera guiones listos para usar, personalizados para tu nicho."
   },
   "nicheSearch": {

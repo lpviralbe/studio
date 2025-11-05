@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Home",
@@ -7,7 +8,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Create viral videos in minutes — without wasting hours on trend research.",
+    "title": "Create viral videos in minutes without wasting hours on trend research.",
     "description": "ViralBe.ai finds the world's most viral videos and generates ready-to-use scripts, customized for your niche."
   },
   "nicheSearch": {

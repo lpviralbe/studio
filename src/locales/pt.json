@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Início",
@@ -7,7 +8,7 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Crie vídeos virais em minutos — sem perder horas pesquisando tendências.",
+    "title": "Crie vídeos virais em minutos sem perder horas pesquisando tendências.",
     "description": "O ViralBe.ai encontra os vídeos mais virais do mundo e gera roteiros prontos, personalizados pro seu nicho."
   },
   "nicheSearch": {
@@ -63,10 +64,10 @@
   "testimonials": {
     "title": "A rotina de social medias, transformada.",
     "description": "Não acredite apenas na nossa palavra. Veja o que profissionais como você estão falando sobre o ViralBe.AI.",
-    "t1": "Eu cuido de 5 clientes e estava me afogando em pesquisa. O ViralBe salvou meu mês. Entreguei um vídeo que bateu 50k views em 2 dias para um deles e justifiquei meu valor.",
-    "t2": "Nossa agência dobrou o número de reels entregues por semana. O custo da ferramenta se paga com o primeiro cliente que você consegue atender a mais.",
-    "t3": "Não sou o mais criativo, mas preciso entregar resultado. O ViralBe é o parceiro perfeito para escalar a operação. Meus clientes estão amando a nova linha de conteúdo.",
-    "t4": "Minha maior dificuldade era achar tendências que encaixassem em nichos diferentes. Agora faço isso em minutos e consigo atender mais clientes com a mesma equipe."
+    "t1": "Eu cuido de 5 clientes e estava me afogando em pesquisa. O ViralBe salvou meu mês. Entreguei um vídeo que bateu 50k views em 2 dias para um deles.",
+    "t2": "Nossa agência dobrou o número de reels entregues por semana. O custo da ferramenta se paga com o primeiro cliente.",
+    "t3": "Não sou o mais criativo, mas preciso entregar resultado. O ViralBe é o parceiro perfeito. Meus clientes estão amando a nova linha de conteúdo.",
+    "t4": "Minha maior dificuldade era achar tendências que encaixassem em nichos diferentes. Agora faço isso em minutos. É absurdamente prático."
   },
   "pricing": {
     "title": "Escolha o plano que escala com seu negócio.",
