@@ -11,7 +11,7 @@
     "description": "ViralBe.ai encuentra los videos más virales del mundo y genera guiones listos para usar, personalizados para tu nicho."
   },
   "nicheSearch": {
-    "button": "Encontrar videos virales"
+    "button": "Prueba gratis — comienza en 2 minutos"
   },
   "problemSolution": {
     "title": "Crear contenido se ha convertido en una guerra contra el tiempo y la creatividad.",
@@ -66,35 +66,35 @@
     "title": "Cómo usar en 3 pasos",
     "description": "El proceso es tan simple que parece magia. Convierte la inspiración en contenido viral en minutos.",
     "step1": {
-      "title": "Busca tu nicho",
+      "title": "Explora tu nicho",
       "objection": "“No sé qué está en tendencia”",
-      "answer": "Te mostramos los videos con más potencial.",
-      "description": "Busca por tu nicho y ve los videos que más se están viralizando en este momento para inspirarte."
+      "answer": "La IA encuentra los videos virales para ti.",
+      "description": "Nuestra IA ya ha explorado las plataformas y ha encontrado los videos con mayor potencial viral para ti."
     },
     "step2": {
-      "title": "Selecciona un Video",
-      "objection": "“¿Y si no coincide con mi estilo?”",
-      "answer": "Tú eliges la base, nosotros adaptamos la magia.",
-      "description": "Elige el video que más te guste y que tenga que ver con tu audiencia. Será la base para tu nueva creación."
+      "title": "Analiza los patrones",
+      "objection": "“¿Pero cómo sé que funcionará?”",
+      "answer": "Analizamos lo que ya ha funcionado.",
+      "description": "La IA analiza la estructura, el gancho, la duración y el CTA de los videos que ya tuvieron éxito para replicar el éxito."
     },
     "step3": {
       "title": "Recibe tu Guion",
       "objection": "“¿Necesito crear el guion desde cero?”",
       "answer": "No. La IA crea un guion nuevo para ti.",
-      "description": "Nuestra IA analiza el video seleccionado y crea un guion 100% nuevo y mejorado para que solo tengas que grabar."
+      "description": "Recibe un guion listo y personalizado para que lo filmes, con subtítulos y sugerencias de hashtags."
     }
   },
   "testimonials": {
     "title": "Cuentas que pasaron de cero a resultados increíbles",
-    "description": "No te fíes solo de nuestra palabra. Ve lo que dicen los creadores sobre ViralBe.AI.",
-    "t1": "De 300 a 12k en 6 semanas. ¡Los guiones me ahorran tiempo y cordura!",
-    "t2": "Contenido consistente sin esfuerzo. Vale cada centavo del plan Pro. ¡Lo recomiendo mucho!",
-    "t3": "No soy creativo, y ViralBe.AI fue la solución perfecta. ¡Mi canal de finanzas despegó!",
-    "t4": "Finalmente puedo publicar sobre mis mascotas todos los días. ¡El crecimiento ha sido absurdo!"
+    "description": "No te fíes solo de nuestra palabra. Ve lo que dicen los social media managers sobre ViralBe.AI.",
+    "t1": "Manejo 5 clientes y estaba ahogada en investigación. ViralBe salvó mi mes. Entregué un video que alcanzó 50k vistas en 2 días para uno de ellos.",
+    "t2": "Nuestra agencia duplicó el número de reels entregados por semana. El costo de la herramienta se paga solo con el primer cliente.",
+    "t3": "No soy el más creativo, but necesito entregar resultados. ViralBe es el socio perfecto. A mis clientes les encanta la nueva línea de contenido.",
+    "t4": "Mi mayor dificultad era encontrar tendencias que se ajustaran a diferentes nichos. Ahora lo hago en minutos. Es absurdamente práctico."
   },
   "pricing": {
     "title": "Elige tu plan y empieza a hacerte viral ahora.",
-    "description": "De básico a avanzado, la IA hace el trabajo pesado, tú cosechas las vistas.",
+    "description": "Piensa en el valor del tiempo perdido: horas de investigación vs. la cantidad de clientes que dejas de atender. La automatización aquí es ROI.",
     "monthly": "mes",
     "popular": "Popular",
     "free": {
@@ -103,7 +103,7 @@
       "feature1": "3 generaciones de guion/mes",
       "feature2": "Análisis de hasta 10 videos",
       "feature3": "Soporte vía comunidad",
-      "button": "Comenzar Ahora",
+      "button": "Prueba gratis — comienza en 2 minutos",
       "priceNote": "Siempre gratis"
     },
     "pro": {
@@ -119,14 +119,14 @@
     }
   },
   "faq": {
-    "title": "Preguntas Frecuentes",
+    "title": "Objeciones que hemos escuchado — y por qué no son válidas",
     "description": "Todo lo que necesitas saber antes de empezar a hacerte viral.",
-    "q1": "¿Necesito tener ideas para usar ViralBe.AI?",
-    "a1": "¡No! La gran ventaja es que no necesitas ideas. Simplemente busca en tu nicho, encuentra un video que ya sea viral y creamos un guion nuevo y mejorado para ti.",
-    "q2": "¿La IA copiará el video de otra persona?",
-    "a2": "Para nada. La IA usa el video seleccionado solo como inspiración para entender la estructura y el tema. El guion generado es 100% original y está listo para que lo grabes con tu propio estilo.",
-    "q3": "¿Funciona para cualquier nicho?",
-    "a3": "¡Sí! De finanzas a videojuegos, de belleza a programación. Si hay contenido de video en tu nicho, nuestra herramienta puede encontrar los virales y ayudarte a crear tu versión.",
+    "q1": "Pero la IA no crea contenido humano.",
+    "a1": "Correcto. La IA aquí hace la investigación y la estructura; tú agregas la personalidad. El resultado: escala con autenticidad.",
+    "q2": "¿Y si el algoritmo cambia?",
+    "a2": "ViralBe.ai actualiza las tendencias en tiempo real y señala patrones que se repiten más allá de los cambios momentáneos.",
+    "q3": "Parece caro.",
+    "a3": "Piensa en el valor del tiempo perdido: horas de investigación vs. la cantidad de clientes que dejas de atender. La automatización aquí es ROI.",
     "q4": "¿Cómo funciona la prueba gratuita?",
     "a4": "Tienes derecho a 3 generaciones de guiones totalmente gratis, sin necesidad de registrar una tarjeta de crédito. Es la mejor manera de que pruebes y veas el poder de la herramienta en práctica.",
     "q5": "¿Hay soporte y tutoriales?",

@@ -8,10 +8,10 @@ export function Testimonials() {
 
   const testimonialsData = {
     testimonials: [
-      { name: 'Marina Silva', handle: '@marinabeauty', network: 'Instagram', text: t('testimonials.t1'), photoUrl: '' },
-      { name: 'Gabriel Costa', handle: '@gabs.fit', network: 'TikTok', text: t('testimonials.t2'), photoUrl: '' },
-      { name: 'Lucas Ferraz', handle: '@lucas.investe', network: 'YouTube', text: t('testimonials.t3'), photoUrl: '' },
-      { name: 'Sofia Mendes', handle: '@sofiapets', network: 'Instagram', text: t('testimonials.t4'), photoUrl: '' },
+      { name: 'Júlia T.', handle: '@juliateixeira.sm', network: 'Social Media', text: t('testimonials.t1'), photoUrl: '' },
+      { name: 'Update.Co', handle: '@update.co', network: 'Agência', text: t('testimonials.t2'), photoUrl: '' },
+      { name: 'Lucas Ferraz', handle: '@lucas.socialpro', network: 'Social Media', text: t('testimonials.t3'), photoUrl: '' },
+      { name: 'Sofia Mendes', handle: '@sofiamendes.mkt', network: 'Freelancer', text: t('testimonials.t4'), photoUrl: '' },
       { name: 'Ana Pereira', handle: '@anagourmet', network: 'Instagram', text: t('testimonials.t1'), photoUrl: '' },
       { name: 'Carlos Lima', handle: '@carlosgamer', network: 'TikTok', text: t('testimonials.t2'), photoUrl: '' },
     ]
