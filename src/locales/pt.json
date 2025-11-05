@@ -14,7 +14,7 @@
   "nicheSearch": {
     "button": "teste grátis agora"
   },
-  "problemSolution": {
+  "objections": {
     "supertitle": "A rotina de social medias, transformada.",
     "title": "As dúvidas que todo social media tem e as respostas que você precisa.",
     "description": "Sabemos quais são os gargalos de um social media. Veja como o ViralBe.ai foi construído para resolver cada um deles.",
@@ -44,7 +44,7 @@
     },
     "cta": {
       "title": "Sua criatividade, agora com o poder dos dados. Transforme seu trabalho e entregue os resultados que seus clientes esperam.",
-      "button": "Testar grátis agora"
+      "button": "teste grátis agora"
     }
   },
   "howItWorks": {
@@ -89,7 +89,7 @@
       "feature2": "Análise de até 10 vídeos",
       "feature3": "Suporte via comunidade",
       "button": "Teste grátis — começar em 2 minutos",
-      "priceNote": "Sempre grátis"
+      "priceNote": "teste gratuitamente"
     },
     "pro": {
       "name": "Pro",
@@ -103,7 +103,7 @@
       "priceNote": "cobrado mensalmente"
     }
   },
-  "objections": {
+  "problemSolution": {
     "title": "Criar conteúdo para clientes virou uma guerra contra o tempo.",
     "description": "Você conhece a rotina: abrir o TikTok para garimpar ideias, passar horas vendo o que está em alta, adaptar para cada cliente e, no final, o vídeo flopar. A pressão por resultados é alta, mas as ferramentas certas são raras.",
     "solutionTitle": "Com o ViralBe.ai, você economiza tempo e cria vídeos com chance real de explodir.",

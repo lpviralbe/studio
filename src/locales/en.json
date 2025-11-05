@@ -14,7 +14,7 @@
   "nicheSearch": {
     "button": "try for free now"
   },
-  "problemSolution": {
+  "objections": {
     "supertitle": "The social media manager's routine, transformed.",
     "title": "The questions every social media manager has—and the answers you need.",
     "description": "We know the bottlenecks social media managers face. Here’s how ViralBe.ai is built to solve them.",
@@ -89,7 +89,7 @@
       "feature2": "Analysis of up to 10 videos",
       "feature3": "Community support",
       "button": "Try for free — start in 2 minutes",
-      "priceNote": "Always free"
+      "priceNote": "Try for free"
     },
     "pro": {
       "name": "Pro",
@@ -103,7 +103,7 @@
       "priceNote": "billed monthly"
     }
   },
-  "objections": {
+  "problemSolution": {
     "title": "Creating content for clients has become a war against time.",
     "description": "You know the routine... Opening TikTok for ideas. Spending hours watching trends. Trying to copy a style—only for the video to flop. Creating content is now a battle against tight deadlines, demanding clients, and ever-changing algorithms.",
     "solutionTitle": "With ViralBe.ai, you save time and create videos with a real chance to go big.",
