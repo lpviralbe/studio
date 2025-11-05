@@ -11,7 +11,7 @@
     "description": "O ViralBe.ai encontra os vídeos mais virais do mundo e gera roteiros prontos, personalizados pro seu nicho."
   },
   "nicheSearch": {
-    "button": "Encontrar vídeos virais"
+    "button": "Teste grátis — começar em 2 minutos"
   },
   "problemSolution": {
     "title": "Criar conteúdo virou uma guerra contra o tempo e a criatividade.",
@@ -32,6 +32,9 @@
     },
     "feature5": {
       "title": "Ideal para Social Medias, Criadores e Agências."
+    },
+    "feature6": {
+      "title": "Faça parte de uma comunidade de social medias."
     },
     "tagline": "👉 Pare de adivinhar. Comece a criar o que dá resultado."
   },
@@ -63,27 +66,27 @@
     "title": "Como usar em 3 passos",
     "description": "O processo é tão simples que parece mágica. Transforme inspiração em conteúdo viral em minutos.",
     "step1": {
-      "title": "Pesquise o seu nicho",
+      "title": "Vasculhe seu nicho",
       "objection": "“Não sei o que está em alta”",
-      "answer": "Nós mostramos os vídeos com maior potencial.",
-      "description": "Pesquise por seu nicho e veja os vídeos que mais estão viralizando no momento para se inspirar."
+      "answer": "A IA encontra os vídeos virais para você.",
+      "description": "Nossa IA já vasculhou as plataformas e encontrou os vídeos com maior potencial de viralização para você."
     },
     "step2": {
-      "title": "Selecione um Vídeo",
-      "objection": "“E se não combinar com meu estilo?”",
-      "answer": "Você escolhe a base, nós adaptamos a magia.",
-      "description": "Escolha o vídeo que mais te agrada e que tem a ver com seu público. Ele será a base para sua nova criação."
+      "title": "Analise os padrões",
+      "objection": "“Mas como eu sei que vai funcionar?”",
+      "answer": "Analisamos o que já funcionou.",
+      "description": "A IA analisa a estrutura, hook, duração e CTA dos vídeos que já deram certo para replicar o sucesso."
     },
     "step3": {
       "title": "Receba seu Roteiro",
       "objection": "“Preciso criar o roteiro do zero?”",
       "answer": "Não. A IA cria um roteiro novo para você.",
-      "description": "Nossa IA analisa o vídeo selecionado e cria um roteiro 100% novo e aprimorado para você apenas gravar."
+      "description": "Receba um roteiro pronto e personalizado para você filmar, com legenda e sugestão de hashtags."
     }
   },
   "testimonials": {
     "title": "Contas que saíram do zero a resultados incríveis",
-    "description": "Não acredite só na nossa palavra. Veja o que os criadores estão dizendo sobre o ViralBe.AI.",
+    "description": "“Usei uma ideia do ViralBe.ai e o vídeo teve 20k views em 24h.” — social media (exemplo).",
     "t1": "De 300 para 12k em 6 semanas. Os roteiros salvam meu tempo e minha sanidade!",
     "t2": "Conteúdo consistente sem esforço. Valeu cada centavo do plano Pro. Recomendo demais!",
     "t3": "Eu não sou criativo, e o ViralBe.AI foi a solução perfeita. Meu canal de finanças decolou!",
@@ -91,7 +94,7 @@
   },
   "pricing": {
     "title": "Escolha seu plano e comece a viralizar agora.",
-    "description": "Do básico ao avançado a IA faz o pesado, você colhe os views.",
+    "description": "Pense quanto vale o tempo perdido: horas de pesquisa vs. quantidade de clientes que você deixa de entregar. A automação aqui é ROI.",
     "monthly": "mês",
     "popular": "Popular",
     "free": {
@@ -100,7 +103,7 @@
       "feature1": "3 gerações de roteiro/mês",
       "feature2": "Análise de até 10 vídeos",
       "feature3": "Suporte via comunidade",
-      "button": "Começar Agora",
+      "button": "Teste grátis — começar em 2 minutos",
       "priceNote": "Sempre grátis"
     },
     "pro": {
@@ -116,15 +119,15 @@
     }
   },
   "faq": {
-    "title": "Perguntas Frequentes",
+    "title": "Que objeções a gente já ouviu — e por que não colam",
     "description": "Tudo o que você precisa saber antes de começar a viralizar.",
-    "q1": "Preciso ter ideias para usar o ViralBe.AI?",
-    "a1": "Não! A grande vantagem é que você não precisa de ideias. Basta pesquisar seu nicho, encontrar um vídeo que já é viral e nós criamos um roteiro novo e melhorado para você.",
-    "q2": "A IA vai copiar o vídeo de outra pessoa?",
-    "a2": "De forma alguma. A IA usa o vídeo selecionado apenas como inspiração para entender a estrutura e o tema. O roteiro gerado é 100% original e pronto para você gravar com seu estilo.",
-    "q3": "Funciona para qualquer nicho?",
-    "a3": "Sim! De finanças a games, de beleza a programação. Se existe conteúdo em vídeo no seu nicho, nossa ferramenta pode encontrar os virais e te ajudar a criar sua versão.",
-    "q4": "Como funciona o período grátis?",
+    "q1": "Mas IA não faz conteúdo humano.",
+    "a1": "Certo. A IA aqui faz a pesquisa e estrutura; você adiciona a personalidade. O resultado: escala com autenticidade.",
+    "q2": "E se o algoritmo mudar?",
+    "a2": "O ViralBe.ai atualiza tendências em tempo real e aponta padrões que se repetem além de mudanças momentâneas.",
+    "q3": "Parece caro.",
+    "a3": "Pense quanto vale o tempo perdido: horas de pesquisa vs. quantidade de clientes que você deixa de entregar. A automação aqui é ROI.",
+    "q4": "Como funciona a avaliação gratuita?",
     "a4": "Você tem direito a 3 gerações de roteiros totalmente grátis, sem precisar cadastrar cartão de crédito. É a melhor forma de você testar e ver o poder da ferramenta na prática.",
     "q5": "Tem suporte e tutoriais?",
     "a5": "Sim. Oferecemos uma base de conhecimento com tutoriais e exemplos, e os assinantes do plano Pro contam com suporte prioritário via chat e e-mail para qualquer dúvida."

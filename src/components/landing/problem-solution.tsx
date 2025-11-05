@@ -1,6 +1,6 @@
 'use client';
 import { Card, CardContent } from "@/components/ui/card";
-import { Check } from "lucide-react";
+import { Check, Users } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 export function ProblemSolution() {
@@ -21,6 +21,9 @@ export function ProblemSolution() {
     },
     {
       title: t('problemSolution.feature5.title'),
+    },
+    {
+      title: t('problemSolution.feature6.title'),
     }
   ]
 

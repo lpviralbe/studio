@@ -47,10 +47,10 @@ export function HowItWorks() {
 
   return (
     <section id="how-it-works" className="py-20 md:py-32">
-      <div className="container animate-fade-in-up">
-        <div className="text-center max-w-2xl mx-auto">
-          <p className="mt-4 text-muted-foreground">{t('howItWorks.description')}</p>
+       <div className="text-center max-w-2xl mx-auto mb-16 animate-fade-in-up">
+            <p className="mt-4 text-muted-foreground">{t('howItWorks.description')}</p>
         </div>
+      <div className="container animate-fade-in-up">
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <Card key={index} className="bg-card/50 backdrop-blur-lg border border-white/10 transition-all hover:border-primary/50 hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">

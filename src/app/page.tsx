@@ -1,5 +1,5 @@
 'use client';
-import { Home, Sparkles, MessageCircle, BarChart, HelpCircle } from "lucide-react";
+import { Sparkles, MessageCircle, BarChart, HelpCircle } from "lucide-react";
 import { Faq } from "@/components/landing/faq";
 import { Footer } from "@/components/landing/footer";
 import { Hero } from "@/components/landing/hero";
@@ -29,8 +29,8 @@ function HomePageContent() {
 
       <main className="flex-1">
         <Hero />
-        <HowItWorks />
         <ProblemSolution />
+        <HowItWorks />
         <SocialProof />
         <Testimonials />
         <Pricing />
