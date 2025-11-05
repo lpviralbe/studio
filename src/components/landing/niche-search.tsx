@@ -11,9 +11,9 @@ export function NicheSearch() {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto text-center mt-12">
+    <div className="w-full max-w-4xl mx-auto text-center">
       <div className="flex justify-center mb-6">
-          
+          <FlowButton text={t('objections.cta.button')} onClick={handleRedirect} />
       </div>
     </div>
   );
