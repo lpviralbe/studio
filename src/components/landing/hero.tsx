@@ -6,7 +6,7 @@ export function Hero() {
   const { t } = useI18n();
 
   return (
-    <section className="pt-28 pb-10 md:pt-40 md:pb-10 relative overflow-hidden">
+    <section className="pt-28 pb-10 md:pt-40 md:pb-2 relative overflow-hidden">
       <div className="container text-center relative z-10">
         <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-r from-primary via-blue-400 to-accent text-transparent bg-clip-text animate-fade-in-up">
           {t('hero.title')}

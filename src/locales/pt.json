@@ -14,7 +14,7 @@
   "nicheSearch": {
     "button": "teste grátis agora"
   },
-  "objections": {
+  "problemSolution": {
     "title": "Criar conteúdo para clientes virou uma guerra contra o tempo.",
     "description": "Você conhece a rotina: abrir o TikTok para garimpar ideias, passar horas vendo o que está em alta, adaptar para cada cliente e, no final, o vídeo flopar. A pressão por resultados é alta, mas as ferramentas certas são raras.",
     "solutionTitle": "Com o ViralBe.ai, você economiza tempo e cria vídeos com chance real de explodir.",
@@ -39,7 +39,7 @@
     },
     "tagline": "👉 Pare de adivinhar. Comece a criar o que dá resultado."
   },
-  "problemSolution": {
+  "objections": {
     "supertitle": "A rotina de social medias, transformada.",
     "title": "As dúvidas que todo social media tem e as respostas que você precisa.",
     "description": "Sabemos quais são os gargalos de um social media. Veja como o ViralBe.ai foi construído para resolver cada um deles.",
@@ -106,6 +106,7 @@
     "title": "Escolha o plano que escala com seu negócio.",
     "description": "Pense no ROI: as horas que você economiza viram mais clientes que você consegue atender. Aqui, automação é investimento direto no seu faturamento.",
     "monthly": "mês",
+    "popular": "Popular",
     "free": {
       "name": "Grátis",
       "description": "Para quem está começando a explorar o poder da IA.",
@@ -145,5 +146,52 @@
     "terms": "Termos",
     "privacy": "Privacidade",
     "contact": "Contato"
+  },
+  "survey": {
+    "title": "🧩 Última coisa rapidinho...",
+    "description": "Prometo que é rápido — é só pra entender como a Viralbe pode te ajudar a criar conteúdos que realmente viralizam.",
+    "q1": {
+      "question": "Qual o seu maior desafio hoje como Social Media?",
+      "placeholder": "Exemplo: falta de tempo pra criar, dificuldade em ter ideias virais, sobrecarga de clientes, pouco engajamento, etc."
+    },
+    "q2": {
+      "question": "Seus vídeos estão entregando o resultado que você espera (alcance, engajamento, leads)?",
+      "o1": "Sim, mas quero melhorar.",
+      "o2": "Às vezes acerto, às vezes não.",
+      "o3": "Não, a maioria não performa."
+    },
+    "q3": {
+      "question": "Quanto tempo você leva, em média, pra ter uma boa ideia de conteúdo ou roteiro?",
+      "o1": "Menos de 15 minutos",
+      "o2": "Uns 30 min a 1 hora",
+      "o3": "Mais de 1 hora fácil",
+      "o4": "Depende do humor do dia 😅"
+    },
+    "q4": {
+      "question": "Já perdeu cliente, prazo ou oportunidade por falta de ideias ou resultado?",
+      "o1": "Sim, e doeu 😬",
+      "o2": "Quase aconteceu",
+      "o3": "Ainda não, mas é uma preocupação"
+    },
+    "q5": {
+      "question": "Se existisse uma IA que analisasse os vídeos mais virais do mundo e te entregasse roteiros prontos pro seu nicho, o que mais te ajudaria?",
+      "o1": "Ter ideias infinitas e criativas",
+      "o2": "Economizar horas de trabalho",
+      "o3": "Impressionar meus clientes com resultados reais",
+      "o4": "Tudo isso junto 😍"
+    },
+    "q6": {
+      "question": "Quer testar essa IA agora (de graça) e ver o que ela cria pra você?",
+      "o1": "Bora, quero testar agora 🚀",
+      "o2": "Quero ver exemplos antes",
+      "o3": "Ainda tô na dúvida, quero entender melhor"
+    },
+    "next": "Avançar",
+    "back": "Voltar",
+    "final": {
+      "title": "Perfeito!",
+      "description": "Pelas suas respostas, você tem tudo pra criar vídeos com potencial real de viralização usando a Viralbe. Clique abaixo e teste grátis agora.",
+      "button": "Testar grátis agora"
+    }
   }
 }

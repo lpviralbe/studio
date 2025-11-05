@@ -48,6 +48,7 @@ export function HowItWorks() {
   return (
     <section id="how-it-works" className="py-10 md:py-12">
        <div className="text-center max-w-2xl mx-auto mb-12 animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-bold font-headline">{t('howItWorks.title')}</h2>
             <p className="mt-4 text-muted-foreground">{t('howItWorks.description')}</p>
         </div>
       <div className="container animate-fade-in-up">
