@@ -41,8 +41,8 @@ export function Objections() {
 
             <Card className="bg-card/50 backdrop-blur-sm border-white/10 text-left p-8">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold font-headline mb-4">{t('objections.solutionTitle')}</h3>
-                <p className="text-muted-foreground mb-8 text-lg">{t('objections.solutionDescription')}</p>
+                <h3 className="text-2xl font-bold font-headline mb-4 text-center">{t('objections.solutionTitle')}</h3>
+                <p className="text-muted-foreground mb-8 text-lg text-center max-w-2xl mx-auto">{t('objections.solutionDescription')}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                     {features.map((feature, index) => (
                         <div key={index} className="flex items-start gap-3">
