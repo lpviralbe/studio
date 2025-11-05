@@ -48,7 +48,7 @@ export function HowItWorks() {
       <div className="container animate-fade-in-up">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="bg-card/50 backdrop-blur-lg border border-white/10 transition-all hover:border-primary/50 hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
+            <Card key={index} className="bg-card/50 backdrop-blur-lg border transition-all hover:border-primary/50 hover:shadow-primary/20 hover:-translate-y-2 flex flex-col">
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="bg-primary/10 p-3 rounded-full border border-primary/20">

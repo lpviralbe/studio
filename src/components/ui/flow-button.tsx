@@ -12,7 +12,7 @@ export function FlowButton({ text = "Modern Button", className, ...props }: Flow
   return (
     <button 
         className={cn(
-            "group relative flex items-center gap-1 overflow-hidden rounded-[100px] border-[1.5px] border-primary/40 bg-card/50 px-8 py-4 text-lg font-semibold text-foreground cursor-pointer transition-all duration-flow ease-flow-in-out hover:border-transparent hover:text-primary-foreground hover:rounded-[12px] active:scale-[0.95] hover:bg-primary",
+            "group relative flex items-center gap-1 overflow-hidden rounded-[100px] border-[1.5px] border-primary/40 bg-card px-8 py-4 text-lg font-semibold text-foreground cursor-pointer transition-all duration-flow ease-flow-in-out hover:border-transparent hover:text-primary-foreground hover:rounded-[12px] active:scale-[0.95] hover:bg-primary",
             className
         )}
         {...props}

@@ -51,7 +51,7 @@ export function Objections() {
            <h2 className="text-3xl md:text-5xl font-bold font-headline">
             {t('objections.title')}
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg md:text-xl">
+          <p className="mt-4 text-muted-foreground text-lg md:text-xl text-center mx-auto">
             {t('objections.description')}
           </p>
         </div>
@@ -75,9 +75,6 @@ export function Objections() {
             <h3 className="text-2xl md:text-4xl font-bold font-headline max-w-3xl mx-auto mt-2">
                 {t('objections.cta.title')}
             </h3>
-            <p className="mt-4 text-center mx-auto max-w-2xl text-lg text-muted-foreground">
-              {t('objections.cta.description')}
-            </p>
             <div className="mt-8 flex justify-center">
               <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>

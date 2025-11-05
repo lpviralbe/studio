@@ -70,7 +70,7 @@ export function Pricing() {
           <div
             key={index}
             className={cn(
-              `rounded-2xl border p-6 text-center lg:flex lg:flex-col lg:justify-center relative bg-card/50 backdrop-blur-lg`,
+              `rounded-2xl border p-6 text-center lg:flex lg:flex-col lg:justify-center relative bg-card`,
               plan.isPopular ? "border-primary border-2 shadow-primary/20 shadow-2xl" : "border-border",
               "flex flex-col",
               "transition-all hover:-translate-y-2",
