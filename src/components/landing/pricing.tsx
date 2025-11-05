@@ -57,7 +57,7 @@ export function Pricing() {
   ];
 
   return (
-    <div id="pricing" className="container py-20">
+    <div id="pricing" className="container py-16 md:py-24">
       <div className="text-center space-y-4 mb-12 animate-fade-in-up">
         <h2 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
           {t('pricing.title')}
