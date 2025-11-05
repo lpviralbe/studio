@@ -7,34 +7,33 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Crea videos virales en minutos sin perder horas investigando tendencias.",
-    "typewriter1": "",
-    "typewriter2": "",
-    "description": "Nuestra IA descubre lo que está en auge en tu nicho y crea guiones para que los grabes y finalmente explotes."
+    "title": "Crea videos virales en minutos — sin perder horas buscando tendencias.",
+    "description": "ViralBe.ai encuentra los videos más virales del mundo y genera guiones listos para usar, personalizados para tu nicho."
   },
   "nicheSearch": {
     "button": "Encontrar videos virales"
   },
   "problemSolution": {
-    "title": "Deja de publicar a ciegas",
-    "description": "Puedes seguir probando a ciegas o dejar que la IA te entregue lo que ya está funcionando, y finalmente comenzar a hacerte viral de verdad.",
+    "title": "Crear contenido se ha convertido en una guerra contra el tiempo y la creatividad.",
+    "description": "Sabes cómo es... Abrir TikTok para buscar ideas. Pasar horas viendo lo que está en tendencia. Intentar copiar el estilo—y que el video fracase.",
+    "solutionTitle": "Con ViralBe.ai, ahorras tiempo y creas videos con una oportunidad real de explotar.",
+    "solutionDescription": "La IA analiza los videos más virales del mundo, entiende el formato y te entrega guiones listos, personalizados e inspirados en lo que realmente funciona.",
     "feature1": {
-      "title": "Copia lo que ya funciona",
-      "description": "Nuestra IA analiza millones de videos para encontrar los patrones que generan más vistas y participación en tu nicho."
+      "title": "Descubre videos virales en TikTok, Reels y YouTube Shorts."
     },
     "feature2": {
-      "title": "Guiones listos en minutos",
-      "description": "Recibe guiones completos, con ganchos, estructura y CTA optimizados, listos para que los grabes y publiques."
+      "title": "Recibe guiones automáticos basados en el estilo y la estructura de los videos."
     },
     "feature3": {
-      "title": "Adelántate a la competencia",
-      "description": "Mientras otros prueban a ciegas, tú usas datos para crear contenido que el algoritmo ama y que tu audiencia no puede ignorar."
+      "title": "Ahorra horas de investigación y lluvia de ideas."
     },
     "feature4": {
-      "title": "Comunidad de Social Media",
-      "description": "Conéctate con otros creadores, intercambia experiencias y crece junto a nuestra comunidad exclusiva."
+      "title": "Aumenta la interacción y el alcance con contenido validado."
     },
-    "tagline": "El juego ha cambiado: quien usa IA se vuelve viral, quien no, se queda atrás."
+    "feature5": {
+      "title": "Ideal para Social Media Managers, Creadores y Agencias."
+    },
+    "tagline": "👉 Deja de adivinar. Empieza a crear lo que da resultados."
   },
   "socialProof": {
     "title": {

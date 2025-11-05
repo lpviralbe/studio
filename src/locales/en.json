@@ -7,34 +7,33 @@
     "faq": "FAQ"
   },
   "hero": {
-    "title": "Create viral videos in minutes without wasting hours researching trends.",
-    "typewriter1": "",
-    "typewriter2": "",
-    "description": "Our AI discovers what's booming in your niche and creates scripts for you to record and finally blow up."
+    "title": "Create viral videos in minutes — without wasting hours searching for trends.",
+    "description": "ViralBe.ai finds the most viral videos in the world and generates ready-to-use scripts, customized for your niche."
   },
   "nicheSearch": {
     "button": "Find viral videos"
   },
   "problemSolution": {
-    "title": "Stop posting in the dark",
-    "description": "You can keep testing blindly or let the AI deliver what's already working—and finally start going viral for real.",
+    "title": "Creating content has become a war against time and creativity.",
+    "description": "You know how it is... Opening TikTok to look for ideas. Spending hours watching what's trending. Trying to copy the style—and the video flops.",
+    "solutionTitle": "With ViralBe.ai, you save time and create videos with a real chance to explode.",
+    "solutionDescription": "The AI analyzes the most viral videos in the world, understands the format, and delivers ready-to-use, personalized scripts inspired by what really works.",
     "feature1": {
-      "title": "Copy what already works",
-      "description": "Our AI analyzes millions of videos to find the patterns that generate the most views and engagement in your niche."
+      "title": "Discover viral videos on TikTok, Reels, and YouTube Shorts."
     },
     "feature2": {
-      "title": "Ready-made scripts in minutes",
-      "description": "Receive complete scripts, with optimized hooks, structure, and CTAs, ready for you to record and post."
+      "title": "Receive automatic scripts based on the style and structure of the videos."
     },
     "feature3": {
-      "title": "Get ahead of the competition",
-      "description": "While others test blindly, you use data to create content that the algorithm loves and your audience can't ignore."
+      "title": "Save hours of research and brainstorming."
     },
     "feature4": {
-      "title": "Social Media Community",
-      "description": "Connect with other creators, exchange experiences, and grow together in our exclusive community."
+      "title": "Increase engagement and reach with validated content."
     },
-    "tagline": "The game has changed: those who use AI go viral, those who don't are left behind."
+    "feature5": {
+      "title": "Ideal for Social Media Managers, Creators, and Agencies."
+    },
+    "tagline": "👉 Stop guessing. Start creating what gets results."
   },
   "socialProof": {
     "title": {

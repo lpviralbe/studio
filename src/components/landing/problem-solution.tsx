@@ -1,6 +1,6 @@
 'use client';
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Zap, Copy, Video, Users } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Check } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 
 export function ProblemSolution() {
@@ -8,24 +8,19 @@ export function ProblemSolution() {
 
   const features = [
     {
-      icon: Copy,
       title: t('problemSolution.feature1.title'),
-      description: t('problemSolution.feature1.description'),
     },
     {
-      icon: Video,
       title: t('problemSolution.feature2.title'),
-      description: t('problemSolution.feature2.description'),
     },
     {
-      icon: Zap,
       title: t('problemSolution.feature3.title'),
-      description: t('problemSolution.feature3.description'),
     },
     {
-      icon: Users,
       title: t('problemSolution.feature4.title'),
-      description: t('problemSolution.feature4.description'),
+    },
+    {
+      title: t('problemSolution.feature5.title'),
     }
   ]
 
@@ -36,25 +31,27 @@ export function ProblemSolution() {
                 <h2 className="text-3xl md:text-4xl font-bold font-headline">
                     {t('problemSolution.title')}
                 </h2>
-                <p className="mt-4 text-muted-foreground">
+                <p className="mt-4 text-muted-foreground text-lg">
                     {t('problemSolution.description')}
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {features.map((feature, index) => (
-                    <Card key={index} className="bg-card/50 backdrop-blur-sm border-white/10 text-left">
-                        <CardHeader>
-                            <div className="bg-primary/10 p-3 rounded-full w-fit border border-primary/20">
-                                <feature.icon className="h-6 w-6 text-primary" />
+
+            <Card className="bg-card/50 backdrop-blur-sm border-white/10 text-left p-8">
+              <CardContent className="p-0">
+                <h3 className="text-2xl font-bold font-headline mb-4">{t('problemSolution.solutionTitle')}</h3>
+                <p className="text-muted-foreground mb-8 text-lg">{t('problemSolution.solutionDescription')}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                    {features.map((feature, index) => (
+                        <div key={index} className="flex items-start gap-3">
+                            <div className="bg-green-500/10 p-1 rounded-full mt-1 border border-green-500/30">
+                                <Check className="h-4 w-4 text-green-400" />
                             </div>
-                        </CardHeader>
-                        <CardContent>
-                            <h3 className="text-xl font-bold font-headline mb-2">{feature.title}</h3>
-                            <p className="text-muted-foreground">{feature.description}</p>
-                        </CardContent>
-                    </Card>
-                ))}
-            </div>
+                            <p className="text-foreground/90">{feature.title}</p>
+                        </div>
+                    ))}
+                </div>
+              </CardContent>
+            </Card>
 
             <p 
               className="mt-16 text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary via-blue-400 to-accent text-transparent bg-clip-text"
