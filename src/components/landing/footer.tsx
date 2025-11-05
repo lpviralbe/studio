@@ -18,7 +18,7 @@ export function Footer() {
                     <Link href="#" className="hover:text-foreground">{t('footer.contact')}</Link>
                 </div>
                 <div className="flex items-center gap-4">
-                    <Link href="#" aria-label="Instagram" className="text-muted-foreground hover:text-foreground"><Instagram /></Link>
+                    <Link href="https://www.instagram.com/viralbe.ai/" aria-label="Instagram" className="text-muted-foreground hover:text-foreground"><Instagram /></Link>
                     <Link href="#" aria-label="YouTube" className="text-muted-foreground hover:text-foreground"><Youtube /></Link>
                     <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-foreground"><Twitter /></Link>
                 </div>
